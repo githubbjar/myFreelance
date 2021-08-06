@@ -69,7 +69,7 @@
         $raw_url = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
         $jobx = substr($raw_url, -1, 1);
 
-        if ($jobx ===x "/") {
+        if ($jobx === "/") {
         	$jobx = 0;
         };
     ?>
