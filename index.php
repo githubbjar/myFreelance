@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
-  <title>Invoice 2708</title>
   <style> 
     body {
         margin: 0;
@@ -36,14 +35,29 @@
         padding: 10px;
     }
 
+    a, a:hover {
+        color: #000;
+    }
+
+    #jobList p {
+        margin-left: 20px;
+    }
+
+    #jobList {
+        padding-left: 45px;
+    }
+
     @media only screen and (max-width: 600px) {
         #center {
             text-align: center;
         }
+        #jobList {
+            display: none;
+        }
     }
     
     @media print {
-        #job_status {
+        #job_status, #jobList {
             display: none;
         }
     }    
@@ -62,6 +76,8 @@
     <script> 
         let x = <?php echo $jobx; ?>;
     </script> 
+
+    <title>Freelance Invoice</title>
 
 </head>
 
@@ -91,7 +107,14 @@
 <div class='row'>
     <div class='col-sm-2'>
 
-
+    <div id="jobList">
+        <p><strong>JOBS:</strong></p>
+        <ul>
+            <li><a href="http://www.jerryjanquart.com/myFreelance/index.php?jobx=0">#2708</a></li>
+            <li><a href="http://www.jerryjanquart.com/myFreelance/index.php?jobx=1">#2709</a></li>
+            <li><a href="http://www.jerryjanquart.com/myFreelance/index.php?jobx=2">#2710</a></li>
+        </ul>
+    </div>  
 
         
     </div>
