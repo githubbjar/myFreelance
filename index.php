@@ -68,6 +68,10 @@
         //grab url for use in querying database
         $raw_url = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
         $jobx = substr($raw_url, -1, 1);
+
+        if ($jobx ===x "/") {
+        	$jobx = 0;
+        };
     ?>
 
     <script src="jobs.js" ></script>
@@ -84,6 +88,7 @@
 <body>
 
 <!--ROW ONE BEGIN-->
+<?php echo $jobx; ?>
 <div class='row'>
     <div class="col-sm-12">
         <div id="job_status"></div>
