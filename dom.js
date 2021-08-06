@@ -19,11 +19,11 @@ let jobStatus = "";
 if (jobs[x].completed_date && jobs[x].date_billed && jobs[x].date_paid) {
     jobStatus = "<div class='green'><strong>JOB STATUS: </strong> Completed on " + jobs[x].completed_date + " &#8212;> Billed on " + jobs[x].date_billed + " &#8212> Payment Recieved on " + jobs[x].date_paid + "</div>"; 
 } else if (jobs[x].completed_date && jobs[x].date_billed && !jobs[x].date_paid) {
-    jobStatus = "<div class='yellow'><strong>JOB STATUS: </strong> Completed on " + jobs[x].completed_date + " &#8212;> Billed on " + jobs[x].date_billed + " &#8212> Payment Not Yet Received</div>"
+    jobStatus = "<div class='yellow'><strong>JOB STATUS: </strong> Completed on " + jobs[x].completed_date + " &#8212;> Billed on " + jobs[x].date_billed + " &#8212> Awaiting payment . . .</div>"
 } else if (jobs[x].completed_date && !jobs[x].date_billed && !jobs[x].date_paid) {
-    jobStatus = "<div class='yellow'><strong>JOB STATUS: </strong> Completed on " + jobs[x].completed_date + " &#8212;> Not Yet Billed </div>"
+    jobStatus = "<div class='yellow'><strong>JOB STATUS: </strong> Completed on " + jobs[x].completed_date + " &#8212;> Need to bill . . .  </div>"
 } else {
-    jobStatus = "<div class='yellow'><strong>JOB STATUS: </strong> Job Not Completed </div>"
+    jobStatus = "<div class='gray'><strong>JOB STATUS: </strong> Job Not Completed </div>"
 };
 document.getElementById("job_status").innerHTML = jobStatus;
 

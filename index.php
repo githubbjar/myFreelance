@@ -35,6 +35,11 @@
         padding: 10px;
     }
 
+    .gray {
+        background-color: #CCC;
+        padding: 10px;
+    }
+
     a, a:hover {
         color: #000;
     }
