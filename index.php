@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
+  <title>Invoice 2708</title>
   <style> 
     body {
         margin: 0;
@@ -49,14 +50,19 @@
 
   </style>
     
-    <!-- https://pagecrafter.com/pass-php-variable-javascript/ -->
-    <?php
-        $job = 'string'; //Define our PHP variable.
-    ?>			
+    <?php 
+        //grab url for use in querying database
+        $raw_url = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
+        $jobx = substr($raw_url, -1, 1);
+    ?>
+
+    <script src="jobs.js" ></script>
+
+    <!--HT: https://pagecrafter.com/pass-php-variable-javascript/ -->	
     <script> 
-        x = <?php echo $job; ?>;
+        let x = <?php echo $jobx; ?>;
     </script> 
-    <title>Invoice</title>
+
 </head>
 
 <body>
@@ -128,7 +134,6 @@
 
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="jobs.js" ></script>
 <script src="dom.js"></script>    
 </body>
 </html>
