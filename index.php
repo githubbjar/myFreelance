@@ -88,7 +88,6 @@
 <body>
 
 <!--ROW ONE BEGIN-->
-<?php echo $jobx; ?>
 <div class='row'>
     <div class="col-sm-12">
         <div id="job_status"></div>
