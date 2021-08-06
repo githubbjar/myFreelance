@@ -16,7 +16,7 @@ const jobs = [];
             total_hours: 8,
             rate_of_pay: 40,
             date_billed: "August 4, 2021",
-            date_paid: "August 15, 2021"
+            date_paid: ""
         };
 
         const job2709 = {
