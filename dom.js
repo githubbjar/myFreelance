@@ -10,10 +10,10 @@ document.getElementById("completed_date").innerHTML = "COMPLETED DATE: <br /> " 
 document.getElementById("total_hours").innerHTML = "TOTAL HOURS: " + jobs[x].total_hours;
 document.getElementById("rate_of_pay").innerHTML = "RATE OF PAY: $" + jobs[x].rate_of_pay + " / hour";
 document.getElementById("employer").innerHTML = jobs[x].employer;
-document.getElementById("employer_address1").innerHTML = jobs[x].employer_address1;
-document.getElementById("employer_address2").innerHTML = jobs[x].employer_address2;
-document.getElementById("contact").innerHTML = jobs[x].contact;
-document.getElementById("contact_email").innerHTML = jobs[x].contact_email;
+document.getElementById("employer_address1").innerHTML = jobs[x].employer_address1();
+document.getElementById("employer_address2").innerHTML = jobs[x].employer_address2();
+document.getElementById("contact").innerHTML = jobs[x].contact();
+document.getElementById("contact_email").innerHTML = jobs[x].contact_email();
 
 let jobStatus = "";
 if (jobs[x].completed_date && jobs[x].date_billed && jobs[x].date_paid) {

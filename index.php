@@ -79,7 +79,7 @@
         };
     ?>
 
-    <script src="jobs.js" ></script>
+    <script src="job-list.js" ></script>
 
     <!--HT: https://pagecrafter.com/pass-php-variable-javascript/ -->	
     <script> 
