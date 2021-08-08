@@ -44,11 +44,11 @@
         color: #000;
     }
 
-    #jobList p {
+    #job-list p {
         margin-left: 20px;
     }
 
-    #jobList {
+    #job-list {
         padding-left: 45px;
     }
 
@@ -115,17 +115,14 @@
 <div id="center">
 <div class='row'>
     <div class='col-sm-2'>
-
-    <div id="jobList">
+        <div id="job-list">
         <p><strong>JOBS:</strong></p>
         <ul>
             <li><a href="http://www.jerryjanquart.com/myFreelance/index.php?jobx=0">#2708</a></li>
             <li><a href="http://www.jerryjanquart.com/myFreelance/index.php?jobx=1">#2709</a></li>
             <li><a href="http://www.jerryjanquart.com/myFreelance/index.php?jobx=2">#2710</a></li>
         </ul>
-    </div>  
-
-        
+        </div>  
     </div>
     <div class='col-sm-4'>
         <h2 id="project"></h2>

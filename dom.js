@@ -14,6 +14,7 @@ document.getElementById("employer_address1").innerHTML = jobs[x].employer_addres
 document.getElementById("employer_address2").innerHTML = jobs[x].employer_address2();
 document.getElementById("contact").innerHTML = jobs[x].contact();
 document.getElementById("contact_email").innerHTML = jobs[x].contact_email();
+//document.getElementById("job-list").innerHTML = "Jobs<br />" + job_numbers;
 
 let jobStatus = "";
 if (jobs[x].completed_date && jobs[x].date_billed && jobs[x].date_paid) {

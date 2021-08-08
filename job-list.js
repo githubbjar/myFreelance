@@ -45,6 +45,7 @@ function Job(invoice_number, employer, project, project_type, start_date, due_da
 };
 
 //the jobs
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2708 = new Job(2708, "St. John Cantius Church", "2021 Music Schedule", "16 page booklet", "July 17, 2021", "August 6, 2021");
 job2708.completed_date = "August 1, 2021";
@@ -71,3 +72,22 @@ job2710.rate_of_pay = "";
 job2710.date_billed = "";
 job2710.date_paid = "";
 jobs.push(job2710);
+
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const job_numbers = jobs.map (function (job) {
+    return job.invoice_number;
+});
+/*
+let code = []
+for (let i = 0; i < job_numbers.length; i++) {
+    code.push("Hello " + job_numbers[i]);
+}
+console.log(code) */
