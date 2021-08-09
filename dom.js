@@ -17,14 +17,18 @@ document.getElementById("contact_email").innerHTML = jobs[x].contact_email();
 document.getElementById("job-list").innerHTML = "<p><strong>Jobs:</strong></p>" + list_jobs_code;
 
 let jobStatus = "";
+//completed, billed & paid
 if (jobs[x].completed_date && jobs[x].date_billed && jobs[x].date_paid) {
-    jobStatus = "<div class='green'><strong>JOB STATUS: &#8212;> </strong> <i class='fas fa-check-square'></i> Completed on " + jobs[x].completed_date + " &#8212;> <i class='fas fa-check-square'></i> Billed on " + jobs[x].date_billed + " &#8212> <i class='fas fa-check-square'></i> Payment Recieved on " + jobs[x].date_paid + "</div>"; 
+    jobStatus = "<div class='green'><strong>JOB STATUS: </strong> &#8212;> <i class='fas fa-check-square'></i> Completed on " + jobs[x].completed_date + " &#8212;> <i class='fas fa-check-square'></i> Billed on " + jobs[x].date_billed + " &#8212> <i class='fas fa-check-square'></i> Payment Recieved on " + jobs[x].date_paid + "</div>"; 
+// completed & billed
 } else if (jobs[x].completed_date && jobs[x].date_billed && !jobs[x].date_paid) {
     jobStatus = "<div class='yellow'><strong>JOB STATUS: </strong> &#8212;> <i class='fas fa-check-square'></i> Completed on " + jobs[x].completed_date + " &#8212;> <i class='fas fa-check-square'></i> Billed on " + jobs[x].date_billed + " &#8212> <i class='far fa-square'></i> Awaiting payment . . .</div>"
+// completed
 } else if (jobs[x].completed_date && !jobs[x].date_billed && !jobs[x].date_paid) {
-    jobStatus = "<div class='yellow'><strong>JOB STATUS: &#8212;> </strong> Completed on " + jobs[x].completed_date + " &#8212;> <i class='far fa-square'></i> Need to bill . . .  </div>"
+    jobStatus = "<div class='yellow'><strong>JOB STATUS: </strong> &#8212;> Completed on " + jobs[x].completed_date + " &#8212;> <i class='far fa-square'></i> Need to bill . . .  </div>"
+// not completed
 } else {
-    jobStatus = "<div class='gray'><strong>JOB STATUS: &#8212;> </strong> <i class='far fa-square'></i> Job Not Completed </div>"
+    jobStatus = "<div class='gray'><strong>JOB STATUS: </strong> &#8212;> <i class='far fa-square'></i> Job Not Completed </div>"
 };
 document.getElementById("job_status").innerHTML = jobStatus;
 
