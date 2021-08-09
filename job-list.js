@@ -59,7 +59,7 @@ job2708.completed_date = "August 1, 2021";
 job2708.total_hours = 8;
 job2708.rate_of_pay = 40;
 job2708.date_billed = "August 4, 2021";
-job2708.date_paid = "";
+job2708.date_paid = "August 11, 2011";
 jobs.push(job2708);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
