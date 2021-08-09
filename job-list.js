@@ -56,7 +56,7 @@ job2708.date_paid = "";
 jobs.push(job2708);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2709 = new Job(2709, 1, "PMA", "First Things Flex 2.0", "Online Subs Form Creation", "July 16, 2021", "August 30, 2021");
+const job2709 = new Job(2709, 1, "Publishing Management Associates", "First Things Flex 2.0", "Online Subs Form Creation", "July 16, 2021", "August 30, 2021");
 job2709.completed_date = "";
 job2709.total_hours = "";
 job2709.rate_of_pay = "";
@@ -88,7 +88,7 @@ for (let i = 0; i < invoice_numbers.length; i++) {
     list_jobs.push("<p><a href='http://www.jerryjanquart.com/myFreelance/index.php?jobx=" + job_numbers[i] + "'>#" + invoice_numbers[i] + "</p>")
 }
 
-
-let list_jobs_code = list_jobs.toString();
+let list_jobs_code_w_commas = list_jobs.toString();
+let list_jobs_code = list_jobs_code_w_commas.replace(/,/g, "");
 
 console.log(list_jobs_code);
