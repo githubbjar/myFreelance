@@ -68,7 +68,7 @@
         #center {
             text-align: center;
         }
-        #jobList {
+        #job-list {
             display: none;
         }
     }
