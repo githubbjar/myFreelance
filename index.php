@@ -52,6 +52,17 @@
         padding-left: 45px;
     }
 
+    .jobslist_employer_nicknames {
+        font-size: 12px;
+        margin-bottom: -4px;
+    }
+    .joblist_links {
+        margin-bottom: 0px;
+    }
+    .joblist_projects {
+        font-size: 12px;
+    }
+
     @media only screen and (max-width: 600px) {
         #center {
             text-align: center;

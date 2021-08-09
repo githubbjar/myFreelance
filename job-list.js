@@ -9,28 +9,28 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
     this.contact = function() {
         if (this.employer == "St. John Cantius Church") {
             return "Nick Chapello";
-        } else {
+        } else if (this.employer == "Publishing Management Associates") {
             return "Sue Milnes";
         }
     };
     this.contact_email = function() {
         if (this.employer == "St. John Cantius Church") {
             return "nchapello@cantius.org";
-        } else {
+        } else if (this.employer == "Publishing Management Associates") {
             return "sue@pma-inc.net";
         }
     };
     this.employer_address1 = function() {
         if (this.employer == "St. John Cantius Church") {
             return "825 N. Carpenter Street";
-        } else {
+        } else if (this.employer == "Publishing Management Associates") {
             return "129 Phelps Avenue, Suite 312";
         }
     };
     this.employer_address2 = function() {
         if (this.employer == "St. John Cantius Church") {
             return "Chicago, IL 60642";
-        } else {
+        } else if (this.employer == "Publishing Management Associates") {
             return "Rockford, IL 61108";
         }
     };
@@ -38,6 +38,13 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
     this.project_type = project_type;
     this.start_date = start_date;
     this.due_date = due_date;
+    this.employer_nickname = function() {
+        if (this.employer == "St. John Cantius Church") {
+            return "Cantius";
+        } else if (this.employer == "Publishing Management Associates") {
+            return "PMA";
+        }
+    };
     this.completed_date = "";
     this.total_hours = "";
     this.rate_of_pay = "";
@@ -78,17 +85,30 @@ const invoice_numbers = jobs.map (function (job) {
     return job.invoice_number;
 });
 
+//create array of invoice nubmers
+const employer_nicknames = jobs.map (function (job) {
+    return job.employer_nickname();
+});
+
+
 //create array of job numbers
 const job_numbers = jobs.map (function (job) {
     return job.job_number;
 });
 
+//create array of projects
+const projects = jobs.map (function (job) {
+    return job.project;
+});
+
+
 let list_jobs = []
 for (let i = 0; i < invoice_numbers.length; i++) {
-    list_jobs.push("<p><a href='http://www.jerryjanquart.com/myFreelance/index.php?jobx=" + job_numbers[i] + "'>#" + invoice_numbers[i] + "</p>")
+    list_jobs.push("\
+    <p class='jobslist_employer_nicknames'>" + employer_nicknames[i] + "</p>\
+    <p class='joblist_links'><a href='http://www.jerryjanquart.com/myFreelance/index.php?jobx=" + job_numbers[i] + "'>#" + invoice_numbers[i] + "</a></p>\
+    <p class='joblist_projects'>" + projects[i] + "</p>")
 }
 
 let list_jobs_code_w_commas = list_jobs.toString();
 let list_jobs_code = list_jobs_code_w_commas.replace(/,/g, "");
-
-console.log(list_jobs_code);
