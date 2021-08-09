@@ -81,7 +81,11 @@
 
   </style>
     
-    <?php 
+    
+    <?php
+    
+        //use this code on the other page to grab x duh
+
         //grab url for use in querying database
         $raw_url = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
         $jobx = substr($raw_url, -1, 1);
@@ -111,7 +115,7 @@
     </div>
 </div>
 <div class='row' id='header'>
-    <div class='col-sm-2'></div>
+    <div class='col-sm-2' id='test_space'></div>
     <div class='col-sm-8'> 
         <h2 class="jerry">Jerry Janquart </h2> 
         <p id="services">Graphics / Design / Web Services</p> 

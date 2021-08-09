@@ -15,11 +15,12 @@ document.getElementById("employer_address2").innerHTML = jobs[x].employer_addres
 document.getElementById("contact").innerHTML = jobs[x].contact();
 document.getElementById("contact_email").innerHTML = jobs[x].contact_email();
 document.getElementById("job-list").innerHTML = "<p><strong>Jobs:</strong></p>" + list_jobs_code;
+document.getElementById("test_space").innerHTML = x;
 
 let jobStatus = "";
 //completed, billed & paid
 if (jobs[x].completed_date && jobs[x].date_billed && jobs[x].date_paid) {
-    jobStatus = "<div class='green'><strong>JOB STATUS: </strong> &#8212;><i class='fas fa-check-square'></i> Completed on " + jobs[x].completed_date + " &#8212;> <i class='fas fa-check-square'></i> Billed on " + jobs[x].date_billed + " &#8212> <i class='fas fa-check-square'></i> Payment Recieved on " + jobs[x].date_paid + "</div>"; 
+    jobStatus = "<div class='green'><strong>JOB STATUS: </strong> &#8212;> <i class='fas fa-check-square'></i> Completed on " + jobs[x].completed_date + " &#8212;> <i class='fas fa-check-square'></i> Billed on " + jobs[x].date_billed + " &#8212> <i class='fas fa-check-square'></i> Payment Recieved on " + jobs[x].date_paid + "</div>"; 
 // completed & billed
 } else if (jobs[x].completed_date && jobs[x].date_billed && !jobs[x].date_paid) {
     jobStatus = "<div class='yellow'><strong>JOB STATUS: </strong> &#8212;> <i class='fas fa-check-square'></i> Completed on " + jobs[x].completed_date + " &#8212;> <i class='fas fa-check-square'></i> Billed on " + jobs[x].date_billed + " &#8212> <i class='far fa-square'></i> Awaiting payment . . .</div>"
