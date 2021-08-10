@@ -61,7 +61,7 @@ job2708.completed_date = "August 1, 2021";
 job2708.total_hours = 8;
 job2708.rate_of_pay = 40;
 job2708.date_billed = "August 4, 2021";
-job2708.date_paid = "August 11, 2011";
+job2708.date_paid = "August 9, 2011";
 jobs.push(job2708);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -104,13 +104,22 @@ const projects = jobs.map (function (job) {
 });
 
 
+
 let list_jobs = []
 for (let i = 0; i < invoice_numbers.length; i++) {
+    //I needed to put this IN the for loop since I was referencing "i". 
+    var bold = "";
+    var endBold = "";
+    if(invoice_numbers[i]==jobs[x].invoice_number){
+        bold="<strong>";
+        }
+    if(invoice_numbers[i]==jobs[x].invoice_number){
+        endBold="</strong>";
+        }      
     list_jobs.push("\
     <p class='jobslist_employer_nicknames'>" + employer_nicknames[i] + "</p>\
-    <p class='joblist_links'><a href='http://www.jerryjanquart.com/myFreelance/index.php?jobx=" + job_numbers[i] + "'>#" + invoice_numbers[i] + "</a></p>\
+    <p class='joblist_links'><a href='http://www.jerryjanquart.com/myFreelance/index.php?jobx=" + job_numbers[i] + "'>" + bold + "#" + invoice_numbers[i] + endBold + "</a></p>\
     <p class='joblist_projects'>" + projects[i] + "</p>")
 }
-
 let list_jobs_code_w_commas = list_jobs.toString();
 let list_jobs_code = list_jobs_code_w_commas.replace(/,/g, "");

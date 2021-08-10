@@ -15,7 +15,7 @@ document.getElementById("employer_address2").innerHTML = jobs[x].employer_addres
 document.getElementById("contact").innerHTML = jobs[x].contact();
 document.getElementById("contact_email").innerHTML = jobs[x].contact_email();
 document.getElementById("job-list").innerHTML = "<p><strong>Jobs:</strong></p>" + list_jobs_code;
-document.getElementById("test_space").innerHTML = x;
+document.getElementById("test_space").innerHTML = "";
 
 let jobStatus = "";
 //completed, billed & paid
@@ -29,7 +29,7 @@ if (jobs[x].completed_date && jobs[x].date_billed && jobs[x].date_paid) {
     jobStatus = "<div class='yellow'><strong>JOB STATUS: </strong> &#8212;> Completed on " + jobs[x].completed_date + " &#8212;> <i class='far fa-square'></i> Need to bill . . .  </div>"
 // not completed
 } else {
-    jobStatus = "<div class='gray'><strong>JOB STATUS: </strong> &#8212;> <i class='far fa-square'></i> Job Not Completed </div>"
+    jobStatus = "<div class='gray'><strong>JOB STATUS: </strong> &#8212;> <i class='far fa-square'></i> Job In Progress </div>"
 };
 document.getElementById("job_status").innerHTML = jobStatus;
 

@@ -84,7 +84,7 @@
     
     <?php
     
-        //use this code on the other page to grab x duh
+        //use this code on the other page to grab x
 
         //grab url for use in querying database
         $raw_url = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
@@ -94,8 +94,6 @@
         	$jobx = 0;
         };
     ?>
-
-    <script src="job-list.js" ></script>
 
     <!--HT: https://pagecrafter.com/pass-php-variable-javascript/ -->	
     <script> 
@@ -172,6 +170,7 @@
 
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="job-list.js" ></script>
 <script src="dom.js"></script>    
 </body>
 </html>
