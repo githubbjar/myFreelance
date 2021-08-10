@@ -74,7 +74,7 @@ job2709.date_paid = "";
 jobs.push(job2709);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2710 = new Job(2710, 2, "Biretta Books", "Posters", "For St. John Cantius Church event", "August 6, 2021", "August 30, 2021");
+const job2710 = new Job(2710, 2, "Biretta Books", "Posters", "For St. John Cantius Church event(s)", "August 6, 2021", "August 30, 2021");
 job2710.completed_date = "";
 job2710.total_hours = "";
 job2710.rate_of_pay = "";
