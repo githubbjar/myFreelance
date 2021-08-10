@@ -42,6 +42,11 @@
         padding: 10px;
     }
 
+    .blue {
+        background-color: rgb(76, 179, 209);
+        padding: 10px;
+    }
+
     a, a:hover {
         color: #000;
     }
