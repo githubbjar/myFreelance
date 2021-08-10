@@ -57,6 +57,7 @@
 
     #job-list {
         padding-left: 45px;
+        height: 250px;
     }
 
     .jobslist_employer_nicknames {
@@ -135,7 +136,7 @@
 <div id="center">
 <div class='row'>
     <div class='col-sm-2'>
-        <div id="job-list"></div>  
+        <div id="job-list" class="overflow-scroll"></div>  
     </div>
     <div class='col-sm-4'>
         <h2 id="project"></h2>
