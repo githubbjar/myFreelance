@@ -3,7 +3,11 @@ document.title = "INVOICE #" + jobs[x].invoice_number;
 document.getElementById("invoice_number").innerHTML = "INVOICE #" + jobs[x].invoice_number;
 document.getElementById("date_billed").innerHTML = "BILLING DATE: " + jobs[x].date_billed;
 document.getElementById("project").innerHTML = jobs[x].project;
-document.getElementById("billing_amount").innerHTML = "TOTAL DUE: $" + jobs[x].total_hours * jobs[x].rate_of_pay;
+let totalDue = "Total Due: $";
+if (jobs[x].date_paid) {
+    totalDue = "PAID: $"
+}
+document.getElementById("billing_amount").innerHTML = totalDue + jobs[x].total_hours * jobs[x].rate_of_pay;
 document.getElementById("project_type").innerHTML = jobs[x].project_type;
 document.getElementById("start_date").innerHTML = "START DATE: <br /> " + jobs[x].start_date;
 document.getElementById("completed_date").innerHTML = "COMPLETED DATE: <br /> " + jobs[x].completed_date;
