@@ -56,7 +56,7 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
 
 //the jobs
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2708 = new Job(2708, 0, "St. John Cantius Church", "2021 Music Schedule", "16 page booklet", "July 17, 2021", "August 6, 2021");
+const job2708 = new Job(2708, 0, "St. John Cantius Church", "2021 Music Schedule", "16 page booklet, 5.5 x 8.5", "July 17, 2021", "August 6, 2021");
 job2708.completed_date = "August 1, 2021";
 job2708.total_hours = 8;
 job2708.rate_of_pay = 40;

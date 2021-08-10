@@ -13,6 +13,7 @@
     }
     
     p {font-size: 18px; line-height: 22px;} 
+    p.project-details {font-size: 18px; line-height: 12px; margin-bottom: 5px;} 
     #billing_amount {margin-top: -16px; font-weight: bold;}
     #header {margin-top: 25px;} 
     h2.jerry, #services, #invoice_number, #date_billed, #billing_amount {
@@ -43,6 +44,11 @@
 
     a, a:hover {
         color: #000;
+    }
+
+    #project {
+        margin-bottom: 27px;
+        margin-top: 15px;
     }
 
     #job-list p {
@@ -133,7 +139,7 @@
     </div>
     <div class='col-sm-4'>
         <h2 id="project"></h2>
-        <p><strong>PROJECT DETAILS:</strong></p>
+        <p class="project-details">PROJECT DETAILS:</p>
         <p id="project_type"></p>
         <p id="start_date"></p>
         <p id="completed_date"></p>
