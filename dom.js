@@ -7,11 +7,11 @@ let totalDue = "Total Due: $";
 if (jobs[x].date_paid) {
     totalDue = "PAID: $"
 }
-document.getElementById("billing_amount").innerHTML = totalDue + jobs[x].total_hours * jobs[x].rate_of_pay;
+document.getElementById("billing_amount").innerHTML = totalDue + jobs[x].total_hours() * jobs[x].rate_of_pay;
 document.getElementById("project_type").innerHTML = jobs[x].project_type;
 document.getElementById("start_date").innerHTML = "START DATE: <br /> " + jobs[x].start_date;
 document.getElementById("completed_date").innerHTML = "COMPLETED DATE: <br /> " + jobs[x].completed_date;
-document.getElementById("total_hours").innerHTML = "TOTAL HOURS: " + jobs[x].total_hours;
+document.getElementById("total_hours").innerHTML = "TOTAL HOURS: " + jobs[x].total_hours();
 document.getElementById("rate_of_pay").innerHTML = "RATE OF PAY: $" + jobs[x].rate_of_pay + " / hour";
 document.getElementById("employer").innerHTML = jobs[x].employer;
 document.getElementById("employer_address1").innerHTML = jobs[x].employer_address1();

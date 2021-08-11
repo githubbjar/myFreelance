@@ -47,28 +47,55 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
             return "PMA";
         }
     };
+    this.hours_logged = []; 
     this.completed_date = "";
-    this.total_hours = "";
+    this.total_hours = function() {
+        //create array of hours
+        let arrayOfHours = [];
+        for (let i = 0; i < this.hours_logged.length; i++) {
+            arrayOfHours.push(jobs[0].hours_logged[i].Hours);
+        };
+        //add the array of hours
+        let sum = 0;
+        for (let i = 0; i < arrayOfHours.length; i++) {
+            sum += arrayOfHours[i];
+        }
+        return sum;
+    };
     this.rate_of_pay = "";
     this.date_billed = "";
     this.date_paid = "";
 };
 
-//the jobs
+//begin the jobs
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2708 = new Job(2708, 0, "Biretta Books", "2021 Music Schedule", "16 page booklet, 5.5 x 8.5, St. John Cantius Church", "July 17, 2021", "August 6, 2021");
+//Hours Logged
+job2708.hours_logged[0] = {Date: 2021-07-21, Hours: 3}
+job2708.hours_logged[1] = {Date: 2021-07-24, Hours: 1}
+job2708.hours_logged[2] = {Date: 2021-07-29, Hours: 2}
+job2708.hours_logged[3] = {Date: 2021-07-29, Hours: 1}
+job2708.hours_logged[4] = {Date: 2021-08-01, Hours: 1}
+//End Hours Logged
 job2708.completed_date = "August 1, 2021";
-job2708.total_hours = 8;
 job2708.rate_of_pay = 40;
 job2708.date_billed = "August 4, 2021";
 job2708.date_paid = "August 9, 2011";
 jobs.push(job2708);
 
+console.log (job2708.total_hours());
+console.log (jobs[0].hours_logged[0].Hours);
+    
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2709 = new Job(2709, 1, "Publishing Management Associates", "FT Flex 2.0", "Online subs form creation for First Things website", "July 16, 2021", "August 30, 2021");
+//Hours Logged
+job2709.hours_logged[0] = {Date: 2021-07-19, Hours: 3};
+job2709.hours_logged[1] = {Date: 2021-07-2, Hours: 1};
+job2709.hours_logged[2] = {Date: 2021-08-09, Hours: 1};
+//End Hours Logged
 job2709.completed_date = "";
-job2709.total_hours = "";
-job2709.rate_of_pay = "";
+job2709.rate_of_pay = "50";
 job2709.date_billed = "";
 job2709.date_paid = "";
 jobs.push(job2709);
@@ -76,7 +103,6 @@ jobs.push(job2709);
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2710 = new Job(2710, 2, "Biretta Books", "Posters", "For St. John Cantius Church event(s)", "August 6, 2021", "August 30, 2021");
 job2710.completed_date = "";
-job2710.total_hours = "";
 job2710.rate_of_pay = "";
 job2710.date_billed = "";
 job2710.date_paid = "";
@@ -85,6 +111,19 @@ jobs.push(job2710);
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2711 = new Job(2711, 3, "Publishing Management Associates", "FT House Ads", "Various small ads for First Things magazine", "May 20, 2021", "August 30, 2021");
 jobs.push(job2711);
+
+
+//end the jobs
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
 
 //create array of invoice nubmers
 const invoice_numbers = jobs.map (function (job) {
