@@ -53,7 +53,7 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
         //create array of hours
         let arrayOfHours = [];
         for (let i = 0; i < this.hours_logged.length; i++) {
-            arrayOfHours.push(jobs[0].hours_logged[i].Hours);
+            arrayOfHours.push(jobs[this.job_number].hours_logged[i].Hours);
         };
         //add the array of hours
         let sum = 0;
