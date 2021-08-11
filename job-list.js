@@ -126,7 +126,7 @@ for (let i = 0; i < invoice_numbers.length; i++) {
     //To use a hash or number symbol 
     var hashOrNot = "#";    
     if (dates_paid[i]) {
-        hashOrNot = "<i class='fas fa-check'> #</i>";
+        hashOrNot = "<i class='fas fa-check-square'></i></i> #";
     }  
     list_jobs.push("\
     <p class='jobslist_employer_nicknames'>" + employer_nicknames[i] + "</p>\
