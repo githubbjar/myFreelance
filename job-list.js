@@ -107,11 +107,14 @@ const projects = jobs.map (function (job) {
     return job.project;
 });
 
-
+//create array of completed dates
+const dates_paid = jobs.map (function (job) {
+    return job.date_paid;
+});
 
 let list_jobs = []
 for (let i = 0; i < invoice_numbers.length; i++) {
-    //I needed to put this IN the for loop since I was referencing "i". 
+    //To make bold or leave unbolded 
     var bold = "";
     var endBold = "";
     if(invoice_numbers[i]==jobs[x].invoice_number){
@@ -119,10 +122,15 @@ for (let i = 0; i < invoice_numbers.length; i++) {
         }
     if(invoice_numbers[i]==jobs[x].invoice_number){
         endBold="</strong>";
-        }      
+        }
+    //To use a hash or number symbol 
+    var hashOrNot = "#";    
+    if (dates_paid[i]) {
+        hashOrNot = "<i class='fas fa-check'> #</i>";
+    }  
     list_jobs.push("\
     <p class='jobslist_employer_nicknames'>" + employer_nicknames[i] + "</p>\
-    <p class='joblist_links'><a href='http://www.jerryjanquart.com/myFreelance/index.php?jobx=" + job_numbers[i] + "'>" + bold + "#" + invoice_numbers[i] + endBold + "</a></p>\
+    <p class='joblist_links'><a href='http://www.jerryjanquart.com/myFreelance/index.php?jobx=" + job_numbers[i] + "'>" + bold + hashOrNot + invoice_numbers[i] + endBold + "</a></p>\
     <p class='joblist_projects'>" + projects[i] + "</p>")
 }
 let list_jobs_code_w_commas = list_jobs.toString();
