@@ -109,7 +109,8 @@ job2710.date_paid = "";
 jobs.push(job2710);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2711 = new Job(2711, 3, "Publishing Management Associates", "FT House Ads", "Various small ads for First Things magazine", "May 20, 2021", "August 30, 2021");
+const job2711 = new Job(2711, 3, "Publishing Management Associates", "FT House Ads", "Four small ads for First Things magazine: Back issue organizer, Books, Creed DVD, Reprint Series", "August 12, 2021", "August 30, 2021");
+job2711.hours_logged[0] = {Date: "Aug 12", Hours: 1};
 jobs.push(job2711);
 
 
