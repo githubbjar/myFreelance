@@ -144,6 +144,8 @@ const dates_paid = jobs.map (function (job) {
     return job.date_paid;
 });
 
+
+//BEGIN JOB LIST
 let list_jobs = []
 for (let i = 0; i < invoice_numbers.length; i++) {
     //To make bold or leave unbolded 
@@ -167,3 +169,4 @@ for (let i = 0; i < invoice_numbers.length; i++) {
 }
 let list_jobs_code_w_commas = list_jobs.toString();
 let list_jobs_code = list_jobs_code_w_commas.replace(/,/g, "");
+//END JOB LIST
