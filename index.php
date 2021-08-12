@@ -43,7 +43,7 @@
     }
 
     .blue {
-        background-color: rgb(76, 179, 209);
+        background-color: rgb(144, 235, 234);
         padding: 10px;
     }
 
@@ -61,8 +61,22 @@
     }
 
     #job-list {
-        padding-left: 45px;
+        padding-left: 35px;
         height: 250px;
+    }
+
+    #hours_table {
+        margin-right: 20px;
+    }
+
+    #hours_table {
+        margin-right: 40px;
+        font-size: 14px;
+    }
+
+    p.jobs-heading {
+        padding-left: 35px;
+        margin-left: 20px;
     }
 
     .jobslist_employer_nicknames {
@@ -141,6 +155,7 @@
 <div id="center">
 <div class='row'>
     <div class='col-sm-2'>
+        <p class="jobs-heading"><strong>Jobs:</strong></p>
         <div id="job-list" class="overflow-scroll"></div>  
     </div>
     <div class='col-sm-4'>
@@ -165,10 +180,11 @@
         Saint John, IN 46373 <br />
         312-589-8332 <br />
         jmjanquart@gmail.com </p>
-        <div class='col-sm-2'>
     </div>
+    <div class='col-sm-2'>
+        <p><strong>Log:</strong></p>
+        <div id="hours_table"></div>    
     </div>
-    <div class='col-sm-3'></div>
 </div>
  <div class='row'>
     <div class='col-sm-2'></div>

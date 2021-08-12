@@ -18,8 +18,18 @@ document.getElementById("employer_address1").innerHTML = jobs[x].employer_addres
 document.getElementById("employer_address2").innerHTML = jobs[x].employer_address2();
 document.getElementById("contact").innerHTML = jobs[x].contact();
 document.getElementById("contact_email").innerHTML = jobs[x].contact_email();
-document.getElementById("job-list").innerHTML = "<p><strong>Jobs:</strong></p>" + list_jobs_code;
+document.getElementById("job-list").innerHTML = list_jobs_code;
 document.getElementById("test_space").innerHTML = "";
+
+///BEGIN HOURS LOG
+hoursLog = [];
+for (let i = 0; i < jobs[x].hours_logged.length; i++) {
+    hoursLog.push("<tr><td>" + jobs[x].hours_logged[i].Date + "</td><td>" + jobs[x].hours_logged[i].Hours+ "</td></tr>");
+}
+let hoursLog_w_commas = hoursLog.toString();
+let hoursLog_code = hoursLog_w_commas.replace(/,/g, "");
+document.getElementById("hours_table").innerHTML = "<table class='table'><thead><tr><th scope='col'>DATE</th><th scope='col'>HOURS</th></tr></thead><tbody>" + hoursLog_code + "</tbody></table>";
+//END HOURS LOG
 
 let jobStatus = "";
 //completed, billed & paid

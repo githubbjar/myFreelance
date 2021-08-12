@@ -71,11 +71,11 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2708 = new Job(2708, 0, "Biretta Books", "2021 Music Schedule", "16 page booklet, 5.5 x 8.5, St. John Cantius Church", "July 17, 2021", "August 6, 2021");
 //Hours Logged
-job2708.hours_logged[0] = {Date: 2021-07-21, Hours: 3}
-job2708.hours_logged[1] = {Date: 2021-07-24, Hours: 1}
-job2708.hours_logged[2] = {Date: 2021-07-29, Hours: 2}
-job2708.hours_logged[3] = {Date: 2021-07-29, Hours: 1}
-job2708.hours_logged[4] = {Date: 2021-08-01, Hours: 1}
+job2708.hours_logged[0] = {Date: "Jul 21", Hours: 3}
+job2708.hours_logged[1] = {Date: "Jul 24", Hours: 1}
+job2708.hours_logged[2] = {Date: "Jul 28", Hours: 2}
+job2708.hours_logged[3] = {Date: "Jul 29", Hours: 1}
+job2708.hours_logged[4] = {Date: "Aug 1", Hours: 1}
 //End Hours Logged
 job2708.completed_date = "August 1, 2021";
 job2708.rate_of_pay = 40;
@@ -90,9 +90,9 @@ console.log (jobs[0].hours_logged[0].Hours);
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2709 = new Job(2709, 1, "Publishing Management Associates", "FT Flex 2.0", "Online subs form creation for First Things website", "July 16, 2021", "August 30, 2021");
 //Hours Logged
-job2709.hours_logged[0] = {Date: 2021-07-19, Hours: 3};
-job2709.hours_logged[1] = {Date: 2021-07-2, Hours: 1};
-job2709.hours_logged[2] = {Date: 2021-08-09, Hours: 1};
+job2709.hours_logged[0] = {Date: "Jul 19", Hours: 3};
+job2709.hours_logged[1] = {Date: "Jul 21", Hours: 1};
+job2709.hours_logged[2] = {Date: "Aug 9", Hours: 1};
 //End Hours Logged
 job2709.completed_date = "";
 job2709.rate_of_pay = "50";
@@ -115,13 +115,6 @@ jobs.push(job2711);
 
 //end the jobs
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
-
-
 
 
 
