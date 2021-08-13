@@ -88,7 +88,7 @@ console.log (jobs[0].hours_logged[0].Hours);
     
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2709 = new Job(2709, 1, "Publishing Management Associates", "FT Flex 2.0", "Online subs form creation for First Things website", "July 16, 2021", "August 30, 2021");
+const job2709 = new Job(2709, 1, "Publishing Management Associates", "FT Flex 2.0", "Online subs form creation for First Things website: PRINT, APP, WEB, COMBO", "July 16, 2021", "August 30, 2021");
 //Hours Logged
 job2709.hours_logged[0] = {Date: "Jul 19", Hours: 3};
 job2709.hours_logged[1] = {Date: "Jul 21", Hours: 1};
