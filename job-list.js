@@ -101,7 +101,7 @@ job2709.date_paid = "";
 jobs.push(job2709);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2710 = new Job(2710, 2, "Biretta Books", "Poster, Cantius Event", "Hope for the Broken talk &#8212; Oct 7", "August 12, 2021", "Sept 15, 2021");
+const job2710 = new Job(2710, 2, "Biretta Books", "Poster, Drexel Parish", "Hope for the Broken talk &#8212; 11 x 17", "August 12, 2021", "Sept 15, 2021");
 job2710.hours_logged[0] = {Date: "Aug 12", Hours: .5};
 job2710.completed_date = "";
 job2710.rate_of_pay = "40";
