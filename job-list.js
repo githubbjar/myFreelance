@@ -110,10 +110,16 @@ job2710.date_paid = "";
 jobs.push(job2710);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2711 = new Job(2711, 3, "Publishing Management Associates", "FT House Ads", "Four half-page ads (4.5625\" x 7.3125\" + 6.9375\" x 4.875\") for First Things magazine: Back issue organizer, Books, Creed DVD, Reprint Series", "August 12, 2021", "August 30, 2021");
+const job2711 = new Job(2711, 3, "Publishing Management Associates", "FT House Ads", "Four half-page ads for <em>First Things</em> magazine: Back issue organizer, Books, Creed DVD, Reprint Series", "August 12, 2021", "August 30, 2021");
 job2711.hours_logged[0] = {Date: "Aug 12", Hours: 1};
 job2711.rate_of_pay = 50;
 jobs.push(job2711);
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+const job2712 = new Job(2712, 4, "Biretta Books", "Fatima Event Posters", "2 posters and a Facebook event image", "August 14, 2021", "August 30, 2021");
+job2712.hours_logged[0] = {Date: "Aug 13", Hours: .5};
+job2712.rate_of_pay = 40;
+jobs.push(job2712);
 
 
 //end the jobs
