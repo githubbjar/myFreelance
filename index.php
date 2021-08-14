@@ -88,6 +88,8 @@
     }
     .joblist_projects {
         font-size: 12px;
+        line-height: 14px;
+        margin-top: 3px;
     }
 
     @media only screen and (max-width: 600px) {
