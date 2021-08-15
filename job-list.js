@@ -82,9 +82,6 @@ job2708.rate_of_pay = 40;
 job2708.date_billed = "August 4, 2021";
 job2708.date_paid = "August 9, 2011";
 jobs.push(job2708);
-
-console.log (job2708.total_hours());
-console.log (jobs[0].hours_logged[0].Hours);
     
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -116,11 +113,10 @@ job2711.rate_of_pay = 50;
 jobs.push(job2711);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2712 = new Job(2712, 4, "Biretta Books", "Fatima Event Posters", "2 posters and a Facebook event image", "August 14, 2021", "August 30, 2021");
+const job2712 = new Job(2712, 4, "Biretta Books", "Fatima Event Posters", "2 posters and a Facebook event image", "August 14, 2021", "August 23, 2021");
 job2712.hours_logged[0] = {Date: "Aug 13", Hours: 1};
 job2712.rate_of_pay = 40;
 jobs.push(job2712);
-
 
 //end the jobs
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
