@@ -117,6 +117,7 @@ const job2712 = new Job(2712, 4, "Biretta Books", "Fatima Event Posters", "2 pos
 job2712.hours_logged[0] = {Date: "Aug 13", Hours: .5};
 job2712.hours_logged[1] = {Date: "Aug 15", Hours: 4};
 job2712.hours_logged[2] = {Date: "Aug 16", Hours: 1};
+job2712.hours_logged[3] = {Date: "Aug 17", Hours: .5};
 job2712.rate_of_pay = 40;
 jobs.push(job2712);
 
