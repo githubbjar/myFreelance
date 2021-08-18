@@ -20,9 +20,14 @@ document.getElementById("contact").innerHTML = jobs[x].contact();
 document.getElementById("contact_email").innerHTML = jobs[x].contact_email();
 document.getElementById("job-list").innerHTML = list_jobs_code;
 document.getElementById("test_space").innerHTML = "";
-const thumbnailImg = "come back to this later";
-
+let thumbnailImg = "";
+if (jobs[x].thumbnail) {
+    thumbnailImg = "<img src='thumbnails/" + jobs[x].thumbnail + "' width='80%' />";
+} else {
+    thumbnailImg = "<p>No image <br />available.</p>";
+};
 document.getElementById("thumbnail").innerHTML = thumbnailImg;
+
 
 ///BEGIN HOURS LOG
 hoursLog = [];
@@ -48,5 +53,8 @@ if (jobs[x].completed_date && jobs[x].date_billed && jobs[x].date_paid) {
 } else {
     jobStatus = "<div class='blue'>&#8212;> <i class='fas fa-check-square'></i> Job started on " + jobs[x].start_date + "</div>"};
 document.getElementById("job_status").innerHTML = jobStatus;
+
+
+
 
 

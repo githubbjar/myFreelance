@@ -65,7 +65,7 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
     this.rate_of_pay = "";
     this.date_billed = "";
     this.date_paid = "";
-    this.thumbnail = this.invoice_number + ".png";
+    this.thumbnail = "";
 };
 
 //begin the jobs
@@ -82,6 +82,7 @@ job2708.completed_date = "August 1, 2021";
 job2708.rate_of_pay = 40;
 job2708.date_billed = "August 4, 2021";
 job2708.date_paid = "August 9, 2011";
+job2708.thumbnail = "2708.png";
 jobs.push(job2708);
     
 
@@ -96,6 +97,7 @@ job2709.completed_date = "";
 job2709.rate_of_pay = "50";
 job2709.date_billed = "";
 job2709.date_paid = "";
+job2709.thumbnail = "2709.png";
 jobs.push(job2709);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -155,6 +157,8 @@ const projects = jobs.map (function (job) {
 const dates_paid = jobs.map (function (job) {
     return job.date_paid;
 });
+
+console.log(jobs[1].thumbnail)
 
 //BEGIN JOB LIST
 let list_jobs = []
