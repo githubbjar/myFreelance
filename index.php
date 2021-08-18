@@ -169,7 +169,11 @@
         <p id="total_hours"></p>
         <p id="rate_of_pay"></p>
     </div>
-    <div class='col-sm-4'>
+    <div class='col-sm-2'>
+        <p><br /><strong>Work Log:</strong></p>
+        <div id="hours_table"></div> 
+    </div>
+    <div class='col-sm-2'>
         <hr /><p>BILL TO: <br />
         <p id="employer"></p>
         <p id="employer_address1"></p>
@@ -183,9 +187,9 @@
         312-589-8332 <br />
         jmjanquart@gmail.com </p>
     </div>
-    <div class='col-sm-2'>
-        <p><strong>Log:</strong></p>
-        <div id="hours_table"></div>    
+    <div class='col-sm-2'>   
+        <p><br /><strong>Thumbnail:</strong></p>
+        <div id="thumbnail"></div>
     </div>
 </div>
  <div class='row'>
