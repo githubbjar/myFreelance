@@ -115,13 +115,13 @@ jobs.push(job2711);
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2712 = new Job(2712, 4, "Biretta Books", "Fatima Event Posters", "2 posters and a Facebook event image", "August 14, 2021", "August 23, 2021");
 job2712.hours_logged[0] = {Date: "Aug 13", Hours: .5};
-job2712.hours_logged[1] = {Date: "Aug 15", Hours: 4};
+job2712.hours_logged[1] = {Date: "Aug 15", Hours: 3};
 job2712.hours_logged[2] = {Date: "Aug 16", Hours: 1};
-job2712.hours_logged[3] = {Date: "Aug 17", Hours: .5};
+job2712.hours_logged[3] = {Date: "Aug 17", Hours: 1};
 job2712.rate_of_pay = 40;
 jobs.push(job2712);
 
-const job2713 = new Job(2713, 5, "Publishing Management Associates", "Ad Formatting", "Belmont Abbey", "August 17, 2021", "N/A")
+const job2713 = new Job(2713, 5, "Publishing Management Associates", "Ad Reformatting", "Belmont Abbey", "August 17, 2021", "N/A")
 job2713.hours_logged[0] = {Date: "Aug 17", Hours: .25};
 job2713.rate_of_pay = 50;
 jobs.push(job2713); 
