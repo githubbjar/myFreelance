@@ -65,6 +65,7 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
     this.rate_of_pay = "";
     this.date_billed = "";
     this.date_paid = "";
+    this.thumbnail = this.invoice_number + ".png";
 };
 
 //begin the jobs
@@ -129,8 +130,6 @@ jobs.push(job2713);
 //end the jobs
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
 //create array of invoice nubmers
 const invoice_numbers = jobs.map (function (job) {
     return job.invoice_number;
@@ -157,7 +156,6 @@ const dates_paid = jobs.map (function (job) {
     return job.date_paid;
 });
 
-
 //BEGIN JOB LIST
 let list_jobs = []
 for (let i = 0; i < invoice_numbers.length; i++) {
@@ -183,3 +181,6 @@ for (let i = 0; i < invoice_numbers.length; i++) {
 let list_jobs_code_w_commas = list_jobs.toString();
 let list_jobs_code = list_jobs_code_w_commas.replace(/,/g, "");
 //END JOB LIST
+
+
+

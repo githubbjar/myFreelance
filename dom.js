@@ -20,6 +20,9 @@ document.getElementById("contact").innerHTML = jobs[x].contact();
 document.getElementById("contact_email").innerHTML = jobs[x].contact_email();
 document.getElementById("job-list").innerHTML = list_jobs_code;
 document.getElementById("test_space").innerHTML = "";
+const thumbnailImg = "come back to this later";
+
+document.getElementById("thumbnail").innerHTML = thumbnailImg;
 
 ///BEGIN HOURS LOG
 hoursLog = [];
