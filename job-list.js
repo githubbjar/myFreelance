@@ -167,20 +167,21 @@ for (let i = 0; i < invoice_numbers.length; i++) {
     var bold = "";
     var endBold = "";
     if(invoice_numbers[i]==jobs[x].invoice_number){
-        bold="<strong>";
+        bold="<strong><i class='fas fa-check-square'></i> ";
         }
     if(invoice_numbers[i]==jobs[x].invoice_number){
         endBold="</strong>";
         }
     //To use a hash or number symbol 
+    var lightGray = "";
     var hashOrNot = "#";    
     if (dates_paid[i]) {
-        hashOrNot = "<i class='fas fa-check-square'></i></i> #";
+        lightGray = "light-gray";
     }  
     list_jobs.push("\
-    <p class='jobslist_employer_nicknames'>" + employer_nicknames[i] + "</p>\
-    <p class='joblist_links'><a href='http://www.jerryjanquart.com/myFreelance/index.php?jobx=" + job_numbers[i] + "'>" + bold + hashOrNot + invoice_numbers[i] + endBold + "</a></p>\
-    <p class='joblist_projects'>" + projects[i] + "</p>")
+    <p class='jobslist_employer_nicknames'><span class='" + lightGray + "'>" + employer_nicknames[i] + "</span></p>\
+    <p class='joblist_links'><a class='" + lightGray + "' href='http://www.jerryjanquart.com/myFreelance/index.php?jobx=" + job_numbers[i] + "'>" + bold + "#" + invoice_numbers[i] + endBold + "</a></p>\
+    <p class='joblist_projects'><span class='" + lightGray + "'>" + projects[i] + "</span></p>")
 }
 let list_jobs_code_w_commas = list_jobs.toString();
 let list_jobs_code = list_jobs_code_w_commas.replace(/,/g, "");

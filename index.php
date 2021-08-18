@@ -42,6 +42,8 @@
         padding: 10px;
     }
 
+
+
     .blue {
         background-color: rgb(144, 235, 234);
         padding: 10px;
@@ -86,6 +88,15 @@
     .joblist_links {
         margin-bottom: 0px;
     }
+    
+    a.light-gray {
+        color: #999;
+    }
+
+    .light-gray {
+        color: #999;
+    }
+
     .joblist_projects {
         font-size: 12px;
         line-height: 14px;
