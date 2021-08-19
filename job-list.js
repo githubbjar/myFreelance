@@ -112,6 +112,7 @@ jobs.push(job2710);
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2711 = new Job(2711, 3, "Publishing Management Associates", "FT House Ads", "Four half-page ads for <em>First Things</em> magazine: Back issue organizer, Books, Creed DVD, Reprint Series", "August 12, 2021", "August 30, 2021");
 job2711.hours_logged[0] = {Date: "Aug 12", Hours: 1};
+job2711.hours_logged[1] = {Date: "Aug 19", Hours: .25};
 job2711.rate_of_pay = 50;
 jobs.push(job2711);
 

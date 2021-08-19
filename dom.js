@@ -1,6 +1,6 @@
 //Insert the object data
 document.title = "INVOICE #" + jobs[x].invoice_number + ", " + jobs[x].employer_nickname() + ": " + jobs[x].project;
-document.getElementById("invoice_number").innerHTML = "INVOICE #" + jobs[x].invoice_number;
+document.getElementById("invoice_number").innerHTML = "<h2>INVOICE #" + jobs[x].invoice_number + "</h2>";
 document.getElementById("date_billed").innerHTML = "BILLING DATE: " + jobs[x].date_billed;
 document.getElementById("project").innerHTML = jobs[x].project;
 let totalDue = "Total Due: $";
