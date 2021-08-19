@@ -146,10 +146,8 @@
 <body>
 
 <!--ROW ONE BEGIN-->
-<div class='row'>
-    <div class="col-sm-12">
-        <div id="job_status"></div>
-    </div>
+<div class='row' id="job_status">
+</div>
 </div>
 <div class='row' id='header'>
     <div class='col-sm-2' id='test_space'></div>
