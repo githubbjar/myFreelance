@@ -32,7 +32,7 @@ document.getElementById("thumbnail").innerHTML = thumbnailImg;
 ///BEGIN HOURS LOG
 hoursLog = [];
 for (let i = 0; i < jobs[x].hours_logged.length; i++) {
-    hoursLog.push("<tr><td>" + jobs[x].hours_logged[i].Date + "</td><td>" + jobs[x].hours_logged[i].Hours+ "</td></tr>");
+    hoursLog.push("<tr><td>" + jobs[x].hours_logged[i].Date + "</td><td>" + jobs[x].hours_logged[i].Hours+ "</td></tr><tr><td colspan='2'><p class='worklog_items'>* "+ jobs[x].hours_logged[i].Note +"</p></td></tr>");
 }
 let hoursLog_w_commas = hoursLog.toString();
 let hoursLog_code = hoursLog_w_commas.replace(/,/g, "");

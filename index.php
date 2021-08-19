@@ -103,6 +103,14 @@
         margin-top: 3px;
     }
 
+    .worklog_items {
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: -5px;
+        margin-bottom: -5px;
+        text-align: right;
+    }
+
     @media only screen and (max-width: 600px) {
         #center {
             text-align: center;
