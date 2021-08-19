@@ -122,7 +122,8 @@ const job2712 = new Job(2712, 4, "Biretta Books", "Fatima Event Posters", "2 pos
 job2712.hours_logged[0] = {Date: "Aug 13", Hours: .5, Note: "Getting organized"};
 job2712.hours_logged[1] = {Date: "Aug 15", Hours: 3, Note: "Find pictures / Start layout"};
 job2712.hours_logged[2] = {Date: "Aug 16", Hours: 1, Note: "New picture"};
-job2712.hours_logged[3] = {Date: "Aug 17", Hours: 1, Note: "More adjustments"};
+job2712.hours_logged[3] = {Date: "Aug 17", Hours: 1, Note: "Adjustments"};
+job2712.hours_logged[4] = {Date: "Aug 19", Hours: .5, Note: "More adjustments"};
 job2712.thumbnail = "2712.png";
 job2712.rate_of_pay = 40;
 jobs.push(job2712);
