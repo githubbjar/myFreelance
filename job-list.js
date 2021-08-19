@@ -126,8 +126,9 @@ job2712.rate_of_pay = 40;
 jobs.push(job2712);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2713 = new Job(2713, 5, "Publishing Management Associates", "Ad Reformatting", "Belmont Abbey", "August 17, 2021", "N/A")
+const job2713 = new Job(2713, 5, "Publishing Management Associates", "Ad Reformatting", "Belmont Abbey, Recovery of Family Life, Reason to Believe", "August 17, 2021", "N/A")
 job2713.hours_logged[0] = {Date: "Aug 17", Hours: .25};
+job2713.hours_logged[1] = {Date: "Aug 19", Hours: .25};
 job2713.rate_of_pay = 50;
 jobs.push(job2713); 
 
