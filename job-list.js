@@ -118,6 +118,8 @@ jobs.push(job2710);
 const job2711 = new Job(2711, 3, "Publishing Management Associates", "FT House Ads", "Four half-page ads for <em>First Things</em> magazine: Back issue organizer, Books, Creed DVD, Reprint Series", "August 12, 2021", "August 30, 2021");
 job2711.hours_logged[0] = {Date: "Aug 12", Hours: 1, Note: "Created Reprint Series ad"};
 job2711.hours_logged[1] = {Date: "Aug 19", Hours: .25, Note: "Revised Reprint Series ad"};
+job2711.hours_logged[2] = {Date: "Aug 20", Hours: .5, Note: "Creed DVD ad creation"};
+job2711.thumbnail = "2711.png";
 jobs.push(job2711);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
