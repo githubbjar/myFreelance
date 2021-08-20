@@ -1,5 +1,3 @@
-
-
 // Empty array for jobs
 const jobs = [];
 
@@ -62,7 +60,13 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
         }
         return sum;
     };
-    this.rate_of_pay = "";
+    this.rate_of_pay = function() {
+        if (this.employer == "Biretta Books") {
+            return 40;
+        } else if (this.employer == "Publishing Management Associates") {
+            return 50;
+        }
+        }
     this.date_billed = "";
     this.date_paid = "";
     this.thumbnail = "";
@@ -79,7 +83,6 @@ job2708.hours_logged[3] = {Date: "Jul 29", Hours: 1, Note: "Further edits"}
 job2708.hours_logged[4] = {Date: "Aug 1", Hours: 1, Note: "Final corrections"}
 //End Hours Logged
 job2708.completed_date = "August 1, 2021";
-job2708.rate_of_pay = 40;
 job2708.date_billed = "August 4, 2021";
 job2708.date_paid = "August 9, 2011";
 job2708.thumbnail = "2708.png";
@@ -94,7 +97,6 @@ job2709.hours_logged[1] = {Date: "Jul 21", Hours: 1, Note: "Edits and tweaks"};
 job2709.hours_logged[2] = {Date: "Aug 9", Hours: 1, Note: "More edits and tweaks"};
 //End Hours Logged
 job2709.completed_date = "";
-job2709.rate_of_pay = "50";
 job2709.date_billed = "";
 job2709.date_paid = "";
 job2709.thumbnail = "2709.png";
@@ -104,35 +106,35 @@ jobs.push(job2709);
 const job2710 = new Job(2710, 2, "Biretta Books", "Poster, Drexel Parish", "Hope for the Broken talk &#8212; 11 x 17", "August 12, 2021", "Aug 23, 2021");
 job2710.hours_logged[0] = {Date: "Aug 12", Hours: .5, Note: "Getting organized"};
 job2710.hours_logged[1] = {Date: "Aug 19", Hours: 1, Note: "Outline picture / Begin layout"};
+job2710.hours_logged[2] = {Date: "Aug 20", Hours: 1, Note: "Layout / Submit 1st draft"};
+job2710.hours_logged[3] = {Date: "Aug 20", Hours: .5, Note: "Applied client revisions"}
 job2710.completed_date = "";
-job2710.rate_of_pay = "40";
 job2710.date_billed = "";
 job2710.date_paid = "";
+job2710.thumbnail = "2710.png";
 jobs.push(job2710);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2711 = new Job(2711, 3, "Publishing Management Associates", "FT House Ads", "Four half-page ads for <em>First Things</em> magazine: Back issue organizer, Books, Creed DVD, Reprint Series", "August 12, 2021", "August 30, 2021");
 job2711.hours_logged[0] = {Date: "Aug 12", Hours: 1, Note: "Created Reprint Series ad"};
 job2711.hours_logged[1] = {Date: "Aug 19", Hours: .25, Note: "Revised Reprint Series ad"};
-job2711.rate_of_pay = 50;
 jobs.push(job2711);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2712 = new Job(2712, 4, "Biretta Books", "Fatima Event Posters", "2 posters and a Facebook event image", "August 14, 2021", "August 23, 2021");
 job2712.hours_logged[0] = {Date: "Aug 13", Hours: .5, Note: "Getting organized"};
-job2712.hours_logged[1] = {Date: "Aug 15", Hours: 3, Note: "Find pictures / Start layout"};
+job2712.hours_logged[1] = {Date: "Aug 15", Hours: 2, Note: "Find pictures / Start layout"};
 job2712.hours_logged[2] = {Date: "Aug 16", Hours: 1, Note: "New picture"};
 job2712.hours_logged[3] = {Date: "Aug 17", Hours: 1, Note: "Adjustments"};
 job2712.hours_logged[4] = {Date: "Aug 19", Hours: .5, Note: "More adjustments"};
 job2712.thumbnail = "2712.png";
-job2712.rate_of_pay = 40;
 jobs.push(job2712);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2713 = new Job(2713, 5, "Publishing Management Associates", "Ad Reformatting", "Misc. ads color corrected, resized.", "August 17, 2021", "N/A")
 job2713.hours_logged[0] = {Date: "Aug 17", Hours: .25, Note: "Belmont Abbey"};
 job2713.hours_logged[1] = {Date: "Aug 19", Hours: .25, Note: "Recovery of Family Life / Reason to Believe"};
-job2713.rate_of_pay = 50;
+job2713.hours_logged[2] = {Date: "Aug 20", Hours: .25, Note: "Sparkly Kat Book"};
 jobs.push(job2713); 
 
 //end the jobs
