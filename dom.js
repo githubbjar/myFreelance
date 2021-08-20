@@ -18,7 +18,8 @@ document.getElementById("employer_address1").innerHTML = jobs[x].employer_addres
 document.getElementById("employer_address2").innerHTML = jobs[x].employer_address2();
 document.getElementById("contact").innerHTML = jobs[x].contact();
 document.getElementById("contact_email").innerHTML = jobs[x].contact_email();
-document.getElementById("job-list").innerHTML = list_jobs_code;
+document.getElementById("job-list").innerHTML = "<p class='jobs-heading'><strong>Jobs:</strong></p>" + 
+list_jobs_code;
 document.getElementById("test_space").innerHTML = "";
 let thumbnailImg = "";
 if (jobs[x].thumbnail) {

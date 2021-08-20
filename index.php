@@ -72,12 +72,12 @@
     }
 
     #hours_table {
-        margin-right: 40px;
+        margin-right: 10px;
+        margin-left: 10px;
         font-size: 14px;
     }
 
     p.jobs-heading {
-        padding-left: 35px;
         margin-left: 20px;
     }
 
@@ -174,7 +174,6 @@
 <div id="center">
 <div class='row'>
     <div class='col-sm-2'>
-        <p class="jobs-heading"><strong>Jobs:</strong></p>
         <div id="job-list" class="overflow-scroll"></div>  
     </div>
     <div class='col-sm-4'>
