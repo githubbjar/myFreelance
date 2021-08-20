@@ -96,9 +96,6 @@ job2709.hours_logged[0] = {Date: "Jul 19", Hours: 3, Note: "Initial setup"};
 job2709.hours_logged[1] = {Date: "Jul 21", Hours: 1, Note: "Edits and tweaks"};
 job2709.hours_logged[2] = {Date: "Aug 9", Hours: 1, Note: "More edits and tweaks"};
 //End Hours Logged
-job2709.completed_date = "";
-job2709.date_billed = "";
-job2709.date_paid = "";
 job2709.thumbnail = "2709.png";
 jobs.push(job2709);
 
@@ -108,9 +105,6 @@ job2710.hours_logged[0] = {Date: "Aug 12", Hours: .5, Note: "Getting organized"}
 job2710.hours_logged[1] = {Date: "Aug 19", Hours: 1, Note: "Outline picture / Begin layout"};
 job2710.hours_logged[2] = {Date: "Aug 20", Hours: 1, Note: "Layout / Submit 1st draft"};
 job2710.hours_logged[3] = {Date: "Aug 20", Hours: .5, Note: "Applied client revisions"}
-job2710.completed_date = "";
-job2710.date_billed = "";
-job2710.date_paid = "";
 job2710.thumbnail = "2710.png";
 jobs.push(job2710);
 

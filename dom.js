@@ -5,9 +5,13 @@ if (jobs[x].completed_date) {
     jobOrInvoice = "<h2>INVOICE #" + jobs[x].invoice_number + "</h2>";
 };
 document.getElementById("invoice_number").innerHTML = jobOrInvoice;
-document.getElementById("date_billed").innerHTML = "BILLING DATE: " + jobs[x].date_billed;
+let billingDate = "RUNNING TOTAL:";
+if (jobs[x].date_billed) {
+    billingDate = "BILLING DATE: " + jobs[x].date_billed + " ";
+};
+document.getElementById("date_billed").innerHTML = billingDate;
 document.getElementById("project").innerHTML = jobs[x].project;
-let totalDue = "Total Due: $";
+let totalDue = "$";
 if (jobs[x].date_paid) {
     totalDue = "PAID: $"
 }
