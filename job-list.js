@@ -133,6 +133,10 @@ job2713.hours_logged[1] = {Date: "Aug 19", Hours: .25, Note: "Recovery of Family
 job2713.hours_logged[2] = {Date: "Aug 20", Hours: .25, Note: "Sparkly Kat Book"};
 jobs.push(job2713); 
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+const job2714 = new Job(2714, 6, "Publishing Management Associates", "Poetry Ad First Things", "Quarter-page ad for sixth annual poetry night", "August 20, 2021", "August 23, 2021");
+jobs.push(job2714);
+
 //end the jobs
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
