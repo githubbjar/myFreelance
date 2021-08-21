@@ -121,7 +121,7 @@
     }
     
     @media print {
-        #job_status, #jobList {
+        #job_status, #job-list {
             display: none;
         }
     }    

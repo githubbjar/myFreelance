@@ -131,69 +131,9 @@ const job2713 = new Job(2713, 5, "Publishing Management Associates", "Ad Reforma
 job2713.hours_logged[0] = {Date: "Aug 17", Hours: .25, Note: "Belmont Abbey"};
 job2713.hours_logged[1] = {Date: "Aug 19", Hours: .25, Note: "Recovery of Family Life / Reason to Believe"};
 job2713.hours_logged[2] = {Date: "Aug 20", Hours: .25, Note: "Sparkly Kat Book"};
+job2713.hours_logged[3] = {Date: "Aug 21", Hours: .5, Note: "FT Poetry Night"};
+job2713.thumbnail = "2713.png";
 jobs.push(job2713); 
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2714 = new Job(2714, 6, "Publishing Management Associates", "Poetry Ad First Things", "Quarter-page ad for sixth annual poetry night", "August 20, 2021", "August 23, 2021");
-jobs.push(job2714);
 
 //end the jobs
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-//create array of invoice nubmers
-const invoice_numbers = jobs.map (function (job) {
-    return job.invoice_number;
-});
-
-//create array of invoice nubmers
-const employer_nicknames = jobs.map (function (job) {
-    return job.employer_nickname();
-});
-
-
-//create array of job numbers
-const job_numbers = jobs.map (function (job) {
-    return job.job_number;
-});
-
-//create array of projects
-const projects = jobs.map (function (job) {
-    return job.project;
-});
-
-//create array of completed dates
-const dates_paid = jobs.map (function (job) {
-    return job.date_paid;
-});
-
-console.log(jobs[1].thumbnail)
-
-//BEGIN JOB LIST
-let list_jobs = []
-for (let i = 0; i < invoice_numbers.length; i++) {
-    //To make bold or leave unbolded 
-    var bold = "";
-    var endBold = "";
-    if(invoice_numbers[i]==jobs[x].invoice_number){
-        bold="<strong><i class='fas fa-check-square'></i> ";
-        }
-    if(invoice_numbers[i]==jobs[x].invoice_number){
-        endBold="</strong>";
-        }
-    //To use a hash or number symbol 
-    var lightGray = "";
-    var hashOrNot = "#";    
-    if (dates_paid[i]) {
-        lightGray = "light-gray";
-    }  
-    list_jobs.push("\
-    <p class='jobslist_employer_nicknames'><span class='" + lightGray + "'>" + employer_nicknames[i] + "</span></p>\
-    <p class='joblist_links'><a class='" + lightGray + "' href='http://www.jerryjanquart.com/myFreelance/index.php?jobx=" + job_numbers[i] + "'>" + bold + "#" + invoice_numbers[i] + endBold + "</a></p>\
-    <p class='joblist_projects'><span class='" + lightGray + "'>" + projects[i] + "</span></p>")
-}
-let list_jobs_code_w_commas = list_jobs.toString();
-let list_jobs_code = list_jobs_code_w_commas.replace(/,/g, "");
-//END JOB LIST
-
-
-
