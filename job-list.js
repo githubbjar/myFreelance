@@ -127,15 +127,12 @@ job2712.thumbnail = "2712.png";
 jobs.push(job2712);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2713 = new Job(2713, 5, "Publishing Management Associates", "Ad Reformatting", "Misc. ads color corrected, resized.", "August 17, 2021", "N/A")
+const job2713 = new Job(2713, 5, "Publishing Management Associates", "Ad Reformatting Etc.", "Misc. ads color corrected, resized, created.", "August 17, 2021", "N/A")
 job2713.hours_logged[0] = {Date: "Aug 17", Hours: .25, Note: "Belmont Abbey"};
 job2713.hours_logged[1] = {Date: "Aug 19", Hours: .25, Note: "Recovery of Family Life / Reason to Believe"};
 job2713.hours_logged[2] = {Date: "Aug 20", Hours: .25, Note: "Sparkly Kat Book"};
+job2713.hours_logged[3] = {Date: "Aug 21", Hours: .5, Note: "Ad creation FT Poetry"};
 jobs.push(job2713); 
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2714 = new Job(2714, 6, "Publishing Management Associates", "Poetry Ad First Things", "Quarter-page ad for sixth annual poetry night", "August 20, 2021", "August 23, 2021");
-jobs.push(job2714);
 
 //end the jobs
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
