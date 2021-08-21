@@ -108,11 +108,12 @@ document.getElementById("thumbnail").innerHTML = thumbnailImg;
 ///BEGIN HOURS LOG AS TABLE
 hoursLog = [];
 for (let i = 0; i < jobs[x].hours_logged.length; i++) {
-    hoursLog.push("<tr><td>" + jobs[x].hours_logged[i].Date + "</td><td>" + jobs[x].hours_logged[i].Hours+ "</td></tr><tr><td colspan='2'><p class='worklog_items'>* "+ jobs[x].hours_logged[i].Note +"</p></td></tr>");
+    //hoursLog.push("<tr><td>" + jobs[x].hours_logged[i].Date + "</td><td>" + jobs[x].hours_logged[i].Hours+ "</td></tr><tr><td colspan='2'><p class='worklog_items'>* "+ jobs[x].hours_logged[i].Note +"</p></td></tr>");
+    hoursLog.push("<p class='date-hours'>" + jobs[x].hours_logged[i].Date + " &#8212; " + jobs[x].hours_logged[i].Hours + "</p><p class='note'>*" + jobs[x].hours_logged[i].Note + "</p><hr class='jobs' />")
 }
 let hoursLog_w_commas = hoursLog.toString();
 let hoursLog_code = hoursLog_w_commas.replace(/,/g, "");
-document.getElementById("hours_table").innerHTML = "<table class='table'><thead><tr><th scope='col'>DATE</th><th scope='col'>HOURS</th></tr></thead><tbody>" + hoursLog_code + "</tbody></table>";
+document.getElementById("hours_table").innerHTML = "<p class='date-hours'><strong>Date &#8212; Hours Logged</strong></p><hr class='jobs' />" + hoursLog_code;
 //END HOURS LOG
 
 

@@ -111,6 +111,30 @@
         text-align: right;
     }
 
+    #hours_table p.note {
+        font-size: 12px;
+        padding: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        line-height: 16px;
+    }
+
+    #hours_table p.date-hours {
+        font-size: 15px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    #hours_table hr.jobs {
+        margin: 1rem 0;
+        color: inherit;
+        background-color: currentColor;
+        border: 0;
+        opacity: .25;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+
     @media only screen and (max-width: 600px) {
         #center {
             text-align: center;
@@ -186,7 +210,6 @@
         <p id="rate_of_pay"></p>
     </div>
     <div class='col-sm-2'>
-        <p><br /><strong>Work Log:</strong></p>
         <div id="hours_table"></div> 
     </div>
     <div class='col-sm-2'>

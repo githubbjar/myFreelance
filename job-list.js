@@ -129,7 +129,7 @@ jobs.push(job2712);
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2713 = new Job(2713, 5, "Publishing Management Associates", "Ad Reformatting Etc.", "Misc. ads color corrected, resized, created.", "August 17, 2021", "N/A")
 job2713.hours_logged[0] = {Date: "Aug 17", Hours: .25, Note: "Belmont Abbey"};
-job2713.hours_logged[1] = {Date: "Aug 19", Hours: .25, Note: "Recovery of Family Life / Reason to Believe"};
+job2713.hours_logged[1] = {Date: "Aug 19", Hours: .25, Note: "Recov of Fam Life / RTB"};
 job2713.hours_logged[2] = {Date: "Aug 20", Hours: .25, Note: "Sparkly Kat Book"};
 job2713.hours_logged[3] = {Date: "Aug 21", Hours: .5, Note: "FT Poetry Night"};
 job2713.thumbnail = "2713.png";
