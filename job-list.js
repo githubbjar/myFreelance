@@ -132,6 +132,7 @@ job2713.hours_logged[0] = {Date: "Aug 17", Hours: .25, Note: "Belmont Abbey"};
 job2713.hours_logged[1] = {Date: "Aug 19", Hours: .25, Note: "Recovery of Family Life / Reason to Believe"};
 job2713.hours_logged[2] = {Date: "Aug 20", Hours: .25, Note: "Sparkly Kat Book"};
 job2713.hours_logged[3] = {Date: "Aug 21", Hours: .5, Note: "Ad creation FT Poetry"};
+job2713.thumbnail = "2713.png";
 jobs.push(job2713); 
 
 //end the jobs
