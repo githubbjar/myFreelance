@@ -7,6 +7,9 @@
     <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
     <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
     <script src="https://kit.fontawesome.com/c6ab673120.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <!--//grab url for use in querying database-->
     <?php
         $raw_url = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
@@ -66,12 +69,12 @@
         <p id="employer_address2"></p>
         <p id="contact"></p>
         <p id="contact_email"></p>
-        <hr /> <p>PAY TO: <br /> 
-        <strong> Jerry Janquart </strong> <br /> 
-        10438 Red Oak Drive <br /> 
-        Saint John, IN 46373 <br />
-        312-589-8332 <br />
-        jmjanquart@gmail.com </p>
+        <hr /> <p class="pay-to">PAY TO: <br /> 
+        <strong>Jerry Janquart</strong>  
+        <p class='personal-contact'>10438 Red Oak Drive <br /> 
+        <p class='personal-contact'>Saint John, IN 46373 <br />
+        <p class='personal-contact'>312-589-8332 <br />
+        <p class='personal-contact'>jmjanquart@gmail.com </p>
     </div>
     <div class='col-sm-2'>   
         <p><br /><strong>Thumbnail:</strong></p>

@@ -34,12 +34,12 @@ document.getElementById("total_hours").innerHTML = "TOTAL HOURS: " + jobs[x].tot
 document.getElementById("rate_of_pay").innerHTML = "RATE OF PAY: $" + jobs[x].rate_of_pay(); + " / hour";
 
 
-//BILL TO / PAY TO
+//BILL TO 
 document.getElementById("employer").innerHTML = jobs[x].employer;
-document.getElementById("employer_address1").innerHTML = jobs[x].employer_address1();
-document.getElementById("employer_address2").innerHTML = jobs[x].employer_address2();
-document.getElementById("contact").innerHTML = jobs[x].contact();
-document.getElementById("contact_email").innerHTML = jobs[x].contact_email();
+document.getElementById("employer_address1").innerHTML = "<p class='employer-contact'>" + jobs[x].employer_address1() + "</p>";
+document.getElementById("employer_address2").innerHTML = "<p class='employer-contact'>" + jobs[x].employer_address2() + "</p>";
+document.getElementById("contact").innerHTML = "<p class='employer-contact'>" + jobs[x].contact() + "</p>";
+document.getElementById("contact_email").innerHTML = "<p class='employer-contact'>" + jobs[x].contact_email() + "</p>";
 
 
 //CREATE ALL JOBS LIST
@@ -124,43 +124,43 @@ let jobStatus = "";
 if (jobs[x].completed_date && jobs[x].date_billed && jobs[x].date_paid) {
     jobStatus = "\
         <div class='col-sm-3 green' >\
-            &#8212;> <i class='fas fa-check-square'></i> Job started on " + jobs[x].start_date + " \
+            <p>&#8212;> <i class='fas fa-check-square'></i> Job started on " + jobs[x].start_date + " \
         </div>\
         <div class='col-sm-3 green'>\
-            &#8212;> <i class='fas fa-check-square'></i> Completed on " + jobs[x].completed_date + " \
+            <p>&#8212;> <i class='fas fa-check-square'></i> Completed on " + jobs[x].completed_date + " \
         </div>\
         <div class='col-sm-3 green'>\
-            &#8212;> <i class='fas fa-check-square'></i> Billed on " + jobs[x].date_billed + " \
+            <p>&#8212;> <i class='fas fa-check-square'></i> Billed on " + jobs[x].date_billed + " \
         </div>\
         <div class='col-sm-3 green'>\
-            &#8212> <i class='fas fa-check-square'></i> Payment Recieved on " + jobs[x].date_paid + "\
+            <p>&#8212> <i class='fas fa-check-square'></i> Payment Recieved on " + jobs[x].date_paid + "\
         </div>"; 
 // if completed & billed
 } else if (jobs[x].completed_date && jobs[x].date_billed && !jobs[x].date_paid) {
     jobStatus = "\
     <div class='col-sm-3 yellow'>\
-        &#8212;> <i class='fas fa-check-square'></i> Job started on " + jobs[x].start_date + " \
+        <p>&#8212;> <i class='fas fa-check-square'></i> Job started on " + jobs[x].start_date + " \
     </div>\
     <div class='col-sm-3 yellow'>\
-        &#8212;> <i class='fas fa-check-square'></i> Completed on " + jobs[x].completed_date + " \
+        <p>&#8212;> <i class='fas fa-check-square'></i> Completed on " + jobs[x].completed_date + " \
     </div>\
     <div class='col-sm-3 yellow'>\
-        &#8212;> <i class='fas fa-check-square'></i> Billed on " + jobs[x].date_billed + " \
+        <p>&#8212;> <i class='fas fa-check-square'></i> Billed on " + jobs[x].date_billed + " \
     </div>\
     <div class='col-sm-3 yellow'>\
-        &#8212> <i class='far fa-square'></i> Awaiting payment . . .\
+        <p>&#8212> <i class='far fa-square'></i> Awaiting payment . . .\
     </div>"
 // if completed
 } else if (jobs[x].completed_date && !jobs[x].date_billed && !jobs[x].date_paid) {
     jobStatus = "\
     <div class='col-sm-3 yellow'>\
-        &#8212;> <i class='fas fa-check-square'></i> Job started on " + jobs[x].start_date + " \
+        <p>&#8212;> <i class='fas fa-check-square'></i> Job started on " + jobs[x].start_date + " \
     </div> \
     <div class='col-sm-3 yellow'>\
-        &#8212;> <i class='fas fa-check-square'></i> Completed on " + jobs[x].completed_date + " \
+        <p>&#8212;> <i class='fas fa-check-square'></i> Completed on " + jobs[x].completed_date + " \
     </div>\
     <div class='col-sm-3 yellow'>\
-        &#8212;> <i class='far fa-square'></i> Need to bill . . .  </div> \
+        <p>&#8212;> <i class='far fa-square'></i> Need to bill . . .  </div> \
     </div>\
     <div class='col-sm-3 yellow'>\
     </div>"
@@ -168,7 +168,6 @@ if (jobs[x].completed_date && jobs[x].date_billed && jobs[x].date_paid) {
 // if not completed
 } else {
     jobStatus = "\
-    <div class='col-sm-3 blue'>\
-        &#8212;> <i class='fas fa-check-square'></i> Job started on " + jobs[x].start_date + "\
-    </div><div class='col-sm-3 blue'></div><div class='col-sm-3 blue'></div><div class='col-sm-3 blue'></div>"};
+    <div class='col-sm-4 blue'></div><div class='col-sm-4 blue'>\
+    <p>&#8212;> <i class='fas fa-check-square'></i> Job started on " + jobs[x].start_date + "\</div><div class='col-sm-4 blue'></div>"};
 document.getElementById("job_status").innerHTML = jobStatus;
