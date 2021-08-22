@@ -14,9 +14,9 @@ document.getElementById("invoice_number").innerHTML = jobOrInvoice;
 //BILLING DATE or RUNNING TOTAL
 let billingDate = "RUNNING TOTAL:";
 if (jobs[x].date_billed) {
-    billingDate = "BILLING DATE: " + jobs[x].date_billed + " ";
+    billingDate = "BILLING DATE: " + jobs[x].date_billed;
 };
-document.getElementById("date_billed").innerHTML = billingDate;
+document.getElementById("date_billed").innerHTML = jobs[x].date_billed;
 
 //TOTAL AMOUNT DUE or RUNNING TOTAL
 document.getElementById("project").innerHTML = jobs[x].project;
@@ -24,14 +24,14 @@ let totalDue = "$";
 if (jobs[x].date_paid) {
     totalDue = "PAID: $"
 }
-document.getElementById("billing_amount").innerHTML = totalDue + jobs[x].total_hours() * jobs[x].rate_of_pay();
+document.getElementById("billing_amount").innerHTML = "$" + jobs[x].total_hours() * jobs[x].rate_of_pay();
 
 //JOB INFO
 document.getElementById("project_type").innerHTML = jobs[x].project_type;
-document.getElementById("start_date").innerHTML = "START DATE / DUE DATE: <br /> " + jobs[x].start_date + " / " + jobs[x].due_date;
-document.getElementById("completed_date").innerHTML = "COMPLETED DATE: <br /> " + jobs[x].completed_date;
-document.getElementById("total_hours").innerHTML = "TOTAL HOURS: " + jobs[x].total_hours();
-document.getElementById("rate_of_pay").innerHTML = "RATE OF PAY: $" + jobs[x].rate_of_pay(); + " / hour";
+document.getElementById("start_date").innerHTML =  jobs[x].start_date + " / " + jobs[x].due_date;
+document.getElementById("completed_date").innerHTML = jobs[x].completed_date;
+document.getElementById("total_hours").innerHTML = jobs[x].total_hours() + " hours";
+document.getElementById("rate_of_pay").innerHTML = jobs[x].rate_of_pay() + " / hour";
 
 
 //BILL TO 

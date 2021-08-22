@@ -9,7 +9,8 @@
     <script src="https://kit.fontawesome.com/c6ab673120.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Crimson+Text&display=swap" rel="stylesheet">
+    
     <!--//grab url for use in querying database-->
     <?php
         $raw_url = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
@@ -35,10 +36,12 @@
     <div class='col-sm-2' id='test_space'></div>
     <div class='col-sm-8'> 
         <h2 class="jerry">Jerry Janquart </h2> 
-        <p id="services">Graphics / Design / Web Services</p> 
+        <p id="services" class="crimson">Graphics / Design / Web Services</p> 
         <p id="invoice_number"></p> 
-        <p id="date_billed"></p> 
-        <p id="billing_amount"></p>
+        <p class="project-details-header-top">BILLING DATE:</p>
+        <p id="date_billed" class="project-details"></p> 
+        <p class="project-details-header-top">TOTAL DUE:</p>
+        <p id="billing_amount" class="total-due"></p>
         <hr />
     </div>
     <div class='col-sm-2'></div>
@@ -52,12 +55,16 @@
     </div>
     <div class='col-sm-4'>
         <h2 id="project"></h2>
-        <p class="project-details">PROJECT DETAILS:</p>
-        <p id="project_type"></p>
-        <p id="start_date"></p>
-        <p id="completed_date"></p>
-        <p id="total_hours"></p>
-        <p id="rate_of_pay"></p>
+        <p class="project-details-header">PROJECT DETAILS:</p>
+        <p id="project_type" class="project-details"></p>
+        <p class="project-details-header">START DATE / DUE DATE:</p>
+        <p id="start_date" class="project-details"></p>
+        <p class="project-details-header">COMPLETED DATE:</p>
+        <p id="completed_date" class="project-details"></p>
+        <p class="project-details-header">TIME ON PROJECT:</p>
+        <p id="total_hours" class="project-details"></p>
+        <p class="project-details-header">RATE OF PAY:</p>
+        <p id="rate_of_pay" class="project-details"></p>
     </div>
     <div class='col-sm-2'>
         <div id="hours_table"></div> 
