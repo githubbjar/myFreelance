@@ -58,7 +58,7 @@
         <p id="project_type" class="project-details"></p>
         <p class="project-details-header">START DATE / DUE DATE:</p>
         <p id="start_date" class="project-details"></p>
-        <p class="project-details-header">COMPLETED DATE:</p>
+        <p id="completed-date-header" class="project-details-header"></p>
         <p id="completed_date" class="project-details"></p>
         <p class="project-details-header">TIME ON PROJECT:</p>
         <p id="total_hours" class="project-details"></p>
