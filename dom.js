@@ -36,10 +36,10 @@ document.getElementById("rate_of_pay").innerHTML = jobs[x].rate_of_pay() + " / h
 
 //BILL TO 
 document.getElementById("employer").innerHTML = jobs[x].employer;
-document.getElementById("employer_address1").innerHTML = "<p class='employer-contact'>" + jobs[x].employer_address1() + "</p>";
-document.getElementById("employer_address2").innerHTML = "<p class='employer-contact'>" + jobs[x].employer_address2() + "</p>";
-document.getElementById("contact").innerHTML = "<p class='employer-contact'>" + jobs[x].contact() + "</p>";
-document.getElementById("contact_email").innerHTML = "<p class='employer-contact'>" + jobs[x].contact_email() + "</p>";
+document.getElementById("employer_address1").innerHTML = jobs[x].employer_address1();
+document.getElementById("employer_address2").innerHTML = jobs[x].employer_address2();
+document.getElementById("contact").innerHTML = jobs[x].contact();
+document.getElementById("contact_email").innerHTML = jobs[x].contact_email();
 
 
 //CREATE ALL JOBS LIST
@@ -85,7 +85,7 @@ for (let i = 0; i < invoice_numbers.length; i++) {
 let list_jobs_code_w_commas = list_jobs.toString();
 let list_jobs_code = list_jobs_code_w_commas.replace(/,/g, "");
 
-document.getElementById("job-list").innerHTML = "<p class='jobs-heading'><strong>All Jobs:</strong></p>" + 
+document.getElementById("job-list").innerHTML = "<p class='project-details-header'>ALL JOBS:<br /><br /></p>" + 
 list_jobs_code;
 
 
@@ -109,11 +109,11 @@ document.getElementById("thumbnail").innerHTML = thumbnailImg;
 hoursLog = [];
 for (let i = 0; i < jobs[x].hours_logged.length; i++) {
     //hoursLog.push("<tr><td>" + jobs[x].hours_logged[i].Date + "</td><td>" + jobs[x].hours_logged[i].Hours+ "</td></tr><tr><td colspan='2'><p class='worklog_items'>* "+ jobs[x].hours_logged[i].Note +"</p></td></tr>");
-    hoursLog.push("<p class='date-hours'>" + jobs[x].hours_logged[i].Date + " &#8212; " + jobs[x].hours_logged[i].Hours + "</p><p class='note'>*" + jobs[x].hours_logged[i].Note + "</p><hr class='jobs' />")
+    hoursLog.push("<p class='date-hours'>" + jobs[x].hours_logged[i].Date + " &#8212; " + jobs[x].hours_logged[i].Hours + "</p><p class='note'><em>" + jobs[x].hours_logged[i].Note + "</em></p><hr class='jobs' />")
 }
 let hoursLog_w_commas = hoursLog.toString();
 let hoursLog_code = hoursLog_w_commas.replace(/,/g, "");
-document.getElementById("hours_table").innerHTML = "<p class='date-hours'><strong>Date &#8212; Hours Logged</strong></p><hr class='jobs' />" + hoursLog_code;
+document.getElementById("hours_table").innerHTML = "<p class='project-details-header'><br />DATE &#8212; HOURS</p><hr class='jobs' />" + hoursLog_code;
 //END HOURS LOG
 
 

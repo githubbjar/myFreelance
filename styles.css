@@ -17,8 +17,6 @@ body {
     h2.jerry, #services, #invoice_number, #date_billed, #billing_amount {
         text-align: center; 
     }
-    #employer {font-weight: bold}
-    #employer, #employer_address1, #employer_address2, #contact, #contact_email {margin-top: -16px;}
 
     #job_status {
         margin-top: 0px;
@@ -28,6 +26,10 @@ body {
         font-family: 'Crimson Text', serif;
         margin-top: 5px;
         margin-bottom: 7px;
+    }
+
+    p.billto-payto {
+        margin-bottom: 4px;
     }
 
     p.total-runningtotal {
@@ -50,6 +52,20 @@ body {
         font-family: 'Crimson Text', serif;
         font-size: 22px;
         line-height: 24px;
+    }
+
+    p.info {
+        font-family: 'Crimson Text', serif;
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 3px;
+    }
+
+    p.info-name {
+        font-family: 'Crimson Text', serif;
+        font-size: 22px;
+        line-height: 24px;
+        margin-bottom: 3px;
     }
 
     p.total-due {
@@ -93,15 +109,11 @@ body {
         margin-top: 15px;
     }
 
-    #job-list p {
-        margin-left: 20px;
-        font-family: 'Crimson Text', serif;
-        
-    }
+    
 
     #job-list {
         padding-left: 35px;
-        height: 250px;
+        height: 400px;
     }
 
     #hours_table {
@@ -119,11 +131,14 @@ body {
     }
 
     .jobslist_employer_nicknames {
-        font-size: 12px;
+        font-family: 'Crimson Text', serif;
+        font-size: 16px;
         margin-bottom: -4px;
     }
     .joblist_links {
         margin-bottom: 0px;
+        font-family: 'Crimson Text', serif;
+        font-size: 24px;
     }
     
     a.light-gray {
@@ -135,9 +150,14 @@ body {
     }
 
     .joblist_projects {
-        font-size: 12px;
+        font-size: 16px;
         line-height: 14px;
         margin-top: 3px;
+        font-family: 'Crimson Text', serif;
+    }
+
+    a {
+        text-decoration: none;
     }
 
     .worklog_items {
@@ -149,15 +169,17 @@ body {
     }
 
     #hours_table p.note {
-        font-size: 12px;
+        font-family: 'Crimson Text', serif;
+        font-size: 16px;
         padding: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin-top: 2px;
+        margin-bottom: 2px;
         line-height: 16px;
     }
 
     #hours_table p.date-hours {
-        font-size: 15px;
+        font-family: 'Crimson Text', serif;
+        font-size: 18px;
         margin-bottom: 0px;
         padding-bottom: 0px;
     }

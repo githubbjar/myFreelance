@@ -37,9 +37,8 @@
     <div class='col-sm-8'> 
         <h2 class="jerry">Jerry Janquart </h2> 
         <p id="services" class="crimson">Graphics / Design / Web Services</p> 
-        <p id="invoice_number"></p> 
-        <p class="project-details-header-top">BILLING DATE:</p>
         <p id="date_billed" class="project-details"></p> 
+        <p id="invoice_number"></p> 
         <p class="project-details-header-top">TOTAL DUE:</p>
         <p id="billing_amount" class="total-due"></p>
         <hr />
@@ -70,18 +69,20 @@
         <div id="hours_table"></div> 
     </div>
     <div class='col-sm-2'>
-        <hr /><p>BILL TO: <br />
-        <p id="employer"></p>
-        <p id="employer_address1"></p>
-        <p id="employer_address2"></p>
-        <p id="contact"></p>
-        <p id="contact_email"></p>
-        <hr /> <p class="pay-to">PAY TO: <br /> 
-        <strong>Jerry Janquart</strong>  
-        <p class='personal-contact'>10438 Red Oak Drive <br /> 
-        <p class='personal-contact'>Saint John, IN 46373 <br />
-        <p class='personal-contact'>312-589-8332 <br />
-        <p class='personal-contact'>jmjanquart@gmail.com </p>
+        <hr />
+        <p class="billto-payto">BILL TO: <br />
+        <p class="info-name" id="employer"></p>
+        <p class="info" id="employer_address1"></p>
+        <p class="info" id="employer_address2"></p>
+        <p class="info" id="contact"></p>
+        <p id="contact_email" class="info"></p>
+        <hr /> 
+        <p class="billto-payto">PAY TO: </p>
+        <p class="info-name">Jerry Janquart</p> 
+        <p class='info'>10438 Red Oak Drive <br /> 
+        <p class='info'>Saint John, IN 46373 <br />
+        <p class='info'>312-589-8332 <br />
+        <p class='info'>jmjanquart@gmail.com </p>
     </div>
     <div class='col-sm-2'>   
         <p><br /><strong>Thumbnail:</strong></p>
@@ -91,8 +92,8 @@
  <div class='row'>
     <div class='col-sm-2'></div>
     <div class='col-sm-8'>
-        <hr /><p style='text-align:center'><strong>Thank you for the opportunity to work with you!</strong><br />
-        <em>Please pay within 30 days of receiving invoice.</em></p>
+        <hr /><p style='text-align:center' class="project-details-header">THANK YOU FOR THE OPPORTUNITY TO WORK WITH YOU!</p>
+        <p style='text-align:center' class="project-details"><em>Please pay within 30 days of receiving invoice.</em></p>
     </div>
     <div class='col-sm-2'></div>
 </div>
