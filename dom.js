@@ -31,7 +31,7 @@ document.getElementById("project_type").innerHTML = jobs[x].project_type;
 document.getElementById("start_date").innerHTML =  jobs[x].start_date + " / " + jobs[x].due_date;
 document.getElementById("completed_date").innerHTML = jobs[x].completed_date;
 document.getElementById("total_hours").innerHTML = jobs[x].total_hours() + " hours";
-document.getElementById("rate_of_pay").innerHTML = jobs[x].rate_of_pay() + " / hour";
+document.getElementById("rate_of_pay").innerHTML = "$" + jobs[x].rate_of_pay() + " / hour";
 
 
 //BILL TO 
