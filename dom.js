@@ -111,11 +111,14 @@ document.getElementById("thumbnail").innerHTML = thumbnailImg;
 
 
 
-///BEGIN HOURS LOG AS TABLE
+///BEGIN WORK LOG AS LIST
 hoursLog = [];
 for (let i = 0; i < jobs[x].hours_logged.length; i++) {
-    //hoursLog.push("<tr><td>" + jobs[x].hours_logged[i].Date + "</td><td>" + jobs[x].hours_logged[i].Hours+ "</td></tr><tr><td colspan='2'><p class='worklog_items'>* "+ jobs[x].hours_logged[i].Note +"</p></td></tr>");
-    hoursLog.push("<p class='date-hours'>" + jobs[x].hours_logged[i].Date + " &#8212; " + jobs[x].hours_logged[i].Hours + "</p><p class='note'><em>" + jobs[x].hours_logged[i].Note + "</em></p><hr class='jobs' />")
+    let hourOrHours = "hours";
+    if (jobs[x].hours_logged[i].Hours <= 1) {
+        hourOrHours = "hour";
+    }
+    hoursLog.push("<p class='date-hours'>" + jobs[x].hours_logged[i].Date + " &#8212; " + jobs[x].hours_logged[i].Hours + " " + hourOrHours + " </p><p class='note'><em>" + jobs[x].hours_logged[i].Note + "</em></p><hr class='jobs' />")
 }
 let hoursLog_w_commas = hoursLog.toString();
 let hoursLog_code = hoursLog_w_commas.replace(/,/g, "");
