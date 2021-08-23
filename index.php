@@ -39,7 +39,7 @@
         <p id="services" class="crimson">Graphics / Design / Web Services</p> 
         <p id="date_billed" class="project-details"></p> 
         <p id="invoice_number"></p> 
-        <p class="project-details-header-top">TOTAL DUE:</p>
+        <p id="running_total_or_total" class="project-details-header-top"></p>
         <p id="billing_amount" class="total-due"></p>
         <hr />
     </div>
@@ -85,7 +85,6 @@
         <p class='info'>jmjanquart@gmail.com </p>
     </div>
     <div class='col-sm-2'>   
-        <p><br /><strong>Thumbnail:</strong></p>
         <div id="thumbnail"></div>
     </div>
 </div>

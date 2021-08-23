@@ -11,19 +11,18 @@ if (jobs[x].completed_date) {
 document.getElementById("invoice_number").innerHTML = jobOrInvoice;
 
 
-//BILLING DATE or RUNNING TOTAL
-let billingDate = "RUNNING TOTAL:";
-if (jobs[x].date_billed) {
-    billingDate = "BILLING DATE: " + jobs[x].date_billed;
-};
+//BILLING DATE
 document.getElementById("date_billed").innerHTML = jobs[x].date_billed;
 
+
 //TOTAL AMOUNT DUE or RUNNING TOTAL
-document.getElementById("project").innerHTML = jobs[x].project;
-let totalDue = "$";
-if (jobs[x].date_paid) {
-    totalDue = "PAID: $"
-}
+let runningOrTotal = "RUNNING TOTAL:";
+if (jobs[x].completed_date && jobs[x].date_paid) {
+    runningOrTotal = "AMOUNT PAID:";
+};
+document.getElementById('running_total_or_total').innerHTML = runningOrTotal;
+
+//AMOUNT
 document.getElementById("billing_amount").innerHTML = "$" + jobs[x].total_hours() * jobs[x].rate_of_pay();
 
 //JOB INFO
@@ -96,10 +95,11 @@ document.getElementById("test_space").innerHTML = "";
 
 //THUMBNAIL
 let thumbnailImg = "";
+let thumbnailText = "<p class='project-details-header'>THUMBNAIL:<br /><br /></p>";
 if (jobs[x].thumbnail) {
-    thumbnailImg = "<img src='thumbnails/" + jobs[x].thumbnail + "' width='80%' />";
+    thumbnailImg = thumbnailText + "<img src='thumbnails/" + jobs[x].thumbnail + "' width='80%' />";
 } else {
-    thumbnailImg = "<p class='joblist_projects'>[ No image available. ]</p>";
+    thumbnailImg = thumbnailText + "<p class='joblist_projects'>[ No image available. ]</p>";
 };
 document.getElementById("thumbnail").innerHTML = thumbnailImg;
 
@@ -113,7 +113,7 @@ for (let i = 0; i < jobs[x].hours_logged.length; i++) {
 }
 let hoursLog_w_commas = hoursLog.toString();
 let hoursLog_code = hoursLog_w_commas.replace(/,/g, "");
-document.getElementById("hours_table").innerHTML = "<p class='project-details-header'><br />DATE &#8212; HOURS</p><hr class='jobs' />" + hoursLog_code;
+document.getElementById("hours_table").innerHTML = "<p class='project-details-header'><br />WORK LOG</p><hr class='jobs' />" + hoursLog_code;
 //END HOURS LOG
 
 
