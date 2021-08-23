@@ -26,6 +26,7 @@ document.getElementById('running_total_or_total').innerHTML = runningOrTotal;
 document.getElementById("billing_amount").innerHTML = "$" + jobs[x].total_hours() * jobs[x].rate_of_pay();
 
 //JOB INFO
+document.getElementById("project").innerHTML = jobs[x].project;
 document.getElementById("project_type").innerHTML = jobs[x].project_type;
 document.getElementById("start_date").innerHTML =  jobs[x].start_date + " / " + jobs[x].due_date;
 document.getElementById("completed_date").innerHTML = jobs[x].completed_date;
