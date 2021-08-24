@@ -1,14 +1,14 @@
 //Insert the object data
 
 //DOCUMENT TITLE
-document.title = "INVOICE #" + jobs[x].invoice_number + ", " + jobs[x].employer_nickname() + ": " + jobs[x].project;
+document.title = "Invoice #" + jobs[x].invoice_number + ", " + jobs[x].employer_nickname() + ": " + jobs[x].project;
 
 //JOB/INVOICE NUMBER
-let jobOrInvoice = "<h2>JOB #" + jobs[x].invoice_number + "</h2>";
+let jobOrInvoice = "Job #" + jobs[x].invoice_number;
 if (jobs[x].completed_date) {
-    jobOrInvoice = "<h2>INVOICE #" + jobs[x].invoice_number + "</h2>";
+    jobOrInvoice = "Invoice #" + jobs[x].invoice_number;
 };
-document.getElementById("invoice_number").innerHTML = jobOrInvoice;
+document.getElementById("jerryjob").innerHTML = "Jerry Janquart &#8212; " + jobOrInvoice;
 
 
 //BILLING DATE

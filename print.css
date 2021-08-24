@@ -12,7 +12,7 @@ p {
 h2 {
     font-family: 'Crimson Text', serif;
 }
-p.project-details {font-size: 18px; line-height: 12px; margin-bottom: 5px;} 
+
 #header {margin-top: 25px;} 
 h2.jerry, #services, #invoice_number, #date_billed, #billing_amount {
     text-align: center; 
@@ -50,8 +50,8 @@ p.project-details-header-top {
 }
 p.project-details {
     font-family: 'Crimson Text', serif;
-    font-size: 22px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 18px;
 }
 
 p.info {
@@ -170,7 +170,7 @@ a {
 
 #hours_table p.note {
     font-family: 'Crimson Text', serif;
-    font-size: 16px;
+    font-size: 12px;
     padding: 0px;
     margin-top: 2px;
     margin-bottom: 2px;
@@ -179,7 +179,7 @@ a {
 
 #hours_table p.date-hours {
     font-family: 'Crimson Text', serif;
-    font-size: 18px;
+    font-size: 14px;
     margin-bottom: 0px;
     padding-bottom: 0px;
 }

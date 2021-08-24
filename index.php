@@ -36,7 +36,7 @@
 <div class='row' id='header'>
     <div class='col-sm-2' id='test_space'></div>
     <div class='col-sm-8'> 
-        <h2 class="jerry">Jerry Janquart </h2> 
+        <h2 id="jerryjob" class="jerry"></h2>
         <p id="services" class="crimson">Graphics / Design / Web Services</p> 
         <p id="date_billed" class="project-details"></p> 
         <p id="invoice_number"></p> 
