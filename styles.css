@@ -218,8 +218,4 @@ body {
         }
     }
     
-    @media print {
-        #job_status, #job-list {
-            display: none;
-        }
-    }    
+    

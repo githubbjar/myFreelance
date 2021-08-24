@@ -122,7 +122,7 @@ for (let i = 0; i < jobs[x].hours_logged.length; i++) {
 }
 let hoursLog_w_commas = hoursLog.toString();
 let hoursLog_code = hoursLog_w_commas.replace(/,/g, "");
-document.getElementById("hours_table").innerHTML = "<p class='project-details-header'><br />WORK LOG</p><hr class='jobs' />" + hoursLog_code;
+document.getElementById("hours_table").innerHTML = "<p class='project-details-header'><br />WORK LOG:</p><hr class='jobs' />" + hoursLog_code;
 //END HOURS LOG
 
 
