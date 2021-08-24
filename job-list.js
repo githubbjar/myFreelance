@@ -105,6 +105,7 @@ job2710.hours_logged[0] = {Date: "Aug 12", Hours: .5, Note: "Getting organized"}
 job2710.hours_logged[1] = {Date: "Aug 19", Hours: 1, Note: "Outline picture / Begin layout"};
 job2710.hours_logged[2] = {Date: "Aug 20", Hours: 1, Note: "Layout / Submit 1st draft"};
 job2710.hours_logged[3] = {Date: "Aug 20", Hours: .5, Note: "Applied client revisions"}
+job2710.completed_date = "August 24, 2021";
 job2710.thumbnail = "2710.png";
 jobs.push(job2710);
 
@@ -127,11 +128,12 @@ job2712.thumbnail = "2712.png";
 jobs.push(job2712);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2713 = new Job(2713, 5, "Publishing Management Associates", "Ad Reformatting Etc.", "Misc. ads color corrected, resized, created.", "August 17, 2021", "N/A")
+const job2713 = new Job(2713, 5, "Publishing Management Associates", "Ad Reformatting, misc.", "Misc. ads color corrected, resized, created.", "August 17, 2021", "N/A")
 job2713.hours_logged[0] = {Date: "Aug 17", Hours: .25, Note: "Belmont Abbey"};
 job2713.hours_logged[1] = {Date: "Aug 19", Hours: .25, Note: "Recov of Fam Life / RTB"};
 job2713.hours_logged[2] = {Date: "Aug 20", Hours: .25, Note: "Sparkly Kat Book"};
 job2713.hours_logged[3] = {Date: "Aug 21", Hours: .5, Note: "FT Poetry Night"};
+job2713.hours_logged[4] = {Date: "Aug  24", Hours: .25, Note: "Poetry night revisions"};
 job2713.thumbnail = "2713.png";
 jobs.push(job2713); 
 

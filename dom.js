@@ -10,15 +10,20 @@ if (jobs[x].completed_date) {
 };
 document.getElementById("jerryjob").innerHTML = "Jerry Janquart &#8212; " + jobOrInvoice;
 
-
+let dateBilled = "";
+if (jobs[x].date_billed) {
+    dateBilled = "Billing Date: " + jobs[x].date_billed;
+};
 //BILLING DATE
-document.getElementById("date_billed").innerHTML = jobs[x].date_billed;
+document.getElementById("date_billed").innerHTML = dateBilled;
 
 
 //TOTAL AMOUNT DUE or RUNNING TOTAL
 let runningOrTotal = "RUNNING TOTAL:";
 if (jobs[x].completed_date && jobs[x].date_paid) {
     runningOrTotal = "AMOUNT PAID:";
+} else if (jobs[x].completed_date && !jobs[x].date_paid) {
+    runningOrTotal = "TOTAL DUE:";
 };
 document.getElementById('running_total_or_total').innerHTML = runningOrTotal;
 
