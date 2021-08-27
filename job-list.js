@@ -112,9 +112,10 @@ jobs.push(job2710);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2711 = new Job(2711, 3, "Publishing Management Associates", "FT House Ads", "Four half-page ads for <em>First Things</em> magazine: Back issue organizer, Books, Creed DVD, Reprint Series", "August 12, 2021", "August 30, 2021");
-job2711.hours_logged[0] = {Date: "Aug 12", Hours: 1, Note: "Created Reprint Series ad"};
-job2711.hours_logged[1] = {Date: "Aug 19", Hours: .25, Note: "Revised Reprint Series ad"};
-job2711.hours_logged[2] = {Date: "Aug 20", Hours: .5, Note: "Creed DVD ad creation"};
+job2711.hours_logged[0] = {Date: "Aug 12", Hours: 1, Note: "Create Reprint Series ad"};
+job2711.hours_logged[1] = {Date: "Aug 19", Hours: .25, Note: "Revise Reprint Series ad"};
+job2711.hours_logged[2] = {Date: "Aug 20", Hours: .5, Note: "Create Creed DVD ad"};
+job2711.hours_logged[3] = {Date: "Aug 27", Hours: .5, Note: "Create Books Online ad"}
 job2711.thumbnail = "2711.png";
 jobs.push(job2711);
 
@@ -135,6 +136,7 @@ job2713.hours_logged[1] = {Date: "Aug 19", Hours: .25, Note: "Recov of Fam Life 
 job2713.hours_logged[2] = {Date: "Aug 20", Hours: .25, Note: "Sparkly Kat Book"};
 job2713.hours_logged[3] = {Date: "Aug 21", Hours: .5, Note: "FT Poetry Night"};
 job2713.hours_logged[4] = {Date: "Aug  24", Hours: .25, Note: "Poetry night revisions"};
+job2713.hours_logged[5] = {Date: "Aug 24", Hours: .25, Note: "FT Truth Ad"};
 job2713.thumbnail = "2713.png";
 jobs.push(job2713); 
 
