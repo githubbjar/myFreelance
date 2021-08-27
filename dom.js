@@ -147,7 +147,7 @@ if (jobs[x].completed_date && jobs[x].date_billed && jobs[x].date_paid) {
             <p>&#8212;> <i class='fas fa-check-square'></i> Billed on " + jobs[x].date_billed + " \
         </div>\
         <div class='col-sm-3 green'>\
-            <p>&#8212> <i class='fas fa-check-square'></i> Payment Recieved on " + jobs[x].date_paid + "\
+            <p>&#8212> <i class='fas fa-check-square'></i> Paid on " + jobs[x].date_paid + "\
         </div>"; 
 // if completed & billed
 } else if (jobs[x].completed_date && jobs[x].date_billed && !jobs[x].date_paid) {
