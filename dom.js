@@ -8,7 +8,13 @@ let jobOrInvoice = "Job #" + jobs[x].invoice_number;
 if (jobs[x].completed_date) {
     jobOrInvoice = "Invoice #" + jobs[x].invoice_number;
 };
-document.getElementById("jerryjob").innerHTML = "Jerry Janquart &#8212; " + jobOrInvoice;
+
+let previousJob = "http://www.jerryjanquart.com/myFreelance/index.php?jobx=" + (x-1);
+let nextJob = "http://www.jerryjanquart.com/myFreelance/index.php?jobx=" + (x+1);
+
+document.getElementById("jerryjob").innerHTML = "\
+<span class='small'><a href='" + previousJob + "'>[prev.]</a></span> \
+Jerry Janquart &#8212; " + jobOrInvoice + " <span class='small'><a href='" + nextJob + "'>[next]</a></span>";
 
 let dateBilled = "";
 if (jobs[x].date_billed) {

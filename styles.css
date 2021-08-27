@@ -214,6 +214,12 @@ body {
         padding-bottom: 0px;
     }
 
+    .small {
+        font-size: 14px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     @media only screen and (max-width: 600px) {
         #center {
             text-align: center;

@@ -120,13 +120,15 @@ job2711.thumbnail = "2711.png";
 jobs.push(job2711);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2712 = new Job(2712, 4, "Biretta Books", "Fatima Event Posters", "2 posters and a Facebook event image", "August 14, 2021", "August 23, 2021");
+const job2712 = new Job(2712, 4, "Biretta Books", "Fatima Event Posters", "2 posters (11x17 &amp; 8.5x11) and a jpg for social media", "August 14, 2021", "August 23, 2021");
 job2712.hours_logged[0] = {Date: "Aug 13", Hours: .5, Note: "Getting organized"};
 job2712.hours_logged[1] = {Date: "Aug 15", Hours: 2, Note: "Find pictures / Start layout"};
 job2712.hours_logged[2] = {Date: "Aug 16", Hours: 1, Note: "New picture"};
 job2712.hours_logged[3] = {Date: "Aug 17", Hours: 1, Note: "Adjustments"};
 job2712.hours_logged[4] = {Date: "Aug 19", Hours: .5, Note: "More adjustments"};
-job2712.hours_logged[5] = {Date: "Aug 27", Hours: .25, Note: "Final text and submit"};
+job2712.hours_logged[5] = {Date: "Aug 27", Hours: .75, Note: "Final text and submit"};
+job2712.completed_date = "August 27, 2021";
+job2712.date_billed = "August 27, 2021";
 job2712.thumbnail = "2712.png";
 jobs.push(job2712);
 
