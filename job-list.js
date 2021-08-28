@@ -128,7 +128,7 @@ job2712.hours_logged[3] = {Date: "Aug 17", Hours: 1, Note: "Adjustments"};
 job2712.hours_logged[4] = {Date: "Aug 19", Hours: .5, Note: "More adjustments"};
 job2712.hours_logged[5] = {Date: "Aug 27", Hours: .75, Note: "Final text and submit"};
 job2712.completed_date = "August 27, 2021";
-job2712.date_billed = "August 27, 2021";
+job2712.date_billed = "August 28, 2021";
 job2712.thumbnail = "2712.png";
 jobs.push(job2712);
 
