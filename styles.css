@@ -214,10 +214,10 @@ body {
         padding-bottom: 0px;
     }
 
-    .small {
-        font-size: 14px;
-        margin-left: 20px;
-        margin-right: 20px;
+    #previous, #next {
+        font-size: 16px;
+        text-align: center;
+        font-family: 'Crimson Text', serif;
     }
 
     @media only screen and (max-width: 600px) {

@@ -226,4 +226,8 @@ p.pay-to {
     #job_status, #job-list, #thumbnail {
         display: none;
     }
+
+    #next a, #previous a {
+        color: transparent;
+    }
 }    

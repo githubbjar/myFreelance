@@ -8,19 +8,29 @@ let jobOrInvoice = "Job #" + jobs[x].invoice_number;
 if (jobs[x].completed_date) {
     jobOrInvoice = "Invoice #" + jobs[x].invoice_number;
 };
+document.getElementById("jerryjob").innerHTML = "Jerry Janquart &#8212; " + jobOrInvoice;
 
-let previousJob = "http://www.jerryjanquart.com/myFreelance/index.php?jobx=" + (x-1);
-let nextJob = "http://www.jerryjanquart.com/myFreelance/index.php?jobx=" + (x+1);
+//PREVIOUS NEXT LINKS
+let previous = x-1;
+let next = x+1;
+let numOfJobs = jobs.length-1;
+let nextLink = "";
+if (x === 0) {
+    previous = numOfJobs;
+};
+if (x === numOfJobs) {
+    next = 0;
+};
 
-document.getElementById("jerryjob").innerHTML = "\
-<span class='small'><a href='" + previousJob + "'>[prev.]</a></span> \
-Jerry Janquart &#8212; " + jobOrInvoice + " <span class='small'><a href='" + nextJob + "'>[next]</a></span>";
+document.getElementById("previous").innerHTML = "<a href='http://www.jerryjanquart.com/myFreelance/index.php?jobx=" + previous + "'>[prev.]</a>";
+document.getElementById("next").innerHTML = "<a href='http://www.jerryjanquart.com/myFreelance/index.php?jobx=" + next + "'>[next]</a>";
 
+
+//BILLING DATE
 let dateBilled = "";
 if (jobs[x].date_billed) {
     dateBilled = "Billing Date: " + jobs[x].date_billed;
 };
-//BILLING DATE
 document.getElementById("date_billed").innerHTML = dateBilled;
 
 
