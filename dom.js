@@ -123,7 +123,9 @@ document.getElementById("test_space").innerHTML = "";
 //THUMBNAIL
 let thumbnailImg = "";
 let thumbnailText = "<p class='project-details-header'>THUMBNAIL:<br /><br /></p>";
-if (jobs[x].thumbnail) {
+if (jobs[x].thumbnail && jobs[x].pdf) {
+    thumbnailImg = thumbnailText + "<a href='pdfs/" + jobs[x].pdf + "'><img src='thumbnails/" + jobs[x].thumbnail + "' width='80%' /></a>";
+} else if(jobs[x].thumbnail) {
     thumbnailImg = thumbnailText + "<img src='thumbnails/" + jobs[x].thumbnail + "' width='80%' />";
 } else {
     thumbnailImg = thumbnailText + "<p class='joblist_projects'>[ No image available. ]</p>";
