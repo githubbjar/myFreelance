@@ -43,8 +43,9 @@ if (jobs[x].completed_date && jobs[x].date_paid) {
 };
 document.getElementById('running_total_or_total').innerHTML = runningOrTotal;
 
-//AMOUNT
-document.getElementById("billing_amount").innerHTML = "$" + jobs[x].total_hours() * jobs[x].rate_of_pay();
+//AMOUNT toFixed adds the decimal point and places
+const totalAmount = jobs[x].total_hours() * jobs[x].rate_of_pay();
+document.getElementById("billing_amount").innerHTML = "$" + totalAmount.toFixed(2);
 
 //JOB INFO
 document.getElementById("project").innerHTML = jobs[x].project;
