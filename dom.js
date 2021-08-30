@@ -115,18 +115,19 @@ document.getElementById("job-list").innerHTML = "<p class='project-details-heade
 list_jobs_code;
 
 
+
 //TEST DIV
 document.getElementById("test_space").innerHTML = "";
 
 
 
-//THUMBNAIL
+//THUMBNAIL & PDF
 let thumbnailImg = "";
 let thumbnailText = "<p class='project-details-header'>THUMBNAIL:<br /><br /></p>";
 if (jobs[x].thumbnail && jobs[x].pdf) {
-    thumbnailImg = thumbnailText + "<a href='pdfs/" + jobs[x].pdf + "'><img src='thumbnails/" + jobs[x].thumbnail + "' width='80%' /></a>";
+    thumbnailImg = thumbnailText + "<a href='pdfs/" + jobs[x].invoice_number + ".pdf'><img src='thumbnails/" + jobs[x].invoice_number + ".png' width='80%' /></a>";
 } else if(jobs[x].thumbnail) {
-    thumbnailImg = thumbnailText + "<img src='thumbnails/" + jobs[x].thumbnail + "' width='80%' />";
+    thumbnailImg = thumbnailText + "<img src='thumbnails/" + jobs[x].invoice_number + ".png' width='80%' />";
 } else {
     thumbnailImg = thumbnailText + "<p class='joblist_projects'>[ No image available. ]</p>";
 };
@@ -196,7 +197,6 @@ if (jobs[x].completed_date && jobs[x].date_billed && jobs[x].date_paid) {
     </div>\
     <div class='col-sm-3 yellow'>\
     </div>"
-
 // if not completed
 } else {
     jobStatus = "\

@@ -69,8 +69,8 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
         }
     this.date_billed = "";
     this.date_paid = "";
-    this.thumbnail = "";
-    this.thumbnail = "";
+    this.thumbnail = false;
+    this.pdf = false;
 };
 
 //begin the jobs
@@ -86,8 +86,8 @@ job2708.hours_logged[4] = {Date: "Aug 1", Hours: 1, Note: "Final corrections"}
 job2708.completed_date = "August 1, 2021";
 job2708.date_billed = "August 4, 2021";
 job2708.date_paid = "August 9, 2011";
-job2708.thumbnail = "2708.png";
-job2708.pdf = "2708.pdf";
+job2708.thumbnail = true;
+job2708.pdf = true;
 jobs.push(job2708);
     
 
@@ -98,11 +98,11 @@ job2709.hours_logged[0] = {Date: "Jul 19", Hours: 3, Note: "Initial setup"};
 job2709.hours_logged[1] = {Date: "Jul 21", Hours: 1, Note: "Edits and tweaks"};
 job2709.hours_logged[2] = {Date: "Aug 9", Hours: 1, Note: "More edits and tweaks"};
 //End Hours Logged
-job2709.thumbnail = "2709.png";
+job2709.thumbnail = true;
 jobs.push(job2709);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2710 = new Job(2710, 2, "Biretta Books", "Poster, Drexel Parish", "Hope for the Broken talk &#8212; 11 x 17 and 7.25 x 4.57 ad", "August 12, 2021", "Aug 23, 2021");
+const job2710 = new Job(2710, 2, "Biretta Books", "Poster, Drexel Parish", "Hope for the Broken talk &#8212; 11 x 17 and 8.5 x 11 posters, and 7.25 x 4.57 ad", "August 12, 2021", "Aug 23, 2021");
 job2710.hours_logged[0] = {Date: "Aug 12", Hours: .5, Note: "Getting organized"};
 job2710.hours_logged[1] = {Date: "Aug 19", Hours: 1, Note: "Outline picture / Begin layout"};
 job2710.hours_logged[2] = {Date: "Aug 20", Hours: 1, Note: "Layout / Submit 1st draft"};
@@ -110,8 +110,8 @@ job2710.hours_logged[3] = {Date: "Aug 20", Hours: .5, Note: "Applied client revi
 job2710.completed_date = "August 24, 2021";
 job2710.date_billed ="August 24, 2021";
 job2710.date_paid = "August 29, 2021";
-job2710.thumbnail = "2710.png";
-job2710.pdf = "2710.pdf";
+job2710.thumbnail = true;
+job2710.pdf = true;
 jobs.push(job2710);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -120,7 +120,7 @@ job2711.hours_logged[0] = {Date: "Aug 12", Hours: 1, Note: "Create Reprint Serie
 job2711.hours_logged[1] = {Date: "Aug 19", Hours: .25, Note: "Revise Reprint Series ad"};
 job2711.hours_logged[2] = {Date: "Aug 20", Hours: .5, Note: "Create Creed DVD ad"};
 job2711.hours_logged[3] = {Date: "Aug 27", Hours: .5, Note: "Create Books Online ad"}
-job2711.thumbnail = "2711.png";
+job2711.thumbnail = true;
 jobs.push(job2711);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -133,8 +133,8 @@ job2712.hours_logged[4] = {Date: "Aug 19", Hours: .5, Note: "More adjustments"};
 job2712.hours_logged[5] = {Date: "Aug 27", Hours: .75, Note: "Final text and submit"};
 job2712.completed_date = "August 27, 2021";
 job2712.date_billed = "August 27, 2021";
-job2712.thumbnail = "2712.png";
-job2712.pdf = "2712.pdf";
+job2712.thumbnail = true;
+job2712.pdf = true;
 jobs.push(job2712);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -145,7 +145,7 @@ job2713.hours_logged[2] = {Date: "Aug 20", Hours: .25, Note: "Sparkly Kat Book"}
 job2713.hours_logged[3] = {Date: "Aug 21", Hours: .5, Note: "FT Poetry Night"};
 job2713.hours_logged[4] = {Date: "Aug  24", Hours: .25, Note: "Poetry night revisions"};
 job2713.hours_logged[5] = {Date: "Aug 24", Hours: .25, Note: "FT Truth Ad"};
-job2713.thumbnail = "2713.png";
+job2713.thumbnail = true;
 jobs.push(job2713); 
 
 //end the jobs
