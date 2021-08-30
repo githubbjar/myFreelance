@@ -120,7 +120,7 @@ job2711.hours_logged[0] = {Date: "Aug 12", Hours: 1, Note: "Create Reprint Serie
 job2711.hours_logged[1] = {Date: "Aug 19", Hours: .25, Note: "Revise Reprint Series ad"};
 job2711.hours_logged[2] = {Date: "Aug 20", Hours: .5, Note: "Create Creed DVD ad"};
 job2711.hours_logged[3] = {Date: "Aug 27", Hours: .5, Note: "Create Books Online ad"};
-job2711. hours_logged[4] = {Date: "Aug 30", Hours: .5, Note: "Create Slipcase ad"};
+job2711. hours_logged[4] = {Date: "Aug 30", Hours: 1.5, Note: "Create Slipcase ad"};
 job2711.thumbnail = true;
 jobs.push(job2711);
 
