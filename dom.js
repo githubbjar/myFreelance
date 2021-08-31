@@ -132,53 +132,30 @@ document.getElementById("hours_table").innerHTML = "<p class='project-details-he
 
 //BEGIN JOB STATUS BAR
 let jobStatus = "";
+const green = "<div class='col-sm-3 green'>";
+const yellow = "<div class='col-sm-3 yellow'>";
+const blue = "<div class='col-sm-4 blue'>";
+const endColor = "</div>";
+const square = "<p>&#8212;> <i class='fas fa-check-square'></i>"
 //if completed, billed & paid
 if (jobs[x].completed_date && jobs[x].date_billed && jobs[x].date_paid) {
-    jobStatus = "\
-        <div class='col-sm-3 green' >\
-            <p>&#8212;> <i class='fas fa-check-square'></i> Job started on " + jobs[x].start_date + " \
-        </div>\
-        <div class='col-sm-3 green'>\
-            <p>&#8212;> <i class='fas fa-check-square'></i> Completed on " + jobs[x].completed_date + " \
-        </div>\
-        <div class='col-sm-3 green'>\
-            <p>&#8212;> <i class='fas fa-check-square'></i> Billed on " + jobs[x].date_billed + " \
-        </div>\
-        <div class='col-sm-3 green'>\
-            <p>&#8212> <i class='fas fa-check-square'></i> Paid on " + jobs[x].date_paid + "\
-        </div>"; 
+    jobStatus = green + square + " Job started on " + jobs[x].start_date + endColor +
+        green + square + " Completed on " + jobs[x].completed_date + endColor +
+        green + square + " Billed on " + jobs[x].date_billed + endColor +
+        green  + square + " Paid on " + jobs[x].date_paid + endColor;
 // if completed & billed
 } else if (jobs[x].completed_date && jobs[x].date_billed && !jobs[x].date_paid) {
-    jobStatus = "\
-    <div class='col-sm-3 yellow'>\
-        <p>&#8212;> <i class='fas fa-check-square'></i> Job started on " + jobs[x].start_date + " \
-    </div>\
-    <div class='col-sm-3 yellow'>\
-        <p>&#8212;> <i class='fas fa-check-square'></i> Completed on " + jobs[x].completed_date + " \
-    </div>\
-    <div class='col-sm-3 yellow'>\
-        <p>&#8212;> <i class='fas fa-check-square'></i> Billed on " + jobs[x].date_billed + " \
-    </div>\
-    <div class='col-sm-3 yellow'>\
-        <p>&#8212> <i class='far fa-square'></i> Awaiting payment . . .\
-    </div>"
+    jobStatus = yellow + square + " Job started on " + jobs[x].start_date + endColor +
+    yellow + square + " Completed on " + jobs[x].completed_date + endColor +
+    yellow + square + " Billed on " + jobs[x].date_billed + endColor +
+    yellow + square + " Awaiting payment . . ." + endColor;
 // if completed
 } else if (jobs[x].completed_date && !jobs[x].date_billed && !jobs[x].date_paid) {
-    jobStatus = "\
-    <div class='col-sm-3 yellow'>\
-        <p>&#8212;> <i class='fas fa-check-square'></i> Job started on " + jobs[x].start_date + " \
-    </div> \
-    <div class='col-sm-3 yellow'>\
-        <p>&#8212;> <i class='fas fa-check-square'></i> Completed on " + jobs[x].completed_date + " \
-    </div>\
-    <div class='col-sm-3 yellow'>\
-        <p>&#8212;> <i class='far fa-square'></i> Need to bill . . .  </div> \
-    </div>\
-    <div class='col-sm-3 yellow'>\
-    </div>"
+    jobStatus = yellow + square + " Job started on " + jobs[x].start_date + endColor +
+    yellow + square + "Completed on " + jobs[x].completed_date + endColor +
+    yellow + square + " Need to bill . . .  " + endColor +
+    yellow + endColor;
 // if not completed
 } else {
-    jobStatus = "\
-    <div class='col-sm-4 blue'></div><div class='col-sm-4 blue'>\
-    <p>&#8212;> <i class='fas fa-check-square'></i> Job started on " + jobs[x].start_date + "\</div><div class='col-sm-4 blue'></div>"};
+    jobStatus = blue + endColor + blue + square + " Job started on " + jobs[x].start_date + endColor + blue + endColor};
 document.getElementById("job_status").innerHTML = jobStatus;
