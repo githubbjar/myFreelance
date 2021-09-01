@@ -4,8 +4,11 @@
 //instead of calling for 'jobs[x].invoice_number', I can just use the variable 'invoice_number'
 const { invoice_number, job_number, employer, project, project_type, start_date, due_date, completed_date, date_billed, date_paid, hours_logged, thumbnail, pdf } = jobs[x];
 
+//make variables from object methods
+const employer_nickname = jobs[x].employer_nickname();
+
 //DOCUMENT TITLE
-document.title = "Invoice #" + invoice_number + ", " + jobs[x].employer_nickname() + ": " + project;
+document.title = "Invoice #" + invoice_number + ", " + employer_nickname + ": " + project;
 
 
 //JOB/INVOICE NUMBER
