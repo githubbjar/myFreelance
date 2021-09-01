@@ -152,3 +152,14 @@ jobs.push(job2713);
 
 //end the jobs
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Tips and tricks
+
+//JSON.stringify with spaces
+//const job1 = JSON.stringify(jobs[1], null, 2);
+//console.log(job1);
+
+//The Destructuring Assignment syntax
+//const { project, project_type } = jobs[1];
+//console.log(project);
+//console.log(project_type);

@@ -1,12 +1,15 @@
 //Insert the object data
 
+//Leveraging the destructuring assignment syntax to create variables
+//instead of calling for 'jobs[x].invoice_number', I can just use the variable 'invoice_number'
+const { invoice_number, job_number, employer, project, project_type, start_date, due_date, completed_date, date_billed, date_paid, hours_logged, thumbnail, pdf } = jobs[x];
 
 //DOCUMENT TITLE
-document.title = "Invoice #" + jobs[x].invoice_number + ", " + jobs[x].employer_nickname() + ": " + jobs[x].project;
+document.title = "Invoice #" + invoice_number + ", " + jobs[x].employer_nickname() + ": " + project;
 
 
 //JOB/INVOICE NUMBER
-const jobOrInvoice = (jobs[x].completed_date) ? "Invoice #" + jobs[x].invoice_number : "Job #" + jobs[x].invoice_number;
+const jobOrInvoice = (completed_date) ? "Invoice #" + invoice_number : "Job #" + invoice_number;
 document.getElementById("jerryjob").innerHTML = "Jerry Janquart &#8212; " + jobOrInvoice;
 
 
@@ -18,15 +21,15 @@ document.getElementById("next").innerHTML = "<a href='http://www.jerryjanquart.c
 
 
 //BILLING DATE
-const dateBilled = (jobs[x].date_billed) ? "Billing Date: " + jobs[x].date_billed : "";
+const dateBilled = (date_billed) ? "Billing Date: " + date_billed : "";
 document.getElementById("date_billed").innerHTML = dateBilled;
 
 
 //TOTAL AMOUNT DUE or RUNNING TOTAL
 let runningOrTotal = "RUNNING TOTAL:";
-if (jobs[x].completed_date && jobs[x].date_paid) {
+if (completed_date && date_paid) {
     runningOrTotal = "AMOUNT PAID:";
-} else if (jobs[x].completed_date && !jobs[x].date_paid) {
+} else if (completed_date && !date_paid) {
     runningOrTotal = "TOTAL DUE:";
 };
 document.getElementById('running_total_or_total').innerHTML = runningOrTotal;
@@ -38,18 +41,18 @@ document.getElementById("billing_amount").innerHTML = "$" + totalAmount.toFixed(
 
 
 //JOB INFO
-document.getElementById("project").innerHTML = jobs[x].project;
-document.getElementById("project_type").innerHTML = jobs[x].project_type;
-document.getElementById("start_date").innerHTML =  jobs[x].start_date + " / " + jobs[x].due_date;
-const completed_date = (jobs[x].completed_date) ? "COMPLETED DATE:" : "";
-document.getElementById("completed-date-header").innerHTML = completed_date;
-document.getElementById("completed_date").innerHTML = jobs[x].completed_date;
+document.getElementById("project").innerHTML = project;
+document.getElementById("project_type").innerHTML = project_type;
+document.getElementById("start_date").innerHTML =  start_date + " / " + due_date;
+const completed_date_text = (jobs[x].completed_date) ? "COMPLETED DATE:" : "";
+document.getElementById("completed-date-header").innerHTML = completed_date_text;
+document.getElementById("completed_date").innerHTML = completed_date;
 document.getElementById("total_hours").innerHTML = jobs[x].total_hours() + " hours";
 document.getElementById("rate_of_pay").innerHTML = "$" + jobs[x].rate_of_pay() + " / hour";
 
 
 //BILL TO 
-document.getElementById("employer").innerHTML = jobs[x].employer;
+document.getElementById("employer").innerHTML = employer;
 document.getElementById("employer_address1").innerHTML = jobs[x].employer_address1();
 document.getElementById("employer_address2").innerHTML = jobs[x].employer_address2();
 document.getElementById("contact").innerHTML = jobs[x].contact();
@@ -68,8 +71,8 @@ const dates_paid = jobs.map (function (job) {return job.date_paid;});
 let list_jobs = []
 for (let i = 0; i < invoice_numbers.length; i++) {
     //To make chosen jobs bolded with a check
-    const boldCheck = (invoice_numbers[i] === jobs[x].invoice_number) ? "<strong><i class='fas fa-check-square'></i> " : "";
-    const endBoldCheck = (invoice_numbers[i] === jobs[x].invoice_number) ? "</strong>" : "";        
+    const boldCheck = (invoice_numbers[i] === invoice_number) ? "<strong><i class='fas fa-check-square'></i> " : "";
+    const endBoldCheck = (invoice_numbers[i] === invoice_number) ? "</strong>" : "";        
     //To make paid jobs greyed out
     const lightGray = (dates_paid[i]) ? "light-gray" : "";
     list_jobs.push("<p class='jobslist_employer_nicknames'><span class='" + lightGray + "'>" + employer_nicknames[i] + "</span></p>" + //Job Nickname
@@ -97,10 +100,10 @@ document.getElementById("test_space").innerHTML = "";
 //THUMBNAIL & PDF
 let thumbnailImg = "";
 let thumbnailText = "<p class='project-details-header'>THUMBNAIL:<br /><br /></p>";
-if (jobs[x].thumbnail && jobs[x].pdf) {
-    thumbnailImg = thumbnailText + "<a href='pdfs/" + jobs[x].invoice_number + ".pdf'><img src='thumbnails/" + jobs[x].invoice_number + ".png' width='80%' /></a>";
+if (thumbnail && pdf) {
+    thumbnailImg = thumbnailText + "<a href='pdfs/" + invoice_number + ".pdf'><img src='thumbnails/" + invoice_number + ".png' width='80%' /></a>";
 } else if(jobs[x].thumbnail) {
-    thumbnailImg = thumbnailText + "<img src='thumbnails/" + jobs[x].invoice_number + ".png' width='80%' />";
+    thumbnailImg = thumbnailText + "<img src='thumbnails/" + invoice_number + ".png' width='80%' />";
 } else {
     thumbnailImg = thumbnailText + "<p class='joblist_projects'>[ No image available. ]</p>";
 };
@@ -112,9 +115,9 @@ document.getElementById("thumbnail").innerHTML = thumbnailImg;
 hoursLog = [];
 
 //2. Iterate through jobs, pushing each hours_logged into the 'hoursLog' array
-for (let i = 0; i < jobs[x].hours_logged.length; i++) {
-    const hourOrHours = (jobs[x].hours_logged[i].Hours <=1) ? "hour" : "hours";
-    hoursLog.push("<p class='date-hours'>" + jobs[x].hours_logged[i].Date + " &#8212; " + jobs[x].hours_logged[i].Hours + " " + hourOrHours + " </p><p class='note'><em>" + jobs[x].hours_logged[i].Note + "</em></p><hr class='jobs' />")
+for (let i = 0; i < hours_logged.length; i++) {
+    const hourOrHours = (hours_logged[i].Hours <=1) ? "hour" : "hours";
+    hoursLog.push("<p class='date-hours'>" + hours_logged[i].Date + " &#8212; " + hours_logged[i].Hours + " " + hourOrHours + " </p><p class='note'><em>" + hours_logged[i].Note + "</em></p><hr class='jobs' />")
 }
 
 //3. Turn array into string
@@ -140,26 +143,26 @@ const square = "<p>&#8212;> <i class='fas fa-check-square'></i>"
 
 //2. Output appropriate data based on values being entered
 //if completed, billed & paid
-if (jobs[x].completed_date && jobs[x].date_billed && jobs[x].date_paid) {
-    jobStatus = green + square + " Job started on " + jobs[x].start_date + endColor +
-        green + square + " Completed on " + jobs[x].completed_date + endColor +
-        green + square + " Billed on " + jobs[x].date_billed + endColor +
-        green  + square + " Paid on " + jobs[x].date_paid + endColor;
+if (completed_date && date_billed && date_paid) {
+    jobStatus = green + square + " Job started on " + start_date + endColor +
+        green + square + " Completed on " + completed_date + endColor +
+        green + square + " Billed on " + date_billed + endColor +
+        green  + square + " Paid on " + date_paid + endColor;
 // if completed & billed
-} else if (jobs[x].completed_date && jobs[x].date_billed && !jobs[x].date_paid) {
-    jobStatus = yellow + square + " Job started on " + jobs[x].start_date + endColor +
-    yellow + square + " Completed on " + jobs[x].completed_date + endColor +
-    yellow + square + " Billed on " + jobs[x].date_billed + endColor +
+} else if (completed_date && date_billed && !date_paid) {
+    jobStatus = yellow + square + " Job started on " + start_date + endColor +
+    yellow + square + " Completed on " + completed_date + endColor +
+    yellow + square + " Billed on " + date_billed + endColor +
     yellow + square + " Awaiting payment . . ." + endColor;
 // if completed
-} else if (jobs[x].completed_date && !jobs[x].date_billed && !jobs[x].date_paid) {
-    jobStatus = yellow + square + " Job started on " + jobs[x].start_date + endColor +
-    yellow + square + "Completed on " + jobs[x].completed_date + endColor +
+} else if (completed_date && !date_billed && !date_paid) {
+    jobStatus = yellow + square + " Job started on " + start_date + endColor +
+    yellow + square + "Completed on " + jobcompleted_date + endColor +
     yellow + square + " Need to bill . . .  " + endColor +
     yellow + endColor;
 // if not completed
 } else {
-    jobStatus = blue + endColor + blue + square + " Job started on " + jobs[x].start_date + endColor + blue + endColor};
+    jobStatus = blue + endColor + blue + square + " Job started on " + start_date + endColor + blue + endColor};
 
 //3. Insert code into spot
 document.getElementById("job_status").innerHTML = jobStatus;
