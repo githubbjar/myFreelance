@@ -112,7 +112,7 @@ job2710.date_billed = "August 24, 2021";
 job2710.date_paid = "August 29, 2021";
 job2710.thumbnail = true;
 job2710.pdf = true;
-jobs.push(job2710);
+//jobs.push(job2710);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2711 = new Job(2711, 3, "Publishing Management Associates", "FT House Ads", "Four half-page ads for <em>First Things</em> magazine: Back issue organizer, Books, Creed DVD, Reprint Series", "August 12, 2021", "August 30, 2021");
