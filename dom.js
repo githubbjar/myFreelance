@@ -179,4 +179,4 @@ document.getElementById("job_status").innerHTML = jobStatus;
 
 //JSON 
 document.getElementById("json-spot").innerHTML = 'Job #' + invoice_number + ' JSON';
-document.getElementById("json").innerHTML = JSON.stringify(jobs[x], null, 2);
+document.getElementById("json").innerHTML = '<pre>' + JSON.stringify(jobs[x], null, 2) + '</pre>';/*MUST WRAP IN PRE to get the spacing and formatting to work */  
