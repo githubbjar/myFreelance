@@ -148,10 +148,12 @@ job2713.hours_logged[2] = {Date: "Aug 20", Hours: .25, Note: "Sparkly Kat Book"}
 job2713.hours_logged[3] = {Date: "Aug 21", Hours: .5, Note: "FT Poetry Night"};
 job2713.hours_logged[4] = {Date: "Aug  24", Hours: .25, Note: "Poetry night revisions"};
 job2713.hours_logged[5] = {Date: "Aug 24", Hours: .25, Note: "FT Truth Ad"};
+job2713.hours_logged[6] = {Date: "Sept 2", Hours: .5, Note: "FT Gift Subs Sm Ads"};
 job2713.thumbnail = true;
 jobs.push(job2713); 
 
 const job2714 = new Job(2714, 6, "Biretta Books", "Benefit Prayer Card", "Holy card sized 3.25 x 5.5 w/ bleed, four color", "September 1, 2021", "September 8, 2021");
+job2714.hours_logged[0] = {Date: "Sept 2", Hours: .25, Note: "Getting organized"};
 jobs.push(job2714);
 
 //end the jobs
