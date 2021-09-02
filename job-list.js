@@ -121,6 +121,7 @@ job2711.hours_logged[1] = {Date: "Aug 19", Hours: .25, Note: "Revise Reprint Ser
 job2711.hours_logged[2] = {Date: "Aug 20", Hours: .5, Note: "Create Creed DVD ad"};
 job2711.hours_logged[3] = {Date: "Aug 27", Hours: .5, Note: "Create Books Online ad"};
 job2711. hours_logged[4] = {Date: "Aug 30", Hours: 1.5, Note: "Create Slipcase ad"};
+job2711.completed_date = "September 1, 2021";
 job2711.thumbnail = true;
 job2711.pdf = true;
 jobs.push(job2711);
@@ -150,16 +151,8 @@ job2713.hours_logged[5] = {Date: "Aug 24", Hours: .25, Note: "FT Truth Ad"};
 job2713.thumbnail = true;
 jobs.push(job2713); 
 
+const job2714 = new Job(2714, 6, "Biretta Books", "Benefit Prayer Card", "Holy card sized 3.25 x 5.5 w/ bleed, four color", "September 1, 2021", "September 8, 2021");
+jobs.push(job2714);
+
 //end the jobs
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-//Tips and tricks
-
-//JSON.stringify with spaces
-//const job1 = JSON.stringify(jobs[1], null, 2);
-//console.log(job1);
-
-//The Destructuring Assignment syntax
-//const { project, project_type } = jobs[1];
-//console.log(project);
-//console.log(project_type);
+//////////////////////////////////////////////////////////////////////////////////////////////////////////

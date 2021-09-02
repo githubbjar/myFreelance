@@ -217,7 +217,7 @@ p.pay-to {
 
 
 @media print {
-    #job_status, #job-list, #thumbnail {
+    #job_status, #job-list, #thumbnail, #json-spot {
         display: none;
     }
 

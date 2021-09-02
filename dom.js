@@ -3,9 +3,15 @@
 //Leveraging the destructuring assignment syntax to create variables
 //instead of calling for 'jobs[x].invoice_number', I can just use the variable 'invoice_number'
 const { invoice_number, job_number, employer, project, project_type, start_date, due_date, completed_date, date_billed, date_paid, hours_logged, thumbnail, pdf } = jobs[x];
-
 //make variables from object methods
 const employer_nickname = jobs[x].employer_nickname();
+const total_hours = jobs[x].total_hours();
+const rate_of_pay = jobs[x].rate_of_pay();
+const employer_address1 = jobs[x].employer_address1();
+const employer_address2 = jobs[x].employer_address2();
+const contact = jobs[x].contact();
+const contact_email = jobs[x].contact_email();
+
 
 //DOCUMENT TITLE
 document.title = "Invoice #" + invoice_number + ", " + employer_nickname + ": " + project;
@@ -39,7 +45,7 @@ document.getElementById('running_total_or_total').innerHTML = runningOrTotal;
 
 
 //AMOUNT toFixed adds the decimal point and places
-const totalAmount = jobs[x].total_hours() * jobs[x].rate_of_pay();
+const totalAmount = total_hours * rate_of_pay;
 document.getElementById("billing_amount").innerHTML = "$" + totalAmount.toFixed(2);
 
 
@@ -50,16 +56,16 @@ document.getElementById("start_date").innerHTML =  start_date + " / " + due_date
 const completed_date_text = (jobs[x].completed_date) ? "COMPLETED DATE:" : "";
 document.getElementById("completed-date-header").innerHTML = completed_date_text;
 document.getElementById("completed_date").innerHTML = completed_date;
-document.getElementById("total_hours").innerHTML = jobs[x].total_hours() + " hours";
-document.getElementById("rate_of_pay").innerHTML = "$" + jobs[x].rate_of_pay() + " / hour";
+document.getElementById("total_hours").innerHTML = total_hours + " hours";
+document.getElementById("rate_of_pay").innerHTML = "$" + rate_of_pay + " / hour";
 
 
 //BILL TO 
 document.getElementById("employer").innerHTML = employer;
-document.getElementById("employer_address1").innerHTML = jobs[x].employer_address1();
-document.getElementById("employer_address2").innerHTML = jobs[x].employer_address2();
-document.getElementById("contact").innerHTML = jobs[x].contact();
-document.getElementById("contact_email").innerHTML = jobs[x].contact_email();
+document.getElementById("employer_address1").innerHTML = employer_address1;
+document.getElementById("employer_address2").innerHTML = employer_address2;
+document.getElementById("contact").innerHTML = contact;
+document.getElementById("contact_email").innerHTML = contact_email;
 
 
 //CREATE ALL JOBS LIST
@@ -90,8 +96,7 @@ const list_jobs_code_w_commas = list_jobs.toString();
 const list_jobs_code = list_jobs_code_w_commas.replace(/,/g, "");
 
 //5. Insert jobs list code into the job list spot
-document.getElementById("job-list").innerHTML = "<p class='project-details-header'>ALL JOBS:<br /><br /></p>" + 
-list_jobs_code;
+document.getElementById("job-list").innerHTML = "<p class='project-details-header'>ALL JOBS:<br /><br /></p>" + list_jobs_code;
 
 
 
@@ -160,7 +165,7 @@ if (completed_date && date_billed && date_paid) {
 // if completed
 } else if (completed_date && !date_billed && !date_paid) {
     jobStatus = yellow + square + " Job started on " + start_date + endColor +
-    yellow + square + "Completed on " + jobcompleted_date + endColor +
+    yellow + square + " Completed on " + completed_date + endColor +
     yellow + square + " Need to bill . . .  " + endColor +
     yellow + endColor;
 // if not completed
@@ -169,3 +174,9 @@ if (completed_date && date_billed && date_paid) {
 
 //3. Insert code into spot
 document.getElementById("job_status").innerHTML = jobStatus;
+
+
+
+//JSON 
+document.getElementById("json-spot").innerHTML = 'Job #' + invoice_number + ' JSON';
+document.getElementById("json").innerHTML = JSON.stringify(jobs[x], null, 2);
