@@ -94,7 +94,7 @@
         <!--Bootstrap Modal to display JSON-->
         <p class="info">
             <a data-bs-toggle="modal" data-bs-target="#exampleModal">
-            JSON
+            <span id="json-hide">JSON</span>
             </a>
         </p>
         <!-- Modal -->

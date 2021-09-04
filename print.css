@@ -56,22 +56,23 @@ p.project-details {
 
 p.info {
     font-family: 'Crimson Text', serif;
-    font-size: 16px;
-    line-height: 18px;
-    margin-bottom: 1px;
+    font-size: 14px;
+    line-height: 15px;
+    margin-bottom: 0px;
 }
 
 p.info-name {
     font-family: 'Crimson Text', serif;
-    font-size: 18px;
-    line-height: 20px;
-    margin-bottom: 3px;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 0px;
 }
 
 p.total-due {
     font-family: 'Crimson Text', serif;
     font-size: 32px;
     line-height: 34px;
+    margin-bottom: -20px;
 }
 
 p.crimson {
@@ -217,7 +218,7 @@ p.pay-to {
 
 
 @media print {
-    #job_status, #job-list, #thumbnail, #json-spot {
+    #job_status, #job-list, #thumbnail, #json-hide {
         display: none;
     }
 
