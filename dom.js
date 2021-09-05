@@ -32,8 +32,8 @@ const loadPage = function() {
 
 
     //BILLING DATE
-    const dateBilled = (date_billed) ? "Billing Date: " + date_billed : "";
-    document.getElementById("date_billed").innerHTML = dateBilled;
+    const billingDate = (date_billed) ? "Billing Date: " + date_billed : "";
+    document.getElementById("date_billed").innerHTML = billingDate;
 
 
     //TOTAL AMOUNT DUE or RUNNING TOTAL
