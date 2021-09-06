@@ -34,7 +34,7 @@
 </div>
 </div>
 <div class='row' id='header'>
-    <div class='col-sm-2' id='test_space'></div>
+    <div class='col-sm-2'></div>
     <div class='col-sm-8'> 
         <div class="row">
             <div id="previous" class="col-sm-2"></div>               
@@ -113,6 +113,30 @@
                 </div>
             </div>
         </div>
+
+        <!--Bootstrap Modal to display TOTALS-->
+        <p class="info">
+            <a data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            <span id="totals-hide">TOTALS</span>
+            </a>
+        </p>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><span id="totals-spot"></span></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="totals">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <div class='col-sm-2'>   
         <div id="thumbnail"></div>
