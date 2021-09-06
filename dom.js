@@ -179,9 +179,51 @@ const loadPage = function() {
 
 
 
-    //JSON 
+    //JSON MODAL
     document.getElementById("json-spot").innerHTML = 'Job #' + invoice_number + ' JSON';
     document.getElementById("json").innerHTML = '<pre>' + JSON.stringify(jobs[x], null, 2) + '</pre>';/*MUST WRAP IN PRE to get the spacing and formatting to work */  
+
+
+    //TOTALS MODAL
+    //TOTAL PAID JOBS
+    const closedJobs = [];
+    for (let i = 0; i < jobs.length; i++) {
+        if (jobs[i].date_paid) {
+            closedJobs.push(jobs[i]);
+        }
+    };
+    const closedJobsAmountArray = closedJobs.map (function (job) {return job.total_paid();});
+    const totalAmountReceived = closedJobsAmountArray.reduce(function (accumVariable, curValue) {
+        return accumVariable + curValue
+    }, 0);
+    //TOTAL BILLED JOBS
+    const completedJobs = [];
+    for (let i = 0; i < jobs.length; i++) {
+        if (jobs[i].date_billed && !jobs[i].date_paid) {
+            completedJobs.push(jobs[i]);
+        }
+    };
+    const completedJobsAmountArray = completedJobs.map (function (job) {return job.total_paid();});
+    const totalAmountBilled = completedJobsAmountArray.reduce(function (accumVariable, curValue) {
+        return accumVariable + curValue
+    }, 0);
+    //TOTAL TO BE BILLED    
+    const jobsInProgress = [];
+    for (let i = 0; i < jobs.length; i++) {
+        if (!jobs[i].completed_date) {
+            jobsInProgress.push(jobs[i]);
+        }
+    };
+    const jobsInProgressAmountArray = jobsInProgress.map (function (job) {return job.total_paid();});
+    const totalAmountToBeBilled = jobsInProgressAmountArray.reduce(function (accumVariable, curValue) {
+        return accumVariable + curValue
+    }, 0);
+    //OUTPUT TOTALS MODAL
+    document.getElementById("totals-spot").innerHTML = '<h2 class="jerry">Totals from All Jobs</h2>';
+    document.getElementById("totals").innerHTML = '<p class="project-details-header">AMOUNT RECEIVED (CLOSED JOBS):</p><p class="total-due">$' + totalAmountReceived.toFixed(2) + '</p><p class="project-details-header">AMOUNT BILLED (COMPLETED JOBS):</p><p class="total-due">$' + totalAmountBilled.toFixed(2) + '</p><p class="project-details-header">AMOUNT TO BE BILLED (JOBS IN PROGRESS):</p><p class="total-due">$' + totalAmountToBeBilled.toFixed(2) + '</p>';
+
+
+
 };
 
 loadPage();

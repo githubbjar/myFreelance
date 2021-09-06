@@ -66,7 +66,10 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
         } else if (this.employer == "Publishing Management Associates") {
             return 50;
         }
-        }
+    };
+    this.total_paid = function() {
+        return this.rate_of_pay() * this.total_hours();
+    };
     this.date_billed = "";
     this.date_paid = "";
     this.thumbnail = false;
@@ -137,6 +140,7 @@ job2712.hours_logged[4] = {Date: "Aug 19", Hours: .5, Note: "More adjustments"};
 job2712.hours_logged[5] = {Date: "Aug 27", Hours: .75, Note: "Final text and submit"};
 job2712.completed_date = "August 27, 2021";
 job2712.date_billed = "August 27, 2021";
+job2712.date_paid = "September 7, 2021";
 job2712.thumbnail = true;
 job2712.pdf = true;
 jobs.push(job2712);
