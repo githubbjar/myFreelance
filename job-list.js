@@ -140,7 +140,6 @@ job2712.hours_logged[4] = {Date: "Aug 19", Hours: .5, Note: "More adjustments"};
 job2712.hours_logged[5] = {Date: "Aug 27", Hours: .75, Note: "Final text and submit"};
 job2712.completed_date = "August 27, 2021";
 job2712.date_billed = "August 27, 2021";
-job2712.date_paid = "September 7, 2021";
 job2712.thumbnail = true;
 job2712.pdf = true;
 jobs.push(job2712);
@@ -162,6 +161,8 @@ jobs.push(job2713);
 const job2714 = new Job(2714, 6, "Biretta Books", "Benefit Prayer Card", "Holy card sized 3.25 x 5.5 w/ bleed, four color", "September 1, 2021", "September 8, 2021");
 job2714.hours_logged[0] = {Date: "Sept 2", Hours: .25, Note: "Getting organized"};
 job2714.hours_logged[1] = {Date: "Sept 4", Hours: .5, Note: "Initial layout"};
+job2714.thumbnail = true;
+job2714.pdf = true;
 jobs.push(job2714);
 
 //end the jobs

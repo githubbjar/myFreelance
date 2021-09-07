@@ -32,8 +32,8 @@ const loadPage = function() {
 
 
     //BILLING DATE
-    const dateBilled = (date_billed) ? "Billing Date: " + date_billed : "";
-    document.getElementById("date_billed").innerHTML = dateBilled;
+    const billingDate = (date_billed) ? "Billing Date: " + date_billed : "";
+    document.getElementById("date_billed").innerHTML = billingDate;
 
 
     //TOTAL AMOUNT DUE or RUNNING TOTAL
@@ -101,9 +101,6 @@ const loadPage = function() {
     document.getElementById("job-list").innerHTML = "<p class='project-details-header'>ALL JOBS:<br /><br /></p>" + list_jobs_code;
 
 
-
-    //TEST DIV
-    document.getElementById("test_space").innerHTML = "";
 
 
 
