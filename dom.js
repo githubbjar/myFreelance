@@ -108,7 +108,7 @@ const loadPage = function() {
     let thumbnailImg = "";
     let thumbnailText = "<p class='project-details-header'>THUMBNAIL:<br /><br /></p>";
     if (thumbnail && pdf) {
-        thumbnailImg = thumbnailText + "<a href='pdfs/" + invoice_number + ".pdf'><img src='thumbnails/" + invoice_number + ".png' width='80%' /></a>";
+        thumbnailImg = `${thumbnailText}<a href='pdfs/${invoice_number}.pdf'><img src='thumbnails/${invoice_number}.png' width='80%' /></a>`;
     } else if(jobs[x].thumbnail) {
         thumbnailImg = thumbnailText + "<img src='thumbnails/" + invoice_number + ".png' width='80%' />";
     } else {
@@ -190,6 +190,7 @@ const loadPage = function() {
         }
     };
     const closedJobsAmountArray = closedJobs.map (function (job) {return job.total_paid();});
+    const closedJobsProjectTitles = closedJobs.map (function (job) {return job.project;});
     const totalAmountReceived = closedJobsAmountArray.reduce(function (accumVariable, curValue) {
         return accumVariable + curValue
     }, 0);
@@ -216,8 +217,8 @@ const loadPage = function() {
         return accumVariable + curValue
     }, 0);
     //OUTPUT TOTALS MODAL
-    document.getElementById("totals-spot").innerHTML = '<h2 class="jerry">Totals from All Jobs</h2>';
-    document.getElementById("totals").innerHTML = '<p class="project-details-header">AMOUNT RECEIVED (CLOSED JOBS):</p><p class="total-due">$' + totalAmountReceived.toFixed(2) + '</p><p class="project-details-header">AMOUNT BILLED (COMPLETED JOBS):</p><p class="total-due">$' + totalAmountBilled.toFixed(2) + '</p><p class="project-details-header">AMOUNT TO BE BILLED (JOBS IN PROGRESS):</p><p class="total-due">$' + totalAmountToBeBilled.toFixed(2) + '</p>';
+    document.getElementById("totals-spot").innerHTML = `<h2 class="jerry">Amounts &#8212; ${jobs.length} Jobs Total</h2>`;
+    document.getElementById("totals").innerHTML = `<p class="project-details-header">AMOUNT RECEIVED (CLOSED JOBS, ${closedJobs.length}):</p><p class="joblist_projects">${closedJobsProjectTitles}</p><p class="total-due">$${totalAmountReceived.toFixed(2)}</p><p class="project-details-header">AMOUNT BILLED (COMPLETED JOBS, ${completedJobs.length}):</p><p class="total-due">$${totalAmountBilled.toFixed(2)}</p><p class="project-details-header">AMOUNT TO BE BILLED (JOBS IN PROGRESS, ${jobsInProgress.length}):</p><p class="total-due">$${totalAmountToBeBilled.toFixed(2)}</p>`;
 
 
 
