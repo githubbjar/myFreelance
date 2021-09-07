@@ -181,6 +181,7 @@ const loadPage = function() {
     document.getElementById("json").innerHTML = '<pre>' + JSON.stringify(jobs[x], null, 2) + '</pre>';/*MUST WRAP IN PRE to get the spacing and formatting to work */  
 
 
+
     //TOTALS MODAL
     //TOTAL PAID JOBS
     const closedJobs = [];
@@ -190,7 +191,8 @@ const loadPage = function() {
         }
     };
     const closedJobsAmountArray = closedJobs.map (function (job) {return job.total_paid();});
-    const closedJobsProjectTitles = closedJobs.map (function (job) {return job.project;});
+    const closedJobsProjectTitlesArray = closedJobs.map (function (job) {return job.project;});
+    const closedProjectTitles = closedJobsProjectTitlesArray.join(', ');
     const totalAmountReceived = closedJobsAmountArray.reduce(function (accumVariable, curValue) {
         return accumVariable + curValue
     }, 0);
@@ -202,10 +204,12 @@ const loadPage = function() {
         }
     };
     const completedJobsAmountArray = completedJobs.map (function (job) {return job.total_paid();});
+    const completedJobsTitlesArray = completedJobs.map (function (job) {return job.project;});
+    const completedProjectTitles = completedJobsTitlesArray.join(', ');
     const totalAmountBilled = completedJobsAmountArray.reduce(function (accumVariable, curValue) {
         return accumVariable + curValue
     }, 0);
-    //TOTAL TO BE BILLED    
+    //TOTAL JOBS TO COMPLETE    
     const jobsInProgress = [];
     for (let i = 0; i < jobs.length; i++) {
         if (!jobs[i].completed_date) {
@@ -213,12 +217,15 @@ const loadPage = function() {
         }
     };
     const jobsInProgressAmountArray = jobsInProgress.map (function (job) {return job.total_paid();});
+    const jobsInProgressTitlesArray = jobsInProgress.map (function (job) {return job.project;});
+    const jobsInProgressTitles = jobsInProgressTitlesArray.join(', ');
     const totalAmountToBeBilled = jobsInProgressAmountArray.reduce(function (accumVariable, curValue) {
         return accumVariable + curValue
     }, 0);
+    
     //OUTPUT TOTALS MODAL
     document.getElementById("totals-spot").innerHTML = `<h2 class="jerry">Amounts &#8212; ${jobs.length} Jobs Total</h2>`;
-    document.getElementById("totals").innerHTML = `<p class="project-details-header">AMOUNT RECEIVED (CLOSED JOBS, ${closedJobs.length}):</p><p class="joblist_projects">${closedJobsProjectTitles}</p><p class="total-due">$${totalAmountReceived.toFixed(2)}</p><p class="project-details-header">AMOUNT BILLED (COMPLETED JOBS, ${completedJobs.length}):</p><p class="total-due">$${totalAmountBilled.toFixed(2)}</p><p class="project-details-header">AMOUNT TO BE BILLED (JOBS IN PROGRESS, ${jobsInProgress.length}):</p><p class="total-due">$${totalAmountToBeBilled.toFixed(2)}</p>`;
+    document.getElementById("totals").innerHTML = `<p class="project-details-header">AMOUNT RECEIVED (CLOSED JOBS, ${closedJobs.length}):</p><p class="joblist_projects_amounts">${closedProjectTitles}</p><p class="total-due">$${totalAmountReceived.toFixed(2)}</p><p class="project-details-header">AMOUNT BILLED (COMPLETED JOBS, ${completedJobs.length}):</p><p class="joblist_projects_amounts">${completedProjectTitles}</p><p class="total-due">$${totalAmountBilled.toFixed(2)}</p><p class="project-details-header">AMOUNT TO BE BILLED (JOBS IN PROGRESS, ${jobsInProgress.length}):</p><p class="joblist_projects_amounts">${jobsInProgressTitles}</p><p class="total-due">$${totalAmountToBeBilled.toFixed(2)}</p>`;
 
 
 

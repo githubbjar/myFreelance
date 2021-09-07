@@ -153,6 +153,8 @@ job2713.hours_logged[3] = {Date: "Aug 21", Hours: .5, Note: "FT Poetry Night"};
 job2713.hours_logged[4] = {Date: "Aug  24", Hours: .25, Note: "Poetry night revisions"};
 job2713.hours_logged[5] = {Date: "Aug 24", Hours: .25, Note: "FT Truth Ad"};
 job2713.hours_logged[6] = {Date: "Sept 2", Hours: 1, Note: "FT Gift Subs Sm Ads"};
+job2713.completed_date = "September 7, 2021";
+job2713.date_billed = "September 7, 2021";
 job2713.thumbnail = true;
 jobs.push(job2713); 
 
