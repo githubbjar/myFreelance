@@ -20,6 +20,7 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
             return "ravaughan@pma-inc.net";
         }
     };
+    this.secondary_contact = [];
     this.employer_address1 = function() {
         if (this.employer == "Biretta Books") {
             return "1025 West Fry Street";
@@ -106,6 +107,7 @@ jobs.push(job2709);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2710 = new Job(2710, 2, "Biretta Books", "Drexel Parish Poster", "Hope for the Broken talk &#8212; 11 x 17 and 8.5 x 11 posters, and 7.25 x 4.57 ad", "August 12, 2021", "Aug 23, 2021");
+job2710.secondary_contact[0] = {Name: "Andrea Eisenberg", Email: "aeisenberg@cantius.org"};
 job2710.hours_logged[0] = {Date: "Aug 12", Hours: .5, Note: "Getting organized"};
 job2710.hours_logged[1] = {Date: "Aug 19", Hours: 1, Note: "Outline picture / Begin layout"};
 job2710.hours_logged[2] = {Date: "Aug 20", Hours: 1, Note: "Layout / Submit 1st draft"};
@@ -132,6 +134,7 @@ jobs.push(job2711);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2712 = new Job(2712, 4, "Biretta Books", "Fatima Event Posters", "2 posters (11x17 &amp; 8.5x11) and a jpg for social media", "August 14, 2021", "August 23, 2021");
+job2710.secondary_contact[0] = {Name: "Andrea Eisenberg", Email: "aeisenberg@cantius.org"};
 job2712.hours_logged[0] = {Date: "Aug 13", Hours: .5, Note: "Getting organized"};
 job2712.hours_logged[1] = {Date: "Aug 15", Hours: 2, Note: "Find pictures / Start layout"};
 job2712.hours_logged[2] = {Date: "Aug 16", Hours: 1, Note: "New picture"};
