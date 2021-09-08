@@ -134,7 +134,7 @@ jobs.push(job2711);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2712 = new Job(2712, 4, "Biretta Books", "Fatima Event Posters", "2 posters (11x17 &amp; 8.5x11) and a jpg for social media", "August 14, 2021", "August 23, 2021");
-job2710.secondary_contact[0] = {Name: "Andrea Eisenberg", Email: "aeisenberg@cantius.org"};
+job2712.secondary_contact[0] = {Name: "Andrea Eisenberg", Email: "aeisenberg@cantius.org"};
 job2712.hours_logged[0] = {Date: "Aug 13", Hours: .5, Note: "Getting organized"};
 job2712.hours_logged[1] = {Date: "Aug 15", Hours: 2, Note: "Find pictures / Start layout"};
 job2712.hours_logged[2] = {Date: "Aug 16", Hours: 1, Note: "New picture"};
