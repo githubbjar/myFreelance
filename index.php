@@ -117,7 +117,7 @@
         <!--Bootstrap Modal to display TOTALS-->
         <p class="info">
             <a data-bs-toggle="modal" data-bs-target="#exampleModal2">
-            <span id="totals-hide">TOTALS</span>
+            <span id="totals-hide">AMOUNTS</span>
             </a>
         </p>
         <!-- Modal -->
