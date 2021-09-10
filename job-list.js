@@ -163,9 +163,9 @@ jobs.push(job2713);
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2714 = new Job(2714, 6, "Biretta Books", "Benefit Prayer Card", "Holy card sized 3.25 x 5.5 w/ bleed, four color", "September 1, 2021", "September 8, 2021");
+const job2714 = new Job(2714, 6, "Biretta Books", "Benefit Prayer Cards", "Holy cards sized 3.25 x 5.5 w/ bleed, four color", "September 1, 2021", "September 8, 2021");
 job2714.hours_logged[0] = {Date: "Sept 2", Hours: .25, Note: "Getting organized"};
-job2714.hours_logged[1] = {Date: "Sept 4", Hours: .5, Note: "Initial layout"};
+job2714.hours_logged[1] = {Date: "Sept 4", Hours: .5, Note: "Initial layout, St. Joseph"};
 job2714.thumbnail = true;
 job2714.pdf = true;
 jobs.push(job2714);
@@ -176,6 +176,10 @@ job2715.secondary_contact = {Name: "Massimo Scapin", Email: "music@cantius.org"}
 job2715.hours_logged[0] = {Date: "Sept 9", Hours: .5, Note: "Getting organized"};
 job2715.hours_logged[1] = {Date: "Sept 10", Hours: 2, Note: "Initial layout"};
 jobs.push(job2715);
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+const job2716 = new Job(2716, 8, "Publishing Management Associates", "Small Ads", "Reno Future of Christianity", "September 10, 2021", "N/A");
+jobs.push(job2716);
 
 //end the jobs
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
