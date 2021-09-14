@@ -143,6 +143,7 @@ job2712.hours_logged[4] = {Date: "Aug 19", Hours: .5, Note: "More adjustments"};
 job2712.hours_logged[5] = {Date: "Aug 27", Hours: .75, Note: "Final text and submit"};
 job2712.completed_date = "August 27, 2021";
 job2712.date_billed = "August 27, 2021";
+job2712.date_paid = "September 10, 2011";
 job2712.thumbnail = true;
 job2712.pdf = true;
 jobs.push(job2712);
@@ -174,11 +175,14 @@ jobs.push(job2714);
 const job2715 = new Job(2715, 7, "Biretta Books", "5 Masses", "5 booklets, 8.5 x 11", "September 9, 2021", "September 23, 2021");
 job2715.secondary_contact = {Name: "Massimo Scapin", Email: "music@cantius.org"};
 job2715.hours_logged[0] = {Date: "Sept 9", Hours: .5, Note: "Getting organized"};
-job2715.hours_logged[1] = {Date: "Sept 10", Hours: 2, Note: "Initial layout"};
+job2715.hours_logged[1] = {Date: "Sept 10", Hours: 2, Note: "Initial layout Advent"};
+job2715.hours_logged[2] = {Date: "Sept 11", Hours: .5, Note: "Easter art found"}
 jobs.push(job2715);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2716 = new Job(2716, 8, "Publishing Management Associates", "Small Ads", "Reno Future of Christianity", "September 10, 2021", "N/A");
+job2716.hours_logged[0] = {Date: "Sept 11", Hours: 1, Note: "Wash College ad"};
+job2716.thumbnail = true;
 jobs.push(job2716);
 
 //end the jobs
