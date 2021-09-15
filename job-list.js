@@ -176,7 +176,9 @@ const job2715 = new Job(2715, 7, "Biretta Books", "5 Masses", "5 booklets, 8.5 x
 job2715.secondary_contact = {Name: "Massimo Scapin", Email: "music@cantius.org"};
 job2715.hours_logged[0] = {Date: "Sept 9", Hours: .5, Note: "Getting organized"};
 job2715.hours_logged[1] = {Date: "Sept 10", Hours: 2, Note: "Initial layout Advent"};
-job2715.hours_logged[2] = {Date: "Sept 11", Hours: .5, Note: "Easter art found"}
+job2715.hours_logged[2] = {Date: "Sept 11", Hours: .5, Note: "Easter art found"};
+job2715.hours_logged[3] = {Date: "Sept 14", Hours: .5, Note: "Formatting"};
+job2715.hours_logged[4] = {Date: "Sept 15", Hours: 1.5, Note: "Paintings, graphics"};
 jobs.push(job2715);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
