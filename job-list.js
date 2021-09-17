@@ -179,7 +179,8 @@ job2715.hours_logged[1] = {Date: "Sept 10", Hours: 2, Note: "Initial layout Adve
 job2715.hours_logged[2] = {Date: "Sept 11", Hours: .5, Note: "More art found"};
 job2715.hours_logged[3] = {Date: "Sept 14", Hours: .5, Note: "Formatting"};
 job2715.hours_logged[4] = {Date: "Sept 15", Hours: 1.5, Note: "Paintings, graphics"};
-job2715.hours_logged[5] = {Date: "Sept 16", Hours: 1.5, Note: "rework design & page layout"};
+job2715.hours_logged[5] = {Date: "Sept 16", Hours: 1, Note: "rework design layout"};
+job2715.hours_logged[6] = {Date: "Sept 17", Hours: 1, Note: "layout/scale pages"}
 job2715.thumbnail = true;
 jobs.push(job2715);
 
