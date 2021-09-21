@@ -189,6 +189,7 @@ jobs.push(job2715);
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2716 = new Job(2716, 8, "Publishing Management Associates", "Small Ads", "Reno Future of Christianity", "September 10, 2021", "N/A");
 job2716.hours_logged[0] = {Date: "Sept 11", Hours: 1, Note: "Wash College ad"};
+job2716.hours_logged[1] = {Date: "Sept 21", Hours: .5, Note: "Tolstoy &amp; W. College"};
 job2716.thumbnail = true;
 jobs.push(job2716);
 
