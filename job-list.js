@@ -172,7 +172,7 @@ job2714.pdf = true;
 jobs.push(job2714);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2715 = new Job(2715, 7, "Biretta Books", "5 Masses", "5 booklets, 8.5 x 11", "September 9, 2021", "September 23, 2021");
+const job2715 = new Job(2715, 7, "Biretta Books", "The Alternatim Masses Series", "5 booklets, 8.5 x 11, Covers, and an ad", "September 9, 2021", "September 23, 2021");
 job2715.secondary_contact = {Name: "Massimo Scapin", Email: "music@cantius.org"};
 job2715.hours_logged[0] = {Date: "Sept 9", Hours: .5, Note: "Getting organized"};
 job2715.hours_logged[1] = {Date: "Sept 10", Hours: 2, Note: "Initial layout Advent"};
