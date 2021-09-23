@@ -16,7 +16,7 @@ const loadPage = function() {
 
 
     //DOCUMENT TITLE
-    document.title = `Invoice${invoice_number}_${employer_nickname}_${project}`;
+    document.title = `Invoice #${invoice_number}&#8212;${employer_nickname}, ${project}`;
 
 
     //JOB/INVOICE NUMBER
@@ -186,10 +186,10 @@ const loadPage = function() {
     const totalAmountReceived = closedJobsAmountArray.reduce(function (accumVariable, curValue) {
         return accumVariable + curValue
     }, 0);
-    //TOTAL BILLED JOBS
+    //TOTAL COMPLETED BILLED or SOON TO BE BILLED JOBS
     const completedJobs = [];
     for (let i = 0; i < jobs.length; i++) {
-        if (jobs[i].date_billed && !jobs[i].date_paid) {
+        if (jobs[i].completed_date && !jobs[i].date_paid) {
             completedJobs.push(jobs[i]);
         }
     };
