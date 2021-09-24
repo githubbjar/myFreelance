@@ -184,7 +184,8 @@ job2715.hours_logged[6] = {Date: "Sept 17", Hours: 1, Note: "layout/scale pages"
 job2715.hours_logged[6] = {Date: "Sept 18", Hours: 1.5, Note: "prepare fnl version/layout"};
 job2715.hours_logged[7] = {Date: "Sept 22", Hours: 3, Note: "Back page ad/layout"};
 job2715.hours_logged[8] = {Date: "Sept 23", Hours: 1, Note: "Final Preparations"};
-job2715.completed_date = "September 23, 2021"; 
+job2715.completed_date = "September 23, 2021";
+job2715.date_billed = "September 23, 2021";
 job2715.thumbnail = true;
 job2715.pdf = true;
 jobs.push(job2715);
