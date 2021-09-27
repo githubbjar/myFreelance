@@ -16,7 +16,7 @@ const loadPage = function() {
 
 
     //DOCUMENT TITLE
-    document.title = `Invoice #${invoice_number}&#8212;${employer_nickname}, ${project}`;
+    document.title = `Invoice #${invoice_number}, ${employer_nickname}, ${project}`;
 
 
     //JOB/INVOICE NUMBER
