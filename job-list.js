@@ -197,9 +197,14 @@ job2716.hours_logged[1] = {Date: "Sept 21", Hours: .5, Note: "Tolstoy &amp; W. C
 job2716.hours_logged[2] = {Date: "Sept 21", Hours: .5, Note: "FST More Images"};
 job2716.hours_logged[3] = {Date: "Sept 22", Hours: .25, Note: "GreatHearts"};
 job2716.hours_logged[4] = {Date: "Sept 27", Hours: .25, Note: "Zealot Book"};
-job2716.hours_logged[5] = {Date: "Sept 27", Hours: .25, Note: "Missionaries Book"}
+job2716.hours_logged[5] = {Date: "Sept 27", Hours: .25, Note: "Missionaries Book"};
 job2716.thumbnail = true;
 jobs.push(job2716);
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+const job2717 = new Job (2717, 9, "Biretta Books", "2022 Ordo", "6 x 9 spiral-bound reference book for St. John Cantius Church", "September 27, 2021", "October 15, 2021");
+job2717.hours_logged[0] = {Date: "Sept 27", Hours: .5, Note: "Getting organized"};
+jobs.push(job2717);
 
 //end the jobs
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
