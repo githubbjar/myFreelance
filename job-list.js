@@ -208,6 +208,7 @@ const job2717 = new Job (2717, 9, "Biretta Books", "2022 Ordo", "6 x 9, spiral-b
 job2717.hours_logged[0] = {Date: "Sept 27", Hours: .5, Note: "Getting organized"};
 job2717.hours_logged[1] = {Date: "Oct 10", Hours: 2, Note: "Designing tables"};
 job2717.hours_logged[2] = {Date: "Oct 11", Hours: 2.5, Note: "Table layout"};
+job2717.hours_logged[3] = {Date: "Oct 14", Hours: 2.25, Note: "Layout"};
 jobs.push(job2717);
 
 //end the jobs
