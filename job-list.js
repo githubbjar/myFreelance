@@ -210,6 +210,7 @@ job2717.hours_logged[1] = {Date: "Oct 10", Hours: 2, Note: "Designing tables"};
 job2717.hours_logged[2] = {Date: "Oct 11", Hours: 2.5, Note: "Table layout"};
 job2717.hours_logged[3] = {Date: "Oct 15", Hours: 2.25, Note: "Layout"};
 job2717.hours_logged[4] = {Date: "Oct 16", Hours: 1, Note: "Layout"};
+job2717.hours_logged[5] = {Date: "Oct 18", Hours: 4.5, Note: "Layout"};
 jobs.push(job2717);
 
 //end the jobs
