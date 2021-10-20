@@ -212,6 +212,7 @@ job2717.hours_logged[3] = {Date: "Oct 15", Hours: 2.25, Note: "Layout"};
 job2717.hours_logged[4] = {Date: "Oct 16", Hours: 1, Note: "Layout"};
 job2717.hours_logged[5] = {Date: "Oct 18", Hours: 4.5, Note: "Layout"};
 job2717.hours_logged[6] = {Date: "Oct 19", Hours: 3.0, Note: "Layout"};
+job2717.hours_logged[7] = {Date: "Oct 20", Hours: 1, Note: "Layout"};
 jobs.push(job2717);
 
 //end the jobs
