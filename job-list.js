@@ -208,11 +208,12 @@ const job2717 = new Job (2717, 9, "Biretta Books", "2022 Ordo", "6 x 9, spiral-b
 job2717.hours_logged[0] = {Date: "Sept 27", Hours: .5, Note: "Getting organized"};
 job2717.hours_logged[1] = {Date: "Oct 10", Hours: 2, Note: "Designing tables"};
 job2717.hours_logged[2] = {Date: "Oct 11", Hours: 2.5, Note: "Table layout"};
-job2717.hours_logged[3] = {Date: "Oct 15", Hours: 2.25, Note: "Layout"};
-job2717.hours_logged[4] = {Date: "Oct 16", Hours: 1, Note: "Layout"};
-job2717.hours_logged[5] = {Date: "Oct 18", Hours: 4.5, Note: "Layout"};
-job2717.hours_logged[6] = {Date: "Oct 19", Hours: 3.0, Note: "Layout"};
-job2717.hours_logged[7] = {Date: "Oct 20", Hours: 1, Note: "Layout"};
+job2717.hours_logged[3] = {Date: "Oct 15", Hours: 2.25, Note: "Date Layout"};
+job2717.hours_logged[4] = {Date: "Oct 16", Hours: 1, Note: "Date Layout"};
+job2717.hours_logged[5] = {Date: "Oct 18", Hours: 4.5, Note: "Date Layout"};
+job2717.hours_logged[6] = {Date: "Oct 19", Hours: 3.0, Note: "Date Layout"};
+job2717.hours_logged[7] = {Date: "Oct 20", Hours: 1, Note: "Date Layout"};
+job2717.hours_logged[8] = {Date: "Oct 21", Hours: 1, Note: "Finished Date Layout"}
 jobs.push(job2717);
 
 //end the jobs
