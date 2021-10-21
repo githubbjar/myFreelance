@@ -200,6 +200,7 @@ job2716.hours_logged[2] = {Date: "Sept 21", Hours: .5, Note: "FST More Images"};
 job2716.hours_logged[3] = {Date: "Sept 22", Hours: .25, Note: "GreatHearts"};
 job2716.hours_logged[4] = {Date: "Sept 27", Hours: .25, Note: "Zealot Book"};
 job2716.hours_logged[5] = {Date: "Sept 27", Hours: .25, Note: "Missionaries Book"};
+job2716.hours_logged[6] = {Date: "Oct 21", Hours: .75, Note: "7 Covers"}; 
 job2716.thumbnail = true;
 jobs.push(job2716);
 
