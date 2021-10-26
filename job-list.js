@@ -205,7 +205,7 @@ job2716.thumbnail = true;
 jobs.push(job2716);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2717 = new Job (2717, 9, "Biretta Books", "2022 Ordo", "6 x 9, spiral-bound, 130+ page reference book for St. John Cantius Church", "September 27, 2021", "October 15, 2021");
+const job2717 = new Job (2717, 9, "Biretta Books", "2022 Ordo", "6 x 9, spiral-bound, 150+ page reference book for St. John Cantius Church", "September 27, 2021", "October 15, 2021");
 job2717.hours_logged[0] = {Date: "Sept 27", Hours: .5, Note: "Getting organized"};
 job2717.hours_logged[1] = {Date: "Oct 10", Hours: 2, Note: "Designing tables"};
 job2717.hours_logged[2] = {Date: "Oct 11", Hours: 2.5, Note: "Table layout"};
@@ -223,6 +223,7 @@ job2717.hours_logged[13] = {Date: "Oct 26", Hours: 2, Note: "Cover finished, pdf
 job2717.thumbnail = true;
 job2717.pdf = true;
 job2717.completed_date = "October 26, 2021";
+job2717.date_billed = "October 26, 2021";
 jobs.push(job2717);
 
 //end the jobs
