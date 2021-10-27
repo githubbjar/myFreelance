@@ -193,7 +193,7 @@ job2715.pdf = true;
 jobs.push(job2715);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2716 = new Job(2716, 8, "Publishing Management Associates", "Small Ads", "Reno Future of Christianity", "September 10, 2021", "N/A");
+const job2716 = new Job(2716, 8, "Publishing Management Associates", "Small Ads", "Reno Future of Christianity", "September 10, 2021", "November 5, 2021");
 job2716.hours_logged[0] = {Date: "Sept 11", Hours: 1, Note: "Wash College ad"};
 job2716.hours_logged[1] = {Date: "Sept 21", Hours: .5, Note: "Tolstoy &amp; W. College"};
 job2716.hours_logged[2] = {Date: "Sept 21", Hours: .5, Note: "FST More Images"};
@@ -201,6 +201,7 @@ job2716.hours_logged[3] = {Date: "Sept 22", Hours: .25, Note: "GreatHearts"};
 job2716.hours_logged[4] = {Date: "Sept 27", Hours: .25, Note: "Zealot Book"};
 job2716.hours_logged[5] = {Date: "Sept 27", Hours: .25, Note: "Missionaries Book"};
 job2716.hours_logged[6] = {Date: "Oct 21", Hours: .75, Note: "7 Covers"}; 
+job2716.hours_logged[7] = {Date: "Oct 27", Hours: .2, Note: "Bachonors"};
 job2716.thumbnail = true;
 jobs.push(job2716);
 
