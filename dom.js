@@ -79,7 +79,7 @@ const loadPage = function() {
     const dates_paid = jobs.map (function (job) {return job.date_paid;});
     //2. Create array of jobs
     let list_jobs = []
-    for (let i = 0; i < invoice_numbers.length; i++) {
+    for (let i = invoice_numbers.length - 1; i > -1; i--) { //cycles backwards to put jobs in reverse order
         //To make chosen jobs bolded with a check
         const boldCheck = (invoice_numbers[i] === invoice_number) ? "<strong><i class='fas fa-check-square'></i> " : "";
         const endBoldCheck = (invoice_numbers[i] === invoice_number) ? "</strong>" : "";        
@@ -88,7 +88,7 @@ const loadPage = function() {
         list_jobs.push("<p class='jobslist_employer_nicknames'><span class='" + lightGray + "'>" + employer_nicknames[i] + "</span></p>" + //Job Nickname
         "<p class='joblist_links'><a class='" + lightGray + "' href='http://www.jerryjanquart.com/myFreelance/index.php?jobx=" + job_numbers[i] + "'>" + boldCheck + "#" + invoice_numbers[i] + endBoldCheck + "</a></p>" + //Job Number
         "<p class='joblist_projects'><span class='" + lightGray + "'>" + projects[i] + "</span></p>") //Job Project Title
-    }
+    };
     //3. Turn the array into a string
     const list_jobs_code_w_commas = list_jobs.toString();
     //4. Remove the commas from the string
