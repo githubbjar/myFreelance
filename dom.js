@@ -138,29 +138,29 @@ const loadPage = function() {
     const yellow = '<div class="col-sm-3 yellow">';
     const blue = '<div class="col-sm-4 blue">';
     const endColor = "</div>";
-    const square = '<p>&#8212;> <i class="fas fa-check-square"></i>';
+    const square = '<p><i class="fas fa-check-square"></i>';
     //2. Output appropriate data based on values being entered
     //if completed, billed & paid
     if (completed_date && date_billed && date_paid) {
-        jobStatus = green + square + " Job started on " + start_date + endColor +
-            green + square + " Completed on " + completed_date + endColor +
-            green + square + " Billed on " + date_billed + endColor +
-            green  + square + " Paid on " + date_paid + endColor;
+        jobStatus = green + square + " Started: " + start_date + endColor +
+            green + square + " Finished: " + completed_date + endColor +
+            green + square + " Billed: " + date_billed + endColor +
+            green  + square + " Paid: " + date_paid + endColor;
     // if completed & billed
     } else if (completed_date && date_billed && !date_paid) {
-        jobStatus = yellow + square + " Job started on " + start_date + endColor +
-        yellow + square + " Completed on " + completed_date + endColor +
-        yellow + square + " Billed on " + date_billed + endColor +
-        yellow + square + " Awaiting payment . . ." + endColor;
+        jobStatus = yellow + square + " Started: " + start_date + endColor +
+        yellow + square + " Finished: " + completed_date + endColor +
+        yellow + square + " Billed: " + date_billed + endColor +
+        yellow + " <p>Awaiting payment . . ." + endColor;
     // if completed
     } else if (completed_date && !date_billed && !date_paid) {
-        jobStatus = yellow + square + " Job started on " + start_date + endColor +
-        yellow + square + " Completed on " + completed_date + endColor +
-        yellow + square + " Need to bill . . .  " + endColor +
+        jobStatus = yellow + square + " Started: " + start_date + endColor +
+        yellow + square + " Finished: " + completed_date + endColor +
+        yellow + " <p>Need to bill . . .  " + endColor +
         yellow + endColor;
     // if not completed
     } else {
-        jobStatus = blue + endColor + blue + square + " Job started on " + start_date + endColor + blue + endColor};
+        jobStatus = blue + endColor + blue + square + " Started: " + start_date + endColor + blue + endColor};
     //3. Insert code into spot
     document.getElementById("job_status").innerHTML = jobStatus;
 
