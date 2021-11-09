@@ -205,6 +205,8 @@ job2716.hours_logged[6] = {Date: "Oct 21", Hours: .75, Note: "7 Covers"};
 job2716.hours_logged[7] = {Date: "Oct 27", Hours: .2, Note: "Bachonors"};
 job2716.hours_logged[8] = {Date: "Oct 28", Hours: 1.25, Note: "Creation Book"};
 job2716.hours_logged[9] = {Date: "Nov 5", Hours: .2, Note: "FT 8th Day"};
+job2716.hours_logged[10] = {Date: "Nov 9", Hours: 1, Note: "C.M.H. Koenig"};
+job2716.completed_date = "November 9, 2021"; 
 job2716.thumbnail = true;
 jobs.push(job2716);
 

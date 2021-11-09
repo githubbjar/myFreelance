@@ -1,6 +1,6 @@
 //Insert the object data
 
-const loadPage = function() {
+const loadPage = () => {
 
     //Leveraging the destructuring assignment syntax to create variables
     //instead of calling for 'jobs[x].invoice_number', I can just use the variable 'invoice_number'
