@@ -15,7 +15,14 @@
     <!--//grab url for use in querying database-->
     <?php
         $raw_url = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
-        $jobx = substr($raw_url, -1, 1);
+
+    //added this if/else statement when number of jobs got to double digits...
+        if (strlen($raw_url) === 58) {
+            $jobx = substr($raw_url, -2, 2);
+        } else {
+            $jobx = substr($raw_url, -1, 1);
+        };
+    //if there is no jobx number declared, it starts at 0
         if ($jobx === "/") {
         	$jobx = 0;
         };
