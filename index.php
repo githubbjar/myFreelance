@@ -24,7 +24,7 @@
         };
     //if there is no jobx number declared, it starts at 0
         if ($jobx === "/") {
-        	$jobx = 0;
+        	$jobx = 10;
         };
     ?>
     <!--HT: https://pagecrafter.com/pass-php-variable-javascript/ -->	

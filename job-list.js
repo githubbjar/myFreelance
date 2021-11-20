@@ -235,8 +235,8 @@ job2717.date_billed = "October 26, 2021";
 jobs.push(job2717);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2718 = new Job (2718, 10, "Publishing Management Associates", "Ad Reformatting", "Small Ads and Images Made Ready for Print", "November 18, 2021", "N/A");
-job2718.hours_logged[0] = {Date: "Nov 18", Hours: .2, Note: "McClay"};
-job2718.hours_logged[1] = {Date: "Nov 18", Hours: .2, Note: "Gottfried"};
+job2718.hours_logged[0] = {Date: "Nov 18", Hours: .25, Note: "McClay"};
+job2718.hours_logged[1] = {Date: "Nov 18", Hours: .25, Note: "Gottfried"};
 jobs.push(job2718);
 //end the jobs
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
