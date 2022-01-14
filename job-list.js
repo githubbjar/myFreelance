@@ -7,31 +7,31 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
     this.job_number = job_number;
     this.employer = employer;
     this.contact = function() {
-        if (this.employer == "Biretta Books") {
+        if (this.employer === "Biretta Books") {
             return "Nick Chapello";
-        } else if (this.employer == "Publishing Management Associates") {
+        } else if (this.employer === "Publishing Management Associates") {
             return "Richard A. Vaughan";
         }
     };
     this.contact_email = function() {
-        if (this.employer == "Biretta Books") {
+        if (this.employer === "Biretta Books") {
             return "nchapello@cantius.org";
-        } else if (this.employer == "Publishing Management Associates") {
+        } else if (this.employer === "Publishing Management Associates") {
             return "ravaughan@pma-inc.net";
         }
     };
     this.secondary_contact = [];
     this.employer_address1 = function() {
-        if (this.employer == "Biretta Books") {
+        if (this.employer === "Biretta Books") {
             return "1025 West Fry Street";
-        } else if (this.employer == "Publishing Management Associates") {
+        } else if (this.employer === "Publishing Management Associates") {
             return "129 Phelps Avenue, Suite 312";
         }
     };
     this.employer_address2 = function() {
-        if (this.employer == "Biretta Books") {
+        if (this.employer === "Biretta Books") {
             return "Chicago, IL 60642-5419";
-        } else if (this.employer == "Publishing Management Associates") {
+        } else if (this.employer === "Publishing Management Associates") {
             return "Rockford, IL 61108";
         }
     };
@@ -40,9 +40,9 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
     this.start_date = start_date;
     this.due_date = due_date;
     this.employer_nickname = function() {
-        if (this.employer == "Biretta Books") {
+        if (this.employer === "Biretta Books") {
             return "Biretta";
-        } else if (this.employer == "Publishing Management Associates") {
+        } else if (this.employer === "Publishing Management Associates") {
             return "PMA";
         }
     };
@@ -62,9 +62,9 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
         return sum;
     };
     this.rate_of_pay = function() {
-        if (this.employer == "Biretta Books") {
+        if (this.employer === "Biretta Books") {
             return 40;
-        } else if (this.employer == "Publishing Management Associates") {
+        } else if (this.employer === "Publishing Management Associates") {
             return 50;
         }
     };
@@ -120,12 +120,12 @@ job2710.pdf = true;
 jobs.push(job2710);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2711 = new Job(2711, 3, "Publishing Management Associates", "FT House Ads", "Four half-page ads for <em>First Things</em> magazine: Back issue organizer, Books, Creed DVD, Reprint Series", "August 12, 2021", "August 30, 2021");
+const job2711 = new Job(2711, 3, "Publishing Management Associates", "FT In-House Ads", "Four half-page ads for First Things magazine: Back issue organizer, Books, Creed DVD, Reprint Series", "August 12, 2021", "August 30, 2021");
 job2711.hours_logged[0] = {Date: "Aug 12", Hours: 1, Note: "Create Reprint Series ad"};
 job2711.hours_logged[1] = {Date: "Aug 19", Hours: .25, Note: "Revise Reprint Series ad"};
 job2711.hours_logged[2] = {Date: "Aug 20", Hours: .5, Note: "Create Creed DVD ad"};
 job2711.hours_logged[3] = {Date: "Aug 27", Hours: .5, Note: "Create Books Online ad"};
-job2711. hours_logged[4] = {Date: "Aug 30", Hours: 1.5, Note: "Create Slipcase ad"};
+job2711.hours_logged[4] = {Date: "Aug 30", Hours: 1.5, Note: "Create Slipcase ad"};
 job2711.completed_date = "September 1, 2021";
 job2711.date_billed = "September 3, 2021";
 job2711.date_paid = "October 3, 2021";
@@ -150,7 +150,7 @@ job2712.pdf = true;
 jobs.push(job2712);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2713 = new Job(2713, 5, "Publishing Management Associates", "Ad Reformatting, misc.", "Misc. ads color corrected, resized, created.", "August 17, 2021", "N/A")
+const job2713 = new Job(2713, 5, "Publishing Management Associates", "PMA Small Ads 1", "Misc. ads color corrected, resized, created.", "August 17, 2021", "N/A")
 job2713.hours_logged[0] = {Date: "Aug 17", Hours: .25, Note: "Belmont Abbey"};
 job2713.hours_logged[1] = {Date: "Aug 19", Hours: .25, Note: "Recov of Fam Life / RTB"};
 job2713.hours_logged[2] = {Date: "Aug 20", Hours: .25, Note: "Sparkly Kat Book"};
@@ -166,7 +166,7 @@ jobs.push(job2713);
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2714 = new Job(2714, 6, "Biretta Books", "Benefit Prayer Cards", "Holy cards sized 3.25 x 5.5 w/ bleed, four color", "September 1, 2021", "September 8, 2021");
+const job2714 = new Job(2714, 6, "Biretta Books", "Benefit Prayer Cards", "A prayer card, sized 3.25 x 5.5 w/ bleed, four color", "September 1, 2021", "September 8, 2021");
 job2714.hours_logged[0] = {Date: "Sept 2", Hours: .25, Note: "Getting organized"};
 job2714.hours_logged[1] = {Date: "Sept 4", Hours: .5, Note: "Initial layout, St. Joseph"};
 job2714.thumbnail = true;
@@ -194,7 +194,7 @@ job2715.pdf = true;
 jobs.push(job2715);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2716 = new Job(2716, 8, "Publishing Management Associates", "Small Ads", "Reno Future of Christianity", "September 10, 2021", "November 5, 2021");
+const job2716 = new Job(2716, 8, "Publishing Management Associates", "PMA Small Ads 2", "Small ads, created or reformatted", "September 10, 2021", "November 5, 2021");
 job2716.hours_logged[0] = {Date: "Sept 11", Hours: 1, Note: "Wash College ad"};
 job2716.hours_logged[1] = {Date: "Sept 21", Hours: .5, Note: "Tolstoy &amp; W. College"};
 job2716.hours_logged[2] = {Date: "Sept 21", Hours: .5, Note: "FST More Images"};
@@ -209,6 +209,7 @@ job2716.hours_logged[10] = {Date: "Nov 9", Hours: 1, Note: "C.M.H. Koenig"};
 job2716.hours_logged[11] = {Date: "Nov 10", Hours: .5, Note: "C.M.H Koenig"};
 job2716.completed_date = "November 10, 2021";
 job2716.date_billed = "November 10, 2021";
+job2716.date_paid = "December 17, 2021";
 job2716.thumbnail = true;
 jobs.push(job2716);
 
@@ -232,12 +233,33 @@ job2717.thumbnail = true;
 job2717.pdf = true;
 job2717.completed_date = "October 26, 2021";
 job2717.date_billed = "October 26, 2021";
+job2717.date_paid = "December 1, 2021";
 jobs.push(job2717);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2718 = new Job (2718, 10, "Publishing Management Associates", "Ad Reformatting", "Small Ads and Images Made Ready for Print", "November 18, 2021", "N/A");
+const job2718 = new Job (2718, 10, "Publishing Management Associates", "PMA Small Ads 3", "Small ads, created or reformatted", "November 18, 2021", "N/A");
 job2718.hours_logged[0] = {Date: "Nov 18", Hours: .25, Note: "McClay"};
 job2718.hours_logged[1] = {Date: "Nov 18", Hours: .25, Note: "Gottfried"};
 job2718.hours_logged[2] = {Date: "Nov 20", Hours: 1, Note: "FT Lecture Ad"};
+job2718.hours_logged[3] = {Date: "Nov 22", Hours: 1, Note: "FT Freedom Ad"};
+job2718.hours_logged[4] = {Date: "Nov 22", Hours: 1, Note: "FT Text Speech Ad"};
+job2718.hours_logged[5] = {Date: "Dec 8", Hours: .5, Note: "FT ad revisions"};
+job2718.hours_logged[6] = {Date: "Dec 13", Hours: 1, Note: "St. Thomas"};
+job2718.hours_logged[7] = {Date: "Dec 14", Hours: .25, Note: "Ft ad flat Bork"};
+job2718.hours_logged[8] = {Date: "Dec 15", Hours: .25, Note: "Great Hearts"};
+job2718.hours_logged[9] = {Date: "Dec 17", Hours: .5, Note: "Artwork format (6)"};
+job2718.hours_logged[10] = {Date: "Dec 28", Hours: 1, Note: "FT McClay Book"};
+job2718.hours_logged[11] = {Date: "Dec 29", Hours: .5, Note: "FT McClay Buckslip"};
+job2718.completed_date = "December 29, 2021";
 jobs.push(job2718);
 //end the jobs
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const job2719 = new Job(2719, 11, "Biretta Books", "St. John Cantius book", "6x9 book by Fr. Dennis Kolinski, SJC", "December 20, 2021", "N/A");
+job2719.hours_logged[0] = {Date: "Dec 30", Hours: 2.5, Note: "Initial layouts intro, chpt. 1"};
+job2719.hours_logged[1] = {Date: "Jan 6", Hours: 1, Note: "chpts. 2 and 3"};
+job2719.hours_logged[2] = {Date: "Jan 7", Hours: 1, Note: "chpts. 4 and 5"};
+job2719.hours_logged[3] = {Date: "Jan 8", Hours: 2, Note: "chpts. 6, 7, 8"};
+job2719.hours_logged[4] = {Date: "Jan 14", Hours: 1, Note: "setting up graphics"}
+jobs.push(job2719);
+
+
