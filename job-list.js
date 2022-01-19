@@ -251,6 +251,7 @@ job2718.hours_logged[10] = {Date: "Dec 28", Hours: 1, Note: "FT McClay Book"};
 job2718.hours_logged[11] = {Date: "Dec 29", Hours: .5, Note: "FT McClay Buckslip"};
 job2718.hours_logged[12] = {Date: "Jan 19", Hours: .25, Note: "Artwork reformat (2)"};
 job2718.completed_date = "January 19, 2022";
+job2718.date_billed = "January 19, 2022";
 jobs.push(job2718);
 //end the jobs
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
