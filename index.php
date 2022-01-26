@@ -1,3 +1,9 @@
+<?php
+    $ipaddress = getenv("REMOTE_ADDR");
+    if ($ipaddress !== "107.197.41.219") {
+        header('Location: http://www.jerryjanquart.com');
+    }
+?>
 <!doctype html>
 
 <html lang="en">
@@ -14,6 +20,7 @@
     
     <!--//grab url for use in querying database-->
     <?php
+
         $raw_url = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
 
     //added this if/else statement when number of jobs got to double digits...
@@ -24,7 +31,7 @@
         };
     //if there is no jobx number declared, it starts at 0
         if ($jobx === "/") {
-        	$jobx = 10;
+        	$jobx = 11;
         };
     ?>
     <!--HT: https://pagecrafter.com/pass-php-variable-javascript/ -->	
