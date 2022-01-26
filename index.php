@@ -1,7 +1,7 @@
 <?php
     $ipaddress = getenv("REMOTE_ADDR");
     if ($ipaddress !== "107.197.41.219") {
-        header('Location: http://www.jerryjanquart.com');
+        header('Location: http://www.nickjanquart.com');
     }
 ?>
 <!doctype html>
