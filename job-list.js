@@ -253,7 +253,7 @@ job2718.hours_logged[12] = {Date: "Jan 19", Hours: .25, Note: "Artwork reformat 
 job2718.completed_date = "January 19, 2022";
 job2718.date_billed = "January 19, 2022";
 jobs.push(job2718);
-//end the jobs
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 const job2719 = new Job(2719, 11, "Biretta Books", "St. John Cantius book", "6x9 book by Fr. Dennis Kolinski, SJC", "December 20, 2021", "N/A");
@@ -263,5 +263,10 @@ job2719.hours_logged[2] = {Date: "Jan 7", Hours: 1, Note: "chpts. 4 and 5"};
 job2719.hours_logged[3] = {Date: "Jan 8", Hours: 2, Note: "chpts. 6, 7, 8"};
 job2719.hours_logged[4] = {Date: "Jan 14", Hours: 1, Note: "setting up graphics"}
 jobs.push(job2719);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const job2720 = new Job(2720, 12, "Publishing Management Associates", "PMA Small Ads 4", "Small ads created or reformatted", "February 15, 2022", "N/A");
+job2720.hours_logged[0] = {Date: "Feb 15", Hours: .15, Note: "Gideon"};
 
 
