@@ -269,6 +269,9 @@ jobs.push(job2719);
 const job2720 = new Job(2720, 12, "Publishing Management Associates", "PMA Small Ads 4", "Small ads created or reformatted", "February 15, 2022", "N/A");
 job2720.hours_logged[0] = {Date: "Feb 15", Hours: .25, Note: "Gideon"};
 job2720.hours_logged[1]= {Date: "Feb 21", Hours: .5, Note: "Ligouri"};
+job2720.hours_logged[2] = {Date: "Feb 23", Hours: .5, Note: "Ligouri revisions"};
+job2720.hours_logged[3] = {Date: "Feb 23", Hours: .5, Note: "6 print-ready pdfs"};
+job2720.hours_logged[4] = {Date: "Feb 23", Hours: .5, Note: "Norberg Edward Jones"};
 jobs.push(job2720);
 
 
