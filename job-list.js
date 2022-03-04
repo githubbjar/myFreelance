@@ -272,6 +272,11 @@ job2720.hours_logged[1]= {Date: "Feb 21", Hours: .5, Note: "Ligouri"};
 job2720.hours_logged[2] = {Date: "Feb 23", Hours: .5, Note: "Ligouri revisions"};
 job2720.hours_logged[3] = {Date: "Feb 23", Hours: .5, Note: "6 print-ready pdfs"};
 job2720.hours_logged[4] = {Date: "Feb 23", Hours: .5, Note: "Norberg Edward Jones"};
+job2720.hours_logged[5] = {Date: "Mar 4", Hours: .5, Note: "Boston College Ethics"};
 jobs.push(job2720);
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const job2721 = new Job(2721, 13, "Biretta Books", "Divine Mercy Novena", "5.5 x 8.5, 16 page booklet", "March 4, 2022", "N/A");
+jobs.push(job2721);
 
