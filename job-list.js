@@ -278,6 +278,6 @@ jobs.push(job2720);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 const job2721 = new Job(2721, 13, "Biretta Books", "Divine Mercy Novena", "5.5 x 8.5, 16 page booklet", "March 4, 2022", "N/A");
-job2721.hours_logged[0] = {Date: "Mar 4", Hours: 1, Note: "Begin project"};
+job2721.hours_logged[0] = {Date: "Mar 4", Hours: 1, Note: "Initial layout"};
 jobs.push(job2721);
 
