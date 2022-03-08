@@ -11,6 +11,8 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
             return "Nick Chapello";
         } else if (this.employer === "Publishing Management Associates") {
             return "Richard A. Vaughan";
+        } else if (this.employer === "The Fellowship of St. James") {
+            return "James M. Kushiner";
         }
     };
     this.contact_email = function() {
@@ -18,6 +20,8 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
             return "nchapello@cantius.org";
         } else if (this.employer === "Publishing Management Associates") {
             return "ravaughan@pma-inc.net";
+        } else if (this.employer === "The Fellowship of St. James") {
+            return "jmk@fsj.org";
         }
     };
     this.secondary_contact = [];
@@ -26,6 +30,8 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
             return "1025 West Fry Street";
         } else if (this.employer === "Publishing Management Associates") {
             return "129 Phelps Avenue, Suite 312";
+        } else if (this.employer === "The Fellowship of St. James") {
+            return "4215 W. Newport Avenue";
         }
     };
     this.employer_address2 = function() {
@@ -33,7 +39,9 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
             return "Chicago, IL 60642-5419";
         } else if (this.employer === "Publishing Management Associates") {
             return "Rockford, IL 61108";
-        }
+        } else if (this.employer === "The Fellowship of St. James") {
+            return "Chicaog, IL 60641";
+        } 
     };
     this.project = project;
     this.project_type = project_type;
@@ -44,6 +52,8 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
             return "Biretta";
         } else if (this.employer === "Publishing Management Associates") {
             return "PMA";
+        } else if (this.employer === "The Fellowship of St. James") {
+            return "FSJ";
         }
     };
     this.hours_logged = []; 
@@ -65,6 +75,8 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
         if (this.employer === "Biretta Books") {
             return 40;
         } else if (this.employer === "Publishing Management Associates") {
+            return 50;
+        } else if (this.employer === "The Fellowship of St. James") {
             return 50;
         }
     };
@@ -280,5 +292,10 @@ jobs.push(job2720);
 const job2721 = new Job(2721, 13, "Biretta Books", "Divine Mercy Novena", "5.5 x 8.5, 16 page booklet", "March 4, 2022", "N/A");
 job2721.hours_logged[0] = {Date: "Mar 4", Hours: 1, Note: "Initial layout"};
 job2721.hours_logged[1] = {Date: "Mar 5", Hours: 1, Note: "layout"};
+job2721.hours_logged[2] = {Date: "Mar 8", Hours: .5, Note: "layout"};
 jobs.push(job2721);
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const job2722 = new Job(2722, 14, "The Fellowship of St. James", "<em>1000 Words</em> Book", "by Mary Elizabeth Podles, 8.5\" by 11\"", "March 8, 2022", "N/A");
+jobs.push(job2722);
