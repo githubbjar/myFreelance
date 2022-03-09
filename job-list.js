@@ -293,9 +293,11 @@ const job2721 = new Job(2721, 13, "Biretta Books", "Divine Mercy Novena", "5.5 x
 job2721.hours_logged[0] = {Date: "Mar 4", Hours: 1, Note: "Initial layout"};
 job2721.hours_logged[1] = {Date: "Mar 5", Hours: 1, Note: "layout"};
 job2721.hours_logged[2] = {Date: "Mar 8", Hours: .5, Note: "layout"};
+job2721.hours_logged[3] = {Date: "Mar 9", Hours: 1, Note: "2nd draft"};
 jobs.push(job2721);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 const job2722 = new Job(2722, 14, "The Fellowship of St. James", "<em>1000 Words</em> Book", "by Mary Elizabeth Podles, 8.5\" by 11\"", "March 8, 2022", "N/A");
+job2722.hours_logged[0] = {Date: "Mar 8", Hours: .75, Note: "Initial layout"};
 jobs.push(job2722);
