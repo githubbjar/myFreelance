@@ -294,6 +294,7 @@ job2721.hours_logged[0] = {Date: "Mar 4", Hours: 1, Note: "Initial layout"};
 job2721.hours_logged[1] = {Date: "Mar 5", Hours: 1, Note: "layout"};
 job2721.hours_logged[2] = {Date: "Mar 8", Hours: .5, Note: "layout"};
 job2721.hours_logged[3] = {Date: "Mar 9", Hours: 1, Note: "2nd draft"};
+job2721.hours_logged[4] = {Date: "Mar 10", Hours: .5, Note: "pages added"};
 jobs.push(job2721);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
