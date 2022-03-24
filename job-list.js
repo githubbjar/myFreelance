@@ -285,6 +285,9 @@ job2720.hours_logged[2] = {Date: "Feb 23", Hours: .5, Note: "Ligouri revisions"}
 job2720.hours_logged[3] = {Date: "Feb 23", Hours: .5, Note: "6 print-ready pdfs"};
 job2720.hours_logged[4] = {Date: "Feb 23", Hours: .5, Note: "Norberg Edward Jones"};
 job2720.hours_logged[5] = {Date: "Mar 4", Hours: .5, Note: "Boston College Ethics"};
+job2720.hours_logged[6] = {Date: "Mar 21", Hours: .25, Note: "Agora Trust"};
+job2720.hours_logged[7] = {Date: "Mar 21", Hours: .25, Note: "Franciscan"};
+job2720.hours_logged[8] = {Date: "Mar 24", Hours: .25, Note: "Glenmary"};
 jobs.push(job2720);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -295,6 +298,8 @@ job2721.hours_logged[1] = {Date: "Mar 5", Hours: 1, Note: "layout"};
 job2721.hours_logged[2] = {Date: "Mar 8", Hours: .5, Note: "layout"};
 job2721.hours_logged[3] = {Date: "Mar 9", Hours: 1, Note: "2nd draft"};
 job2721.hours_logged[4] = {Date: "Mar 10", Hours: .5, Note: "pages added"};
+job2721.hours_logged[5] = {Date: "Mar 14", Hours: .25, Note: "finalize pdf"};
+job2721.completed_date = "March 14, 2022";
 jobs.push(job2721);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
