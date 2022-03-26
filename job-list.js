@@ -288,6 +288,8 @@ job2720.hours_logged[5] = {Date: "Mar 4", Hours: .5, Note: "Boston College Ethic
 job2720.hours_logged[6] = {Date: "Mar 21", Hours: .25, Note: "Agora Trust"};
 job2720.hours_logged[7] = {Date: "Mar 21", Hours: .25, Note: "Franciscan"};
 job2720.hours_logged[8] = {Date: "Mar 24", Hours: .25, Note: "Glenmary"};
+job2720.completed_date = "March 26, 2022";
+job2720.date_billed = "March 26, 2022";
 jobs.push(job2720);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -300,6 +302,7 @@ job2721.hours_logged[3] = {Date: "Mar 9", Hours: 1, Note: "2nd draft"};
 job2721.hours_logged[4] = {Date: "Mar 10", Hours: .5, Note: "pages added"};
 job2721.hours_logged[5] = {Date: "Mar 14", Hours: .25, Note: "finalize pdf"};
 job2721.completed_date = "March 14, 2022";
+job2721.date_billed = "March 26, 2022";
 jobs.push(job2721);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
