@@ -181,6 +181,8 @@ jobs.push(job2713);
 const job2714 = new Job(2714, 6, "Biretta Books", "Benefit Prayer Cards", "A prayer card, sized 3.25 x 5.5 w/ bleed, four color", "September 1, 2021", "September 8, 2021");
 job2714.hours_logged[0] = {Date: "Sept 2", Hours: .25, Note: "Getting organized"};
 job2714.hours_logged[1] = {Date: "Sept 4", Hours: .5, Note: "Initial layout, St. Joseph"};
+job2714.completed_date = "September 8, 2021";
+job2714.date_billed = "March 26, 2022";
 job2714.thumbnail = true;
 job2714.pdf = true;
 jobs.push(job2714);
