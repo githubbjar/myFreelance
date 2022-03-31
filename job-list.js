@@ -183,6 +183,7 @@ job2714.hours_logged[0] = {Date: "Sept 2", Hours: .25, Note: "Getting organized"
 job2714.hours_logged[1] = {Date: "Sept 4", Hours: .5, Note: "Initial layout, St. Joseph"};
 job2714.completed_date = "September 8, 2021";
 job2714.date_billed = "March 26, 2022";
+job2714.date_paid = "March 21, 2022";
 job2714.thumbnail = true;
 job2714.pdf = true;
 jobs.push(job2714);
@@ -305,6 +306,7 @@ job2721.hours_logged[4] = {Date: "Mar 10", Hours: .5, Note: "pages added"};
 job2721.hours_logged[5] = {Date: "Mar 14", Hours: .25, Note: "finalize pdf"};
 job2721.completed_date = "March 14, 2022";
 job2721.date_billed = "March 26, 2022";
+job2721.date_paid = "March 31, 2022";
 jobs.push(job2721);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
