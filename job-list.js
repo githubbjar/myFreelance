@@ -267,6 +267,7 @@ job2718.hours_logged[11] = {Date: "Dec 29", Hours: .5, Note: "FT McClay Buckslip
 job2718.hours_logged[12] = {Date: "Jan 19", Hours: .25, Note: "Artwork reformat (2)"};
 job2718.completed_date = "January 19, 2022";
 job2718.date_billed = "January 19, 2022";
+job2718.date_paid = "April 1, 2022";
 jobs.push(job2718);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -293,6 +294,7 @@ job2720.hours_logged[7] = {Date: "Mar 21", Hours: .25, Note: "Franciscan"};
 job2720.hours_logged[8] = {Date: "Mar 24", Hours: .25, Note: "Glenmary"};
 job2720.completed_date = "March 26, 2022";
 job2720.date_billed = "March 26, 2022";
+job2720.date_paid = "April 1, 2022";
 jobs.push(job2720);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
