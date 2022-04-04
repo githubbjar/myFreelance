@@ -316,3 +316,9 @@ jobs.push(job2721);
 const job2722 = new Job(2722, 14, "The Fellowship of St. James", "<em>1000 Words</em> Book", "by Mary Elizabeth Podles, 8.5\" by 11\"", "March 8, 2022", "N/A");
 job2722.hours_logged[0] = {Date: "Mar 8", Hours: .75, Note: "Initial layout"};
 jobs.push(job2722);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const job2723 = new Job(2723, 15, "Biretta Books", "Mother's Day Cards", "5 x 7 Custom Card 4 color", "March 27, 2022", "April 7, 2022");
+job2723.hours_logged[0] = {Date: "Apr 4", Hours: 1, Note: "Setup"};
+jobs.push(job2723);
