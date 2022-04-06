@@ -315,6 +315,7 @@ jobs.push(job2721);
 
 const job2722 = new Job(2722, 14, "The Fellowship of St. James", "<em>1000 Words</em> Book", "by Mary Elizabeth Podles, 8.5\" by 11\"", "March 8, 2022", "N/A");
 job2722.hours_logged[0] = {Date: "Mar 8", Hours: .75, Note: "Initial layout"};
+job2722.hours_logged[1] = {Date: "Apr 6", Hours: .5, Note: "Try 1 col layout"};
 jobs.push(job2722);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
