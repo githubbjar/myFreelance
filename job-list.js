@@ -277,7 +277,8 @@ job2719.hours_logged[0] = {Date: "Dec 30", Hours: 2.5, Note: "Initial layouts in
 job2719.hours_logged[1] = {Date: "Jan 6", Hours: 1, Note: "chpts. 2 and 3"};
 job2719.hours_logged[2] = {Date: "Jan 7", Hours: 1, Note: "chpts. 4 and 5"};
 job2719.hours_logged[3] = {Date: "Jan 8", Hours: 2, Note: "chpts. 6, 7, 8"};
-job2719.hours_logged[4] = {Date: "Jan 14", Hours: 1, Note: "setting up graphics"}
+job2719.hours_logged[4] = {Date: "Jan 14", Hours: 1, Note: "setting up graphics"};
+job2719.hours_logged[5] = {Date: "Apr 19", Hours: 1, Note: "font size, intro, 1+2 adj"};
 jobs.push(job2719);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -321,5 +322,7 @@ jobs.push(job2722);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 const job2723 = new Job(2723, 15, "Biretta Books", "Mother's Day Cards", "5 x 7 Custom Card 4 color", "March 27, 2022", "April 7, 2022");
-job2723.hours_logged[0] = {Date: "Apr 4", Hours: 1, Note: "Setup"};
+job2723.hours_logged[0] = {Date: "Apr 4", Hours: 1, Note: "Setup/Layout"};
+job2723.hours_logged[1] = {Date: "Apr 6", Hours: 1, Note: "Layout/Finalize"};
+job2723.completed_date = "April 6, 2022";
 jobs.push(job2723);
