@@ -326,3 +326,12 @@ job2723.hours_logged[0] = {Date: "Apr 4", Hours: 1, Note: "Setup/Layout"};
 job2723.hours_logged[1] = {Date: "Apr 6", Hours: 1, Note: "Layout/Finalize"};
 job2723.completed_date = "April 6, 2022";
 jobs.push(job2723);
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const job2724 = new Job(2724, 16, "Publishing Management Associates", "PMA Small Ads 5", "Small ads created or reformatted", "April 21, 2022", "N/A");
+job2724.hours_logged[0] = {Date: "Apr 21", Hours: .25, Note: "Watergate book"};
+job2724.hours_logged[1] = {Date: "Apr 21", Hours: .25, Note: "Run & Hide book"};
+job2724.hours_logged[2] = {Date: "Apr 21", Hours: .25, Note: "Transcendantalists book"};
+jobs.push(job2724);
