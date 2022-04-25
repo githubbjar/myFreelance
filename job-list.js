@@ -279,6 +279,7 @@ job2719.hours_logged[2] = {Date: "Jan 7", Hours: 1, Note: "chpts. 4 and 5"};
 job2719.hours_logged[3] = {Date: "Jan 8", Hours: 2, Note: "chpts. 6, 7, 8"};
 job2719.hours_logged[4] = {Date: "Jan 14", Hours: 1, Note: "setting up graphics"};
 job2719.hours_logged[5] = {Date: "Apr 19", Hours: 1, Note: "font size, intro, 1+2 adj"};
+job2719.hours_logged[6] = {Date: "Apr 21", Hours: 1, Note: "size adjust through chpt. 5"};
 jobs.push(job2719);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -334,4 +335,6 @@ const job2724 = new Job(2724, 16, "Publishing Management Associates", "PMA Small
 job2724.hours_logged[0] = {Date: "Apr 21", Hours: .25, Note: "Watergate book"};
 job2724.hours_logged[1] = {Date: "Apr 21", Hours: .25, Note: "Run & Hide book"};
 job2724.hours_logged[2] = {Date: "Apr 21", Hours: .25, Note: "Transcendantalists book"};
+job2724.hours_logged[3] = {Date: "Apr 22", Hours: .75, Note: "FT 2022 Spring FR"};
+job2724.hours_logged[4] = {Date: "Apr 25", Hours: .5, Note: "three portraits"};
 jobs.push(job2724);
