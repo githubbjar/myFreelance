@@ -283,6 +283,7 @@ job2719.hours_logged[6] = {Date: "Apr 21", Hours: 1, Note: "size adjust through 
 job2719.hours_logged[7] = {Date: "Apr 25", Hours: 1, Note: "finished chapter txt pages"};
 job2719.hours_logged[8] = {Date: "Apr 25", Hours: 1, Note: "appendices"};
 job2719.hours_logged[9] = {Date: "Apr 26", Hours: 1, Note: "endnotes formatting"};
+job2719.hours_logged[10] = {Date: "Apr 27", Hours: 1, Note: "finalize draft to send around"};
 jobs.push(job2719);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
