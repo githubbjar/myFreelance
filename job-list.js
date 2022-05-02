@@ -341,4 +341,6 @@ job2724.hours_logged[1] = {Date: "Apr 21", Hours: .25, Note: "Run & Hide book"};
 job2724.hours_logged[2] = {Date: "Apr 21", Hours: .25, Note: "Transcendantalists book"};
 job2724.hours_logged[3] = {Date: "Apr 22", Hours: .75, Note: "FT 2022 Spring FR"};
 job2724.hours_logged[4] = {Date: "Apr 25", Hours: .5, Note: "four portraits"};
+job2724.hours_logged[5] = {Date: "Apr 29", Hours: .5, Note: "McCleod, Romans webad"};
+job2724.hours_logged[6] = {Date: "Apr 29", Hours: .5, Note: "Roman Roads ad reformat"};
 jobs.push(job2724);
