@@ -346,4 +346,5 @@ job2724.hours_logged[4] = {Date: "Apr 25", Hours: .5, Note: "four portraits"};
 job2724.hours_logged[5] = {Date: "Apr 29", Hours: .5, Note: "McCleod, Romans webad"};
 job2724.hours_logged[6] = {Date: "Apr 29", Hours: .5, Note: "Roman Roads ad reformat"};
 job2724.hours_logged[7] = {Date: "May 6", Hours: .25, Note: "Holy Cross flat"};
+job2724.hours_logged[8] = {Date: "May 11", Hours: .5, Note: "Arouca Press"};
 jobs.push(job2724);
