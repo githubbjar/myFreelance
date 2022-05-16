@@ -332,6 +332,7 @@ job2723.hours_logged[0] = {Date: "Apr 4", Hours: 1, Note: "Setup/Layout"};
 job2723.hours_logged[1] = {Date: "Apr 6", Hours: 1, Note: "Layout/Finalize"};
 job2723.completed_date = "April 6, 2022";
 job2723.date_billed = "May 6, 2022";
+job2723.date_paid = "May 12, 2022";
 jobs.push(job2723);
 
 
