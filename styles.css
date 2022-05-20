@@ -1,0 +1,251 @@
+body {
+        margin: 0;
+        padding: 0;
+        max-width: 1200px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    p {
+        font-size: 18px; 
+        line-height: 22px;
+        font-family: 'Anton', sans-serif;    
+    } 
+
+    h2 {
+        font-family: 'Crimson Text', serif;
+    }
+    p.project-details {font-size: 18px; line-height: 12px; margin-bottom: 5px;} 
+    #header {margin-top: 25px;} 
+    h2.jerry, #services, #invoice_number, #date_billed, #billing_amount {
+        text-align: center; 
+    }
+
+    #job_status {
+        margin-top: 0px;
+        text-align: center;
+    }
+    #job_status p {
+        font-family: 'Crimson Text', serif;
+        margin-top: 5px;
+        margin-bottom: 7px;
+    }
+
+    p.billto-payto {
+        margin-bottom: 4px;
+    }
+
+    p.total-runningtotal {
+        font-family: 'Crimson Text', serif;
+        font-size: 30px;
+        padding-top: 5px;
+    }
+    p.project-details-header {
+        font-family: 'Anton', sans-serif;
+        margin-bottom: 0px;
+        margin-top: 15px;    
+    }
+    p.project-details-header-top {
+        font-family: 'Anton', sans-serif;
+        margin-bottom: 0px;
+        margin-top: 15px; 
+        text-align: center;   
+    }
+    p.project-details {
+        font-family: 'Crimson Text', serif;
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    p.info {
+        font-family: 'Crimson Text', serif;
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 3px;
+    }
+
+    p.info-name {
+        font-family: 'Crimson Text', serif;
+        font-size: 22px;
+        line-height: 24px;
+        margin-bottom: 3px;
+    }
+
+    p.total-due {
+        font-family: 'Crimson Text', serif;
+        font-size: 32px;
+        line-height: 34px;
+    }
+
+    p.crimson {
+        font-family: 'Crimson Text', serif;
+    }
+
+    .green {
+        background-color: rgb(84, 255, 62);
+        padding: 10px;
+    }
+
+    .yellow {
+        background-color: rgb(255, 242, 62);
+        padding: 10px;
+    }
+
+    .gray {
+        background-color: #CCC;
+        padding: 10px;
+    }
+
+
+
+    .blue {
+        background-color: rgb(144, 235, 234);
+        padding: 10px;
+    }
+
+    a, a:hover {
+        color: #000;
+    }
+
+    #project {
+        margin-bottom: 27px;
+        margin-top: 15px;
+    }
+
+    
+
+    #job-list {
+        padding-left: 35px;
+        height: 650px;
+        margin-top: -210px;
+        padding-top: 30px;
+    }
+
+    #hours_table {
+        margin-right: 20px;
+    }
+
+    #hours_table {
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    p.jobs-heading {
+        margin-left: 20px;
+    }
+
+    .jobslist_employer_nicknames {
+        font-family: 'Crimson Text', serif;
+        font-size: 16px;
+        margin-bottom: -4px;
+    }
+    .joblist_links {
+        margin-bottom: 0px;
+        font-family: 'Crimson Text', serif;
+        font-size: 24px;
+    }
+    
+    a.light-gray {
+        color: #999;
+    }
+
+    .light-gray {
+        color: #999;
+    }
+
+    .joblist_projects {
+        font-size: 16px;
+        line-height: 14px;
+        margin-top: 3px;
+        font-family: 'Crimson Text', serif;
+    }
+
+    .joblist_projects_amounts {
+        font-size: 16px;
+        line-height: 14px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-family: 'Crimson Text', serif;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .worklog_items {
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: -5px;
+        margin-bottom: -5px;
+        text-align: right;
+    }
+
+    #hours_table p.note {
+        font-family: 'Crimson Text', serif;
+        font-size: 16px;
+        padding: 0px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        line-height: 16px;
+    }
+
+    #hours_table p.date-hours {
+        font-family: 'Crimson Text', serif;
+        font-size: 18px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    #hours_table hr.jobs {
+        margin: 1rem 0;
+        color: inherit;
+        background-color: currentColor;
+        border: 0;
+        opacity: .25;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+
+    p.employer-contact {
+    	font-size: 14px;
+	}
+    
+    p.personal-contact {
+        font-size: 14px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+	
+    p.pay-to {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    #previous, #next {
+        font-size: 16px;
+        text-align: center;
+        font-family: 'Crimson Text', serif;
+    }
+
+    /*https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp*/
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .overflow-scroll::-webkit-scrollbar {
+        display: none;
+    }    
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .overflow-scroll {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    @media only screen and (max-width: 600px) {
+        #center {
+            text-align: center;
+        }
+        #job-list {
+            display: none;
+        }
+    }
+    
+    
