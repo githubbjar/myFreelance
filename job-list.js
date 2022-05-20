@@ -13,7 +13,9 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
             return "Richard A. Vaughan";
         } else if (this.employer === "The Fellowship of St. James") {
             return "James M. Kushiner";
-        }
+        } else if (this.employer === "Douglas Shaw & Associates") {
+            return "Catalina Chavez";
+		}
     };
     this.contact_email = function() {
         if (this.employer === "Biretta Books") {
@@ -22,6 +24,8 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
             return "ravaughan@pma-inc.net";
         } else if (this.employer === "The Fellowship of St. James") {
             return "jmk@fsj.org";
+        } else if (this.employer === "Douglas Shaw & Associates") {
+            return "cchavez@douglasshaw.com";
         }
     };
     this.secondary_contact = [];
@@ -32,6 +36,8 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
             return "129 Phelps Avenue, Suite 312";
         } else if (this.employer === "The Fellowship of St. James") {
             return "4215 W. Newport Avenue";
+        } else if (this.employer === "Douglas Shaw & Associates") {
+            return "1717 Park Street Suite 300";
         }
     };
     this.employer_address2 = function() {
@@ -41,6 +47,8 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
             return "Rockford, IL 61108";
         } else if (this.employer === "The Fellowship of St. James") {
             return "Chicaog, IL 60641";
+        } else if (this.employer === "Douglas Shaw & Associates") {
+            return "Naperville, IL 60563";
         } 
     };
     this.project = project;
@@ -54,6 +62,8 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
             return "PMA";
         } else if (this.employer === "The Fellowship of St. James") {
             return "FSJ";
+        } else if (this.employer === "Douglas Shaw & Associates") {
+            return "Shaw";
         }
     };
     this.hours_logged = []; 
@@ -77,6 +87,8 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
         } else if (this.employer === "Publishing Management Associates") {
             return 50;
         } else if (this.employer === "The Fellowship of St. James") {
+            return 50;
+        } else if (this.employer === "Douglas Shaw & Associates") {
             return 50;
         }
     };
@@ -349,3 +361,8 @@ job2724.hours_logged[6] = {Date: "Apr 29", Hours: .5, Note: "Roman Roads ad refo
 job2724.hours_logged[7] = {Date: "May 6", Hours: .25, Note: "Holy Cross flat"};
 job2724.hours_logged[8] = {Date: "May 11", Hours: .5, Note: "Arouca Press"};
 jobs.push(job2724);
+	
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const job2725 = new Job(2725, 17, "Douglas Shaw & Associates", "July '22 eAppeal", "TSM-0785, 1 Homepage banner, 1 Donation page, 1 Email, 1 FB Post, 1 Twitter Post", "May 25, 2022", "June 2, 2022");
+jobs.push(job2725);
