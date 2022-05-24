@@ -299,6 +299,8 @@ job2719.hours_logged[10] = {Date: "Apr 27", Hours: 1, Note: "finalize draft to s
 job2719.hours_logged[11] = {Date: "May 2", Hours: 1, Note: "proof passes 1"};
 job2719.hours_logged[12] = {Date: "May 20", Hours: 1, Note: "Illustration layout"};
 job2719.hours_logged[13] = {Date: "May 22", Hours: 1, Note: "Illustration layout"};
+job2719.hours_logged[14] = {Date: "May 23", Hours: 1, Note: "Illustration layout"};
+job2719.hours_logged[15] = {Date: "May 24", Hours: 1.5, Note: "Preparing proof copies"};
 jobs.push(job2719);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
