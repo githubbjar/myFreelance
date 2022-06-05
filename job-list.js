@@ -14,7 +14,7 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
         } else if (this.employer === "The Fellowship of St. James") {
             return "James M. Kushiner";
         } else if (this.employer === "Douglas Shaw & Associates") {
-            return "Catalina Chavez";
+            return "Michele Perisin";
 		}
     };
     this.contact_email = function() {
@@ -25,7 +25,7 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
         } else if (this.employer === "The Fellowship of St. James") {
             return "jmk@fsj.org";
         } else if (this.employer === "Douglas Shaw & Associates") {
-            return "cchavez@douglasshaw.com";
+            return "mperisin@douglasshaw.com";
         }
     };
     this.secondary_contact = [];
@@ -336,9 +336,10 @@ jobs.push(job2721);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-const job2722 = new Job(2722, 14, "The Fellowship of St. James", "<em>1000 Words</em> Book", "by Mary Elizabeth Podles, 8.5\" by 11\"", "March 8, 2022", "N/A");
+const job2722 = new Job(2722, 14, "The Fellowship of St. James", "<em>1000 Words</em> Book", "by Mary Elizabeth Podles, 8.5\" by 11\"", "March 8, 2022", "September 1");
 job2722.hours_logged[0] = {Date: "Mar 8", Hours: .75, Note: "Initial layout"};
 job2722.hours_logged[1] = {Date: "Apr 6", Hours: .5, Note: "Try 1 col layout"};
+job2722.hours_logged[2] = {Date: "Jun 5", Hours: 1, Note: "Ara Pacis Augustae"};
 jobs.push(job2722);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -368,5 +369,10 @@ jobs.push(job2724);
 	
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-const job2725 = new Job(2725, 17, "Douglas Shaw & Associates", "July '22 eAppeal", "TSM-0785, 1 Homepage banner, 1 Donation page, 1 Email, 1 FB Post, 1 Twitter Post", "May 25, 2022", "June 2, 2022");
+const job2725 = new Job(2725, 17, "Douglas Shaw & Associates", "TSM-0785", "July '22 eAppeal, 1 Homepage banner, 1 Donation page, 1 Email, 1 FB Post, 1 Twitter Post", "May 25, 2022", "June 2, 2022");
+job2725.hours_logged[0] = {Date: "May 25", Hours: 1, Note: "Getting started. email"};
+job2725.hours_logged[1] = {Date: "May 26", Hours: 1.5, Note: "Donation and social"};
+job2725.hours_logged[2] = {Date: "May 27", Hours: 1, Note: "Banner and output"}; 
+job2725.hours_logged[2] = {Date: "May 31", Hours: .25, Note: "1st Submission"}; 
+job2725.hours_logged[3] = {Date: "June 1", Hours: .25, Note: "1st Revision Submitted"}; 
 jobs.push(job2725);
