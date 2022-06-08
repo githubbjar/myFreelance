@@ -365,6 +365,8 @@ job2724.hours_logged[5] = {Date: "Apr 29", Hours: .5, Note: "McCleod, Romans web
 job2724.hours_logged[6] = {Date: "Apr 29", Hours: .5, Note: "Roman Roads ad reformat"};
 job2724.hours_logged[7] = {Date: "May 6", Hours: .25, Note: "Holy Cross flat"};
 job2724.hours_logged[8] = {Date: "May 11", Hours: .5, Note: "Arouca Press"};
+job2724.completed_date = "May 11, 2022";
+job2724.date_billed = "June 7, 2022";
 jobs.push(job2724);
 	
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -374,5 +376,12 @@ job2725.hours_logged[0] = {Date: "May 25", Hours: 1, Note: "Getting started. ema
 job2725.hours_logged[1] = {Date: "May 26", Hours: 1.5, Note: "Donation and social"};
 job2725.hours_logged[2] = {Date: "May 27", Hours: 1, Note: "Banner and output"}; 
 job2725.hours_logged[2] = {Date: "May 31", Hours: .25, Note: "1st Submission"}; 
-job2725.hours_logged[3] = {Date: "June 1", Hours: .25, Note: "1st Revision Submitted"}; 
+job2725.hours_logged[3] = {Date: "June 1", Hours: .25, Note: "1st Route Submitted"}; 
+job2725.hours_logged[4] = {Date: "June 8", Hours: 1, Note: "2nd Route Submitted"}; 
 jobs.push(job2725);
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+const job2726 = new Job(2726, 18, "Biretta Books", "Mozart Vespers", "8 pages, 8.5 x 11", "June 8, 2022", "June 10, 2022");
+job2726.hours_logged[0] = {Date: "Jun 8", Hours: .5, Note: "creating text file from pdf"};
+jobs.push(job2726);
