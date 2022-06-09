@@ -384,4 +384,8 @@ jobs.push(job2725);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2726 = new Job(2726, 18, "Biretta Books", "Mozart Vespers", "8 pages, 8.5 x 11", "June 8, 2022", "June 10, 2022");
 job2726.hours_logged[0] = {Date: "Jun 8", Hours: .5, Note: "creating text file from pdf"};
+job2726.hours_logged[1] = {Date: "Jun 8", Hours: 1, Note: "Initial layout"};
+job2726.hours_logged[2] = {Date: "Jun 9", Hours: 2, Note: "layout submission"};
+job2726.hours_logged[3] = {Date: "Jun 9", Hours: 1, Note: "more layout"};
+job2726.hours_logged[4] = {Date: "Jun 9", Hours: .5, Note: "finalize pdf"};
 jobs.push(job2726);
