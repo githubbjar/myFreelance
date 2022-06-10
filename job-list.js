@@ -340,6 +340,8 @@ const job2722 = new Job(2722, 14, "The Fellowship of St. James", "<em>1000 Words
 job2722.hours_logged[0] = {Date: "Mar 8", Hours: .75, Note: "Initial layout"};
 job2722.hours_logged[1] = {Date: "Apr 6", Hours: .5, Note: "Try 1 col layout"};
 job2722.hours_logged[2] = {Date: "Jun 5", Hours: 1, Note: "Ara Pacis Augustae"};
+job2722.hours_logged[3] = {Date: "Jun 6", Hours: 1.5, Note: "Ancient World completed"};
+job2722.hours_logged[4] = {Date: "Jun 10", Hours: 1, Note: "Rembrandt Introduction"};
 jobs.push(job2722);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
