@@ -388,4 +388,8 @@ job2726.hours_logged[1] = {Date: "Jun 8", Hours: 1, Note: "Initial layout"};
 job2726.hours_logged[2] = {Date: "Jun 9", Hours: 2, Note: "layout submission"};
 job2726.hours_logged[3] = {Date: "Jun 9", Hours: 1, Note: "more layout"};
 job2726.hours_logged[4] = {Date: "Jun 9", Hours: .5, Note: "finalize pdf"};
+job2726.completed_date = "June 9, 2022";
+job2726.date_billed = "June 10, 2022";
+job2726.thumbnail = true;
+job2726.pdf = true;
 jobs.push(job2726);
