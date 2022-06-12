@@ -342,6 +342,7 @@ job2722.hours_logged[1] = {Date: "Apr 6", Hours: .5, Note: "Try 1 col layout"};
 job2722.hours_logged[2] = {Date: "Jun 5", Hours: 1, Note: "Ara Pacis Augustae"};
 job2722.hours_logged[3] = {Date: "Jun 6", Hours: 1.5, Note: "Ancient World completed"};
 job2722.hours_logged[4] = {Date: "Jun 10", Hours: 1, Note: "Rembrandt Introduction"};
+job2722.hours_logged[5] = {Date: "Jun 12", Hours: 1, Note: "Byzantium intro, Hagia Sophia"};
 jobs.push(job2722);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -379,7 +380,8 @@ job2725.hours_logged[1] = {Date: "May 26", Hours: 1.5, Note: "Donation and socia
 job2725.hours_logged[2] = {Date: "May 27", Hours: 1, Note: "Banner and output"}; 
 job2725.hours_logged[2] = {Date: "May 31", Hours: .25, Note: "1st Submission"}; 
 job2725.hours_logged[3] = {Date: "June 1", Hours: .25, Note: "1st Route Submitted"}; 
-job2725.hours_logged[4] = {Date: "June 8", Hours: 1, Note: "2nd Route Submitted"}; 
+job2725.hours_logged[4] = {Date: "June 8", Hours: 1, Note: "2nd Route Submitted"};
+job2725.hours_logged[5] = {Date: "June 10", Hours: .25, Note: "3rd Route Submitted"}; 
 jobs.push(job2725);
 
 
