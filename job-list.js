@@ -397,3 +397,14 @@ job2726.date_billed = "June 10, 2022";
 job2726.thumbnail = true;
 job2726.pdf = true;
 jobs.push(job2726);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+const job2727 = new Job(2727, 19, "Douglas Shaw & Associates", "CFD-0197", "1 homepage banner, 1 donation form, 3 Emails", "June 13, 2022", "June 17, 2022");
+job2727.hours_logged[0] = {Date: "Jun 14", Hours: 2, Note: "mock emails"};
+jobs.push(job2727);
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+const job2728 = new Job(2728, 20, "Douglas Shaw & Associates", "CFD-0204", "September Hunger Action Month", "June 14, 2022", "July 14, 2022");
+job2728.hours_logged[0] = {Date: "Jun 14", Hours: .5, Note: "Initial meeting"}
+jobs.push(job2728);
