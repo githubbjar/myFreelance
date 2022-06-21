@@ -336,13 +336,16 @@ jobs.push(job2721);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-const job2722 = new Job(2722, 14, "The Fellowship of St. James", "<em>1000 Words</em> Book", "by Mary Elizabeth Podles, 8.5\" by 11\"", "March 8, 2022", "September 1");
+const job2722 = new Job(2722, 14, "The Fellowship of St. James", "<em>More Than a Thousand Words</em> Book", "by Mary Elizabeth Podles, 8.5\" by 11\"", "March 8, 2022", "September 1");
 job2722.hours_logged[0] = {Date: "Mar 8", Hours: .75, Note: "Initial layout"};
 job2722.hours_logged[1] = {Date: "Apr 6", Hours: .5, Note: "Try 1 col layout"};
 job2722.hours_logged[2] = {Date: "Jun 5", Hours: 1, Note: "Ara Pacis Augustae"};
 job2722.hours_logged[3] = {Date: "Jun 6", Hours: 1.5, Note: "Ancient World completed"};
 job2722.hours_logged[4] = {Date: "Jun 10", Hours: 1, Note: "Rembrandt Introduction"};
 job2722.hours_logged[5] = {Date: "Jun 12", Hours: 1, Note: "Byzantium intro, Hagia Sophia"};
+job2722.hours_logged[6] = {Date: "Jun 15", Hours: 1, Note: "Christ of Mt. Sinai"};
+job2722.hours_logged[7] = {Date: "Jun 16", Hours: 1, Note: "Apse of St. Apollinarius"};
+job2722.hours_logged[8] = {Date: "Jun 20", Hours: 1, Note: "Throne of Maximian"};
 jobs.push(job2722);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -370,6 +373,7 @@ job2724.hours_logged[7] = {Date: "May 6", Hours: .25, Note: "Holy Cross flat"};
 job2724.hours_logged[8] = {Date: "May 11", Hours: .5, Note: "Arouca Press"};
 job2724.completed_date = "May 11, 2022";
 job2724.date_billed = "June 7, 2022";
+job2724.date_paid = "June 15, 2022";
 jobs.push(job2724);
 	
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -394,13 +398,18 @@ job2726.hours_logged[3] = {Date: "Jun 9", Hours: 1, Note: "more layout"};
 job2726.hours_logged[4] = {Date: "Jun 9", Hours: .5, Note: "finalize pdf"};
 job2726.completed_date = "June 9, 2022";
 job2726.date_billed = "June 10, 2022";
+job2726.date_paid = "June 16, 2022";
 job2726.thumbnail = true;
 job2726.pdf = true;
 jobs.push(job2726);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2727 = new Job(2727, 19, "Douglas Shaw & Associates", "CFD-0197", "1 homepage banner, 1 donation form, 3 Emails", "June 13, 2022", "June 17, 2022");
-job2727.hours_logged[0] = {Date: "Jun 14", Hours: 2, Note: "mock emails"};
+const job2727 = new Job(2727, 19, "Douglas Shaw & Associates", "CFD-0197", "August '22 eAppeal, 1 homepage banner, 1 donation form, 3 Emails", "June 13, 2022", "June 17, 2022");
+job2727.hours_logged[0] = {Date: "Jun 15", Hours: 2, Note: "mock emails"};
+job2727.hours_logged[1] = {Date: "Jun 16", Hours: 1, Note: "donation page and banner"};
+job2727.hours_logged[2] = {Date: "Jun 17", Hours: .5, Note: "check and send first review pdf"};
+job2727.hours_logged[3] = {Date: "Jun 17", Hours: .75, Note: "edits returned"};
+job2727.hours_logged[4] = {Date: "Jun 20", Hours: .25, Note: "first route submitted"};
 jobs.push(job2727);
 
 
@@ -408,3 +417,8 @@ jobs.push(job2727);
 const job2728 = new Job(2728, 20, "Douglas Shaw & Associates", "CFD-0204", "September Hunger Action Month", "June 14, 2022", "July 14, 2022");
 job2728.hours_logged[0] = {Date: "Jun 14", Hours: .5, Note: "Initial meeting"}
 jobs.push(job2728);
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+const job2729 = new Job(2729, 21, "Douglas Shaw & Associates", "MCR-0522", "Moody Church Media, 2022 FYE Digital Campaign", "June 21, 2022", "June 27, 2022");
+jobs.push(job2729);
