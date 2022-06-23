@@ -378,14 +378,15 @@ jobs.push(job2724);
 	
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-const job2725 = new Job(2725, 17, "Douglas Shaw & Associates", "TSM-0785", "July '22 eAppeal, 1 Homepage banner, 1 Donation page, 1 Email, 1 FB Post, 1 Twitter Post", "May 25, 2022", "June 2, 2022");
+const job2725 = new Job(2725, 17, "Douglas Shaw & Associates", "TSM-0785", "The Scott Mission July '22 eAppeal<ul><li>1 Homepage banner</li><li>1 Donation page</li><li>1 Email</li><li>1 FB Post</li><li>1 Twitter Post</li></ul>", "May 25, 2022", "June 2, 2022");
 job2725.hours_logged[0] = {Date: "May 25", Hours: 1, Note: "Getting started. email"};
 job2725.hours_logged[1] = {Date: "May 26", Hours: 1.5, Note: "Donation and social"};
 job2725.hours_logged[2] = {Date: "May 27", Hours: 1, Note: "Banner and output"}; 
 job2725.hours_logged[2] = {Date: "May 31", Hours: .25, Note: "1st Submission"}; 
-job2725.hours_logged[3] = {Date: "June 1", Hours: .25, Note: "1st Route Submitted"}; 
-job2725.hours_logged[4] = {Date: "June 8", Hours: 1, Note: "2nd Route Submitted"};
-job2725.hours_logged[5] = {Date: "June 10", Hours: .25, Note: "3rd Route Submitted"}; 
+job2725.hours_logged[3] = {Date: "June 1", Hours: .25, Note: "changes, submitted"}; 
+job2725.hours_logged[4] = {Date: "June 8", Hours: 1, Note: "changes, submitted"};
+job2725.hours_logged[5] = {Date: "June 10", Hours: .25, Note: "changes, submitted"};
+job2725.hours_logged[6] = {Date: "June 23", Hours: .25, Note: "changes, submitted"}; 
 jobs.push(job2725);
 
 
@@ -404,21 +405,30 @@ job2726.pdf = true;
 jobs.push(job2726);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2727 = new Job(2727, 19, "Douglas Shaw & Associates", "CFD-0197", "August '22 eAppeal, 1 homepage banner, 1 donation form, 3 Emails", "June 13, 2022", "June 17, 2022");
+const job2727 = new Job(2727, 19, "Douglas Shaw & Associates", "CFD-0197", "Chicago Food Depository August '22 eAppeal  <ul><li>1 homepage banner</li><li>1 donation form</li><li>3 Emails</li></ul>", "June 13, 2022", "June 17, 2022");
 job2727.hours_logged[0] = {Date: "Jun 15", Hours: 2, Note: "mock emails"};
 job2727.hours_logged[1] = {Date: "Jun 16", Hours: 1, Note: "donation page and banner"};
 job2727.hours_logged[2] = {Date: "Jun 17", Hours: .5, Note: "check and send first review pdf"};
 job2727.hours_logged[3] = {Date: "Jun 17", Hours: .75, Note: "edits returned"};
 job2727.hours_logged[4] = {Date: "Jun 20", Hours: .25, Note: "first route submitted"};
+job2727.hours_logged[5] = {Date: "Jun 22", Hours: .5, Note: "changes, cs review 01 submitted"};
 jobs.push(job2727);
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2728 = new Job(2728, 20, "Douglas Shaw & Associates", "CFD-0204", "September Hunger Action Month", "June 14, 2022", "July 14, 2022");
+const job2728 = new Job(2728, 20, "Douglas Shaw & Associates", "CFD-0204", "Chicago Food Depository September Hunger Action Month", "June 14, 2022", "July 14, 2022");
 job2728.hours_logged[0] = {Date: "Jun 14", Hours: .5, Note: "Initial meeting"}
 jobs.push(job2728);
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2729 = new Job(2729, 21, "Douglas Shaw & Associates", "MCR-0522", "Moody Church Media, 2022 FYE Digital Campaign", "June 21, 2022", "June 27, 2022");
+const job2729 = new Job(2729, 21, "Douglas Shaw & Associates", "MCR-0522", "Moody Church Media 2022 FYE Digital Campaign<ul><li>2 Facebook ads</li><li>3 total emails </li><li>1 hover ad</li><li>1 Homepage Banner </li><li>1 Donation page </li></ul>", "June 21, 2022", "June 27, 2022");
+job2729.hours_logged[0] = {Date: "Jun 22", Hours: 1, Note: "FB ads and email 1"};
+job2729.hours_logged[1] = {Date: "Jun 22", Hours: .5, Note: "email 2"};
 jobs.push(job2729);
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+const job2730 = new Job(2730, 22, "Publishing Management Associates", "PMA Small Ads 6", "Small ads created or reformatted", "June 23, 2022", "n/a");
+job2730.hours_logged[0] = {Date: "Jun 23", Hours: .25, Note: "CICW_FirstThings color conversion"};
+jobs.push(job2730);
