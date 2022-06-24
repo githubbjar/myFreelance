@@ -79,7 +79,7 @@
         <h2 id="project"></h2>
         <p class="project-details-header">PROJECT DETAILS:</p>
         <p id="project_type" class="project-details"></p>
-        <p class="project-details-header">START DATE / DUE DATE:</p>
+        <p class="project-details-header" id="startdate-duedate"></p>
         <p id="start_date" class="project-details"></p>
         <p id="completed-date-header" class="project-details-header"></p>
         <p id="completed_date" class="project-details"></p>

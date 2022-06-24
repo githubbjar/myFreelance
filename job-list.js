@@ -386,7 +386,10 @@ job2725.hours_logged[2] = {Date: "May 31", Hours: .25, Note: "1st Submission"};
 job2725.hours_logged[3] = {Date: "June 1", Hours: .25, Note: "changes, submitted"}; 
 job2725.hours_logged[4] = {Date: "June 8", Hours: 1, Note: "changes, submitted"};
 job2725.hours_logged[5] = {Date: "June 10", Hours: .25, Note: "changes, submitted"};
-job2725.hours_logged[6] = {Date: "June 23", Hours: .25, Note: "changes, submitted"}; 
+job2725.hours_logged[6] = {Date: "June 23", Hours: .25, Note: "changes, submitted"};
+job2725.hours_logged[7] = {Date: "June 23", Hours: .5, Note: "web assets assembled"};
+job2725.hours_logged[8] = {Date: "June 24", Hours: .5, Note: "final files uploaded"};
+job2725.completed_date = "June 24, 2022"; 
 jobs.push(job2725);
 
 
@@ -425,10 +428,12 @@ jobs.push(job2728);
 const job2729 = new Job(2729, 21, "Douglas Shaw & Associates", "MCR-0522", "Moody Church Media 2022 FYE Digital Campaign<ul><li>2 Facebook ads</li><li>3 total emails </li><li>1 hover ad</li><li>1 Homepage Banner </li><li>1 Donation page </li></ul>", "June 21, 2022", "June 27, 2022");
 job2729.hours_logged[0] = {Date: "Jun 22", Hours: 1, Note: "FB ads and email 1"};
 job2729.hours_logged[1] = {Date: "Jun 22", Hours: .5, Note: "email 2"};
+job2729.hours_logged[2] = {Date: "Jun 24", Hours: .5, Note: "email 3, homepage banner"};
 jobs.push(job2729);
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2730 = new Job(2730, 22, "Publishing Management Associates", "PMA Small Ads 6", "Small ads created or reformatted", "June 23, 2022", "n/a");
 job2730.hours_logged[0] = {Date: "Jun 23", Hours: .25, Note: "CICW_FirstThings color conversion"};
+job2730.hours_logged[1] = {Date: "Jun 23", Hours: .5, Note: "5 images"};
 jobs.push(job2730);
