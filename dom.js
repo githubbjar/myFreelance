@@ -55,8 +55,8 @@ const loadPage = () => {
     document.getElementById("project").innerHTML = project;
     document.getElementById("project_type").innerHTML = project_type;
     const mockup = (jobs[x].employer == "Douglas Shaw & Associates") ? "MOCK-UP" : "";
-    document.getElementById("startdate-duedate").innerHTML =  "START DATE / " + mockup + " DUE DATE:";
-    document.getElementById("start_date").innerHTML =  start_date + " / " + due_date;
+    document.getElementById("startdate-duedate").innerHTML =  "START DATE &#8212; " + mockup + " DUE DATE:";
+    document.getElementById("start_date").innerHTML =  start_date + " &#8212; " + due_date;
     const completed_date_text = (jobs[x].completed_date) ? "COMPLETED DATE:" : "";
     document.getElementById("completed-date-header").innerHTML = completed_date_text;
     document.getElementById("completed_date").innerHTML = completed_date;
