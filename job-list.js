@@ -411,7 +411,7 @@ job2726.pdf = true;
 jobs.push(job2726);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2727 = new Job(2727, 19, "Douglas Shaw & Associates", "CFD-0197", "Chicago Food Depository <br />August '22 eAppeal  <ul><li>1 homepage banner &#10003; </li><li>1 donation form &#10003; </li><li>3 Emails &#10003; </li></ul>", "June 13, 2022", "June 17, 2022");
+const job2727 = new Job(2727, 19, "Douglas Shaw & Associates", "CFD-0197", "Chicago Food Depository <br />August '22 eAppeal  <ol><li> homepage banner &#10003; </li><li>email 1 &#10003; </li><li>email 2 &#10003; </li><li>donation landing page &#10003; </li><li>thank you email &#10003; </li></ol>", "June 13, 2022", "June 17, 2022");
 job2727.hours_logged[0] = {Date: "Jun 15", Hours: 2, Note: "mock emails"};
 job2727.hours_logged[1] = {Date: "Jun 16", Hours: 1, Note: "donation page and banner"};
 job2727.hours_logged[2] = {Date: "Jun 17", Hours: .5, Note: "check and send first review pdf"};
