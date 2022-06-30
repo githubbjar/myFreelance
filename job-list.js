@@ -457,13 +457,17 @@ job2731.hours_logged[3] = {Date: "Jun 28", Hours: .25, Note: "ambassador email"}
 job2731.hours_logged[4] = {Date: "Jun 28", Hours: .5, Note: "email 1 control and test"};
 job2731.hours_logged[5] = {Date: "Jun 28", Hours: .25, Note: "email 2"};
 job2731.hours_logged[6] = {Date: "Jun 29", Hours: 1.5, Note: "all emails; blurring; organizing"};
+<<<<<<< HEAD
 job2731.hours_logged[7] = {Date: "June 30", Hours: 1, Note: "hover ad; web images; creative review 1 submitted"}
+=======
+job2731.hours_logged[7] = {Date: "Jun 30", Hours: 1, Note: "hover ad; web images; creative review 1 submit"};
+>>>>>>> jerry
 jobs.push(job2731);
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2732 = new Job(2732, 24, "Douglas Shaw & Associates", "CFD-0212", "Chicago Food Depository<br />October Digital Donor Report<ul><li>Donation Page</li><li>Impact Landing Page</li><li>Email</li><li>Blog Post 1</li></ul>", "June 27, 2022", "August 17, 2022");
-job2732.hours_logged[0] = {Date: "June 27", Hours: .25, Note: "Initial meeting"};
+job2732.hours_logged[0] = {Date: "Jun 27", Hours: .25, Note: "Initial meeting"};
 jobs.push(job2732);
 
 
@@ -474,5 +478,10 @@ jobs.push(job2733);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2734 = new Job(2734, 26, "Biretta Books", "Bulletins", "St. John Cantius Sunday Bulletins <ul><li>July 10th</li><li>July 17th</li><li>July 24th</li><li>July 31st</li><li>August 7th</li><li>August 14</li><li>August 21</li><li>August 28</li><li>September 4</li>", "June 29th, 2022", "September 4th, 2022");
+<<<<<<< HEAD
 job2734.hours_logged[0] = {Date: "Jul 29th", Hours: 1.5, Note: "getting started; initial layout"};
+=======
+job2734.hours_logged[0] = {Date: "Jun 29", Hours: .5, Note: "getting started"};
+job2734.hours_logged[1] = {Date: "Jun 30", Hours: 1, Note: "starting layout"};
+>>>>>>> jerry
 jobs.push(job2734);
