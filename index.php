@@ -20,24 +20,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Crimson+Text&display=swap" rel="stylesheet">
     
+    <!--//grab url for use in querying database-->
     <?php
-        
-        //https://www.geeksforgeeks.org/how-to-get-parameters-from-a-url-string-in-php/
-        // Initialize URL to the variable
-        $raw_url = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
-            
-        // Use parse_url() function to parse the URL 
-        // and return an associative array which
-        // contains its various components
-        $url_components = parse_url($raw_url);
-        
-        // Use parse_str() function to parse the
-        // string passed via URL
-        parse_str($url_components['query'], $params);
-            
-        // result 
-        $jobx = $params['jobx'];
 
+        $raw_url = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
+
+    //added this if/else statement when number of jobs got to double digits...
+        if (strlen($raw_url) === 58) {
+            $jobx = substr($raw_url, -2, 2);
+        } else {
+            $jobx = substr($raw_url, -1, 1);
+        };
+    //if there is no jobx number declared, it starts at 0
+        if ($jobx === "/") {
+        	$jobx = 15;
+        };
     ?>
     <!--HT: https://pagecrafter.com/pass-php-variable-javascript/ -->	
     <script> 
