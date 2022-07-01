@@ -133,10 +133,10 @@
             </div>
         </div>
 
-        <!--Bootstrap Modal to display TOTALS-->
+        <!--Bootstrap Modal to display TOTALS for ALL JOBS-->
         <p class="info">
             <a data-bs-toggle="modal" data-bs-target="#exampleModal2">
-            <span id="totals-hide">AMOUNTS</span>
+            <span id="totals-hide">ALL JOBS</span>
             </a>
         </p>
         <!-- Modal -->

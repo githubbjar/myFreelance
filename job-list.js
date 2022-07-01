@@ -336,7 +336,7 @@ jobs.push(job2721);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-const job2722 = new Job(2722, 14, "The Fellowship of St. James", "<em>More Than a Thousand Words</em> Book", "by Mary Elizabeth Podles, 8.5\" by 11\"", "March 8, 2022", "September 1");
+const job2722 = new Job(2722, 14, "The Fellowship of St. James", "<em>Thousand Words</em> Book", "by Mary Elizabeth Podles, 8.5\" by 11\"", "March 8, 2022", "September 1");
 job2722.hours_logged[0] = {Date: "Mar 8", Hours: .75, Note: "Initial layout"};
 job2722.hours_logged[1] = {Date: "Apr 6", Hours: .5, Note: "Try 1 col layout"};
 job2722.hours_logged[2] = {Date: "Jun 5", Hours: 1, Note: "Ara Pacis Augustae"};
@@ -349,6 +349,8 @@ job2722.hours_logged[8] = {Date: "Jun 20", Hours: 1, Note: "Throne of Maximian"}
 job2722.hours_logged[9] = {Date: "Jun 24", Hours: 1, Note: "Gospel Book Augustine"};
 job2722.hours_logged[10] = {Date: "Jun 28", Hours: 1, Note: "Crown of Recceswinth"};
 job2722.hours_logged[11] = {Date: "Jun 29", Hours: 1, Note: "The Alfred Jewel"};
+job2722.hours_logged[12] = {Date: "Jul 1", Hours: 2, Note: "Otto III; Beekeepers"};
+job2722.hours_logged[13] = {Date: "Jul 1", Hours: 1, Note: "Chalice of Abbot Suger"};
 jobs.push(job2722);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
