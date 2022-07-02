@@ -168,13 +168,57 @@ const loadPage = () => {
 
 
 
-    //JSON MODAL
-    document.getElementById("json-spot").innerHTML = 'Job #' + invoice_number + ' JSON';
-    document.getElementById("json").innerHTML = '<pre>' + JSON.stringify(jobs[x], null, 2) + '</pre>';/*MUST WRAP IN PRE to get the spacing and formatting to work */  
 
 
 
-    //TOTALS MODAL
+    //ALL JOBS FROM EMPLOYER MODAL
+    //THE LINK ON THE PAGE
+
+    const jobsFromThisEmployer = [];
+    for (let i = 0; i < jobs.length; i++) {
+        if (jobs[i].employer_nickname() == employer_nickname) {
+            jobsFromThisEmployer.push(jobs[i]);
+        }
+    };
+
+    document.getElementById("alljobsfromthisemployerlink").innerHTML = `ALL ${employer_nickname.toUpperCase()} JOBS`;
+
+    
+    const closedJobsFromThisEmployer = [];
+    for (let i = 0; i < jobs.length; i++) {
+        if (jobs[i].date_paid && (jobs[i].employer_nickname() == employer_nickname)) {
+            closedJobsFromThisEmployer.push(jobs[i]);
+        }
+    };
+    
+
+    
+    document.getElementById("totals-from-employer-title").innerHTML = `<h2 class="jerry">Amounts &#8212; ${jobsFromThisEmployer.length} ${employer_nickname} Job(s)</h2>`;
+
+    document.getElementById("totals-from-employer").innerHTML = `
+    <p class="project-details-header">AMOUNT RECEIVED ::: CLOSED JOBS &#8212; ${closedJobsFromThisEmployer.length} </p>
+    <p class="joblist_projects_amounts">List projects here</p>
+    <p class="total-due">$??</p>
+    <p class="project-details-header">AMOUNT BILLED / TO BE BILLED ::: FINISHED JOBS </p>
+    <p class="joblist_projects_amounts">Projects listed here</p>
+    <p class="total-due">$??</p>
+    <p class="project-details-header">AMOUNT NOT YET BILLED ::: JOBS IN PROGRESS</p>
+    <p class="joblist_projects_amounts">Projects listed here</p>
+    <p class="total-due">$??</p>`;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //ALL JOBS MODAL
     //TOTAL PAID JOBS
     const closedJobs = [];
     for (let i = 0; i < jobs.length; i++) {
@@ -216,8 +260,16 @@ const loadPage = () => {
     }, 0);
     
     //OUTPUT TOTALS MODAL
-    document.getElementById("totals-spot").innerHTML = `<h2 class="jerry">Amounts &#8212; ${jobs.length} Jobs Total</h2>`;
-    document.getElementById("totals").innerHTML = `<p class="project-details-header">AMOUNT RECEIVED (CLOSED JOBS, ${closedJobs.length}):</p><p class="joblist_projects_amounts">${closedProjectTitles}</p><p class="total-due">$${totalAmountReceived.toFixed(2)}</p><p class="project-details-header">AMOUNT BILLED (COMPLETED JOBS, ${completedJobs.length}):</p><p class="joblist_projects_amounts">${completedProjectTitles}</p><p class="total-due">$${totalAmountBilled.toFixed(2)}</p><p class="project-details-header">AMOUNT TO BE BILLED (JOBS IN PROGRESS, ${jobsInProgress.length}):</p><p class="joblist_projects_amounts">${jobsInProgressTitles}</p><p class="total-due">$${totalAmountToBeBilled.toFixed(2)}</p>`;
+    document.getElementById("totals-spot").innerHTML = `<h2 class="jerry">Amounts &#8212; ${jobs.length} Jobs</h2>`;
+    document.getElementById("totals").innerHTML = `<p class="project-details-header">AMOUNT RECEIVED ::: CLOSED JOBS &#8212; ${closedJobs.length}</p><p class="joblist_projects_amounts">${closedProjectTitles}</p><p class="total-due">$${totalAmountReceived.toFixed(2)}</p><p class="project-details-header">AMOUNT BILLED / TO BE BILLED ::: FINISHED JOBS &#8212; ${completedJobs.length}</p><p class="joblist_projects_amounts">${completedProjectTitles}</p><p class="total-due">$${totalAmountBilled.toFixed(2)}</p><p class="project-details-header">AMOUNT NOT YET BILLED ::: JOBS IN PROGRESS &#8212; ${jobsInProgress.length}</p><p class="joblist_projects_amounts">${jobsInProgressTitles}</p><p class="total-due">$${totalAmountToBeBilled.toFixed(2)}</p>`;
+
+
+
+
+
+
+
+
 
 
 

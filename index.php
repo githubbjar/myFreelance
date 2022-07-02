@@ -110,21 +110,25 @@
         <p class='info'>312-589-8332 <br />
         <p class='info'>jmjanquart@gmail.com </p>
         <hr />
-        <!--Bootstrap Modal to display JSON-->
+
+
+
+        
+        <!--Bootstrap Modal to display TOTALS for ALL JOBS FROM THIS EMPLOYER-->
         <p class="info">
-            <a data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <span id="json-hide">JSON</span>
+            <a data-bs-toggle="modal" data-bs-target="#alljobsfromthisemployer">
+            <span id="alljobsfromthisemployerlink">ALL JOBS FROM THIS EMPLOYER</span>
             </a>
         </p>
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="alljobsfromthisemployer" tabindex="-1" aria-labelledby="alljobsfromthisemployerLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel"><span id="json-spot"></span></h5>
+                        <h5 class="modal-title" id="alljobsfromthisemployerLabel"><span id="totals-from-employer-title"></span></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body" id="json">
+                    <div class="modal-body" id="totals-from-employer">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -133,18 +137,21 @@
             </div>
         </div>
 
+
+
+
         <!--Bootstrap Modal to display TOTALS for ALL JOBS-->
         <p class="info">
-            <a data-bs-toggle="modal" data-bs-target="#exampleModal2">
-            <span id="totals-hide">ALL JOBS</span>
+            <a data-bs-toggle="modal" data-bs-target="#alljobs">
+            <span>ALL JOBS</span>
             </a>
         </p>
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="alljobs" tabindex="-1" aria-labelledby="allJobsLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel"><span id="totals-spot"></span></h5>
+                        <h5 class="modal-title" id="allJobsLabel"><span id="totals-spot"></span></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body" id="totals">
@@ -155,6 +162,8 @@
                 </div>
             </div>
         </div>
+
+
 
     </div>
     <div class='col-sm-2'>   
