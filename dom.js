@@ -174,6 +174,7 @@ const loadPage = () => {
     //ALL JOBS FROM EMPLOYER MODAL
     //THE LINK ON THE PAGE
 
+    //Create array of all jobs from the employer of the current job
     const jobsFromThisEmployer = [];
     for (let i = 0; i < jobs.length; i++) {
         if (jobs[i].employer_nickname() == employer_nickname) {
@@ -181,9 +182,10 @@ const loadPage = () => {
         }
     };
 
+    //Put the link for the popup on the page
     document.getElementById("alljobsfromthisemployerlink").innerHTML = `ALL ${employer_nickname.toUpperCase()} JOBS`;
 
-    
+    //Create array of all closed jobs from this employer
     const closedJobsFromThisEmployer = [];
     for (let i = 0; i < jobs.length; i++) {
         if (jobs[i].date_paid && (jobs[i].employer_nickname() == employer_nickname)) {
@@ -191,14 +193,59 @@ const loadPage = () => {
         }
     };
 
-    const closedJobsFromThisEmployerProjectTitlesArray = closedJobsFromThisEmployer.map (function (job) {return job.project;});
+    //1::: CLOSED JOBS
+    //create array of titles
+    const closedJobsFromThisEmployerProjectTitlesArray = closedJobsFromThisEmployer.map (function (job) {return `<a href="https://www.jerryjanquart.com/myFreelance/index.php?jobx=${job.job_number}">${job.project}</a>`;});
+    //turn array of titles into a string with commas
     const closedProjectTitlesFromThisEmployer = closedJobsFromThisEmployerProjectTitlesArray.join(', ');
+    
+    //create array of the total amounts received
     const closedJobsAmountFromThisEmployerArray = closedJobsFromThisEmployer.map (function (job) {return job.total_paid();});
+    //add up amounts from array
     const totalAmountReceivedFromThisEmployer = closedJobsAmountFromThisEmployerArray.reduce(function (accumVariable, curValue) {
         return accumVariable + curValue
     }, 0);
 
-    
+
+    //2::: FINISHED JOBS
+    //Create array of all completed-but-not-yet-paid jobs from this employer
+    const completedJobsFromThisEmployer = [];
+    for (let i = 0; i < jobs.length; i++) {
+        if ((jobs[i].employer_nickname() == employer_nickname) && jobs[i].completed_date && !jobs[i].date_paid) {
+            completedJobsFromThisEmployer.push(jobs[i]);
+        }
+    };
+
+    //create array of titles 
+    const completedJobsFromThisEmployerProjectTitlesArray = completedJobsFromThisEmployer.map (function (job) {return `<a href="https://www.jerryjanquart.com/myFreelance/index.php?jobx=${job.job_number}">${job.project}</a>`;});
+    //turn array of titles into a string with commas
+    const completedProjectTitlesFromThisEmployer = completedJobsFromThisEmployerProjectTitlesArray.join(', ');
+
+    //create array of the total amounts to be billed
+    const completedJobsAmountFromThisEmployerArray = completedJobsFromThisEmployer.map (function (job) {return job.total_paid();});
+    //add up amounts from array
+    const totalAmountToBillFromThisEmployer = completedJobsAmountFromThisEmployerArray.reduce(function (accumVariable, curValue) {
+        return accumVariable + curValue
+    }, 0);
+
+
+    //3::: JOBS IN PROGRESS
+    //TOTAL JOBS TO COMPLETE    
+    const jobsInProgressFromThisEmployer = [];
+    for (let i = 0; i < jobs.length; i++) {
+        if (!jobs[i].completed_date && (jobs[i].employer_nickname() == employer_nickname)) {
+            jobsInProgressFromThisEmployer.push(jobs[i]);
+        }
+    };
+    const jobsInProgressFromThisEmployerAmountArray = jobsInProgressFromThisEmployer.map (function (job) {return job.total_paid();});
+    const jobsInProgressFromThisEmployerTitlesArray = jobsInProgressFromThisEmployer.map (function (job) {return `<a href="https://www.jerryjanquart.com/myFreelance/index.php?jobx=${job.job_number}">${job.project}</a>`;});
+    const jobsInProgressFromThisEmployerTitles = jobsInProgressFromThisEmployerTitlesArray.join(', ');
+    const totalAmountToBeBilledFromThisEmployer = jobsInProgressFromThisEmployerAmountArray.reduce(function (accumVariable, curValue) {
+        return accumVariable + curValue
+    }, 0);
+
+
+    //Display the code
     document.getElementById("totals-from-employer-title").innerHTML = `<h2 class="jerry">Amounts &#8212; ${jobsFromThisEmployer.length} ${employer_nickname} Job(s)</h2>`;
 
     document.getElementById("totals-from-employer").innerHTML = `
@@ -206,13 +253,13 @@ const loadPage = () => {
     <p class="joblist_projects_amounts">${closedProjectTitlesFromThisEmployer}</p>
     <p class="total-due">${totalAmountReceivedFromThisEmployer.toFixed(2)}</p>
 
-    <p class="project-details-header">AMOUNT BILLED / TO BE BILLED ::: FINISHED JOBS </p>
-    <p class="joblist_projects_amounts">Projects listed here</p>
-    <p class="total-due">$??</p>
+    <p class="project-details-header">AMOUNT BILLED / TO BE BILLED ::: FINISHED JOBS &#8212; ${completedJobsFromThisEmployer.length}</p>
+    <p class="joblist_projects_amounts">${completedProjectTitlesFromThisEmployer}</p>
+    <p class="total-due">$${totalAmountToBillFromThisEmployer.toFixed(2)}</p>
 
-    <p class="project-details-header">AMOUNT NOT YET BILLED ::: JOBS IN PROGRESS</p>
-    <p class="joblist_projects_amounts">Projects listed here</p>
-    <p class="total-due">$??</p>`;
+    <p class="project-details-header">AMOUNT NOT YET BILLED ::: JOBS IN PROGRESS &#8212; ${jobsInProgressFromThisEmployer.length}</p>
+    <p class="joblist_projects_amounts">${jobsInProgressFromThisEmployerTitles}</p>
+    <p class="total-due">$${totalAmountToBeBilledFromThisEmployer.toFixed(2)}</p>`;
 
 
 
@@ -235,7 +282,7 @@ const loadPage = () => {
         }
     };
     const closedJobsAmountArray = closedJobs.map (function (job) {return job.total_paid();});
-    const closedJobsProjectTitlesArray = closedJobs.map (function (job) {return job.project;});
+    const closedJobsProjectTitlesArray = closedJobs.map (function (job) {return `<a href="https://www.jerryjanquart.com/myFreelance/index.php?jobx=${job.job_number}">${job.project}</a>`;});
     const closedProjectTitles = closedJobsProjectTitlesArray.join(', ');
     const totalAmountReceived = closedJobsAmountArray.reduce(function (accumVariable, curValue) {
         return accumVariable + curValue
@@ -248,7 +295,7 @@ const loadPage = () => {
         }
     };
     const completedJobsAmountArray = completedJobs.map (function (job) {return job.total_paid();});
-    const completedJobsTitlesArray = completedJobs.map (function (job) {return job.project;});
+    const completedJobsTitlesArray = completedJobs.map (function (job) {return `<a href="https://www.jerryjanquart.com/myFreelance/index.php?jobx=${job.job_number}">${job.project}</a>`;});
     const completedProjectTitles = completedJobsTitlesArray.join(', ');
     const totalAmountBilled = completedJobsAmountArray.reduce(function (accumVariable, curValue) {
         return accumVariable + curValue
@@ -261,7 +308,7 @@ const loadPage = () => {
         }
     };
     const jobsInProgressAmountArray = jobsInProgress.map (function (job) {return job.total_paid();});
-    const jobsInProgressTitlesArray = jobsInProgress.map (function (job) {return job.project;});
+    const jobsInProgressTitlesArray = jobsInProgress.map (function (job) {return `<a href="https://www.jerryjanquart.com/myFreelance/index.php?jobx=${job.job_number}">${job.project}</a>`;});
     const jobsInProgressTitles = jobsInProgressTitlesArray.join(', ');
     const totalAmountToBeBilled = jobsInProgressAmountArray.reduce(function (accumVariable, curValue) {
         return accumVariable + curValue
