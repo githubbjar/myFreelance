@@ -190,18 +190,26 @@ const loadPage = () => {
             closedJobsFromThisEmployer.push(jobs[i]);
         }
     };
-    
+
+    const closedJobsFromThisEmployerProjectTitlesArray = closedJobsFromThisEmployer.map (function (job) {return job.project;});
+    const closedProjectTitlesFromThisEmployer = closedJobsFromThisEmployerProjectTitlesArray.join(', ');
+    const closedJobsAmountFromThisEmployerArray = closedJobsFromThisEmployer.map (function (job) {return job.total_paid();});
+    const totalAmountReceivedFromThisEmployer = closedJobsAmountFromThisEmployerArray.reduce(function (accumVariable, curValue) {
+        return accumVariable + curValue
+    }, 0);
 
     
     document.getElementById("totals-from-employer-title").innerHTML = `<h2 class="jerry">Amounts &#8212; ${jobsFromThisEmployer.length} ${employer_nickname} Job(s)</h2>`;
 
     document.getElementById("totals-from-employer").innerHTML = `
     <p class="project-details-header">AMOUNT RECEIVED ::: CLOSED JOBS &#8212; ${closedJobsFromThisEmployer.length} </p>
-    <p class="joblist_projects_amounts">List projects here</p>
-    <p class="total-due">$??</p>
+    <p class="joblist_projects_amounts">${closedProjectTitlesFromThisEmployer}</p>
+    <p class="total-due">${totalAmountReceivedFromThisEmployer.toFixed(2)}</p>
+
     <p class="project-details-header">AMOUNT BILLED / TO BE BILLED ::: FINISHED JOBS </p>
     <p class="joblist_projects_amounts">Projects listed here</p>
     <p class="total-due">$??</p>
+
     <p class="project-details-header">AMOUNT NOT YET BILLED ::: JOBS IN PROGRESS</p>
     <p class="joblist_projects_amounts">Projects listed here</p>
     <p class="total-due">$??</p>`;
