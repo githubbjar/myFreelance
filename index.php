@@ -95,8 +95,7 @@
         <div id="hours_table"></div> 
     </div>
     <div class='col-sm-2'>
-        <hr />
-        <p class="billto-payto">BILL TO: <br />
+        <p class="project-details-header">BILL TO: </p>
         <p class="info-name" id="employer"></p>
         <p class="info" id="employer_address1"></p>
         <p class="info" id="employer_address2"></p>

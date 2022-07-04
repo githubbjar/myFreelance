@@ -31,8 +31,9 @@ const loadPage = () => {
     document.getElementById("next").innerHTML = `<a href="http://www.jerryjanquart.com/myFreelance/index.php?jobx=${next}">[next]</a>`;
 
 
-    //BILLING DATE
-    const billingDate = (date_billed) ? `Billing Date: ${date_billed}` : "";
+    //BILLING DATE or DUE DATE
+    const mock_up = (employer_nickname == "Shaw") ? "Mock-Up" : "";
+    const billingDate = (date_billed) ? `Billing Date: ${date_billed}` : `${mock_up} Due Date: ${due_date}`;
     document.getElementById("date_billed").innerHTML = billingDate;
 
 
@@ -128,7 +129,7 @@ const loadPage = () => {
     //4. Remove Commas 
     let hoursLog_code = hoursLog_w_commas.replace(/,/g, "");
     //5. Insert hoursLog_code into spot
-    document.getElementById("hours_table").innerHTML = `<p class='project-details-header'><br />WORK LOG:</p><hr class='jobs' />${hoursLog_code}`;
+    document.getElementById("hours_table").innerHTML = `<p class='project-details-header'>WORK LOG:</p><hr class='jobs' />${hoursLog_code}`;
 
 
 
