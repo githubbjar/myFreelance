@@ -143,7 +143,7 @@
         <!--Bootstrap Modal to display TOTALS for ALL JOBS-->
         <p class="info">
             <a data-bs-toggle="modal" data-bs-target="#alljobs">
-            <span>ALL JOBS</span>
+            <span id="alljobs">ALL JOBS</span>
             </a>
         </p>
         <!-- Modal -->

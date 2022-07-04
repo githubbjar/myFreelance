@@ -218,7 +218,7 @@ p.pay-to {
 
 
 @media print {
-    #job_status, #job-list, #thumbnail, #json-hide, #totals-hide {
+    #job_status, #job-list, #thumbnail, #json-hide, #totals-hide, #alljobsfromthisemployerlink, #alljobs {
         display: none;
     }
 
