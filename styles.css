@@ -32,7 +32,9 @@ body {
     }
 
     p.billto-payto {
-        margin-bottom: 4px;
+        font-family: 'Anton', sans-serif;
+        margin-bottom: 9px;
+        margin-top: 15px;
     }
 
     p.total-runningtotal {

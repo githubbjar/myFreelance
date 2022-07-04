@@ -95,14 +95,14 @@
         <div id="hours_table"></div> 
     </div>
     <div class='col-sm-2'>
-        <p class="project-details-header">BILL TO: </p>
+        <p class="billto-payto">BILL TO:</p>
         <p class="info-name" id="employer"></p>
         <p class="info" id="employer_address1"></p>
         <p class="info" id="employer_address2"></p>
         <p class="info" id="contact"></p>
         <p id="contact_email" class="info"></p>
         <hr /> 
-        <p class="billto-payto">PAY TO: </p>
+        <p class="billto-payto">PAY TO:</p>
         <p class="info-name">Jerry Janquart</p> 
         <p class='info'>10438 Red Oak Drive <br /> 
         <p class='info'>Saint John, IN 46373 <br />
