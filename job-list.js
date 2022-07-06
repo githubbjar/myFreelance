@@ -460,6 +460,7 @@ job2731.hours_logged[4] = {Date: "Jun 28", Hours: .5, Note: "email 1 control and
 job2731.hours_logged[5] = {Date: "Jun 28", Hours: .25, Note: "email 2"};
 job2731.hours_logged[6] = {Date: "Jun 29", Hours: 1.5, Note: "all emails; blurring; organizing"};
 job2731.hours_logged[7] = {Date: "Jun 30", Hours: 1, Note: "hover ad; web images; creative review 1 submit"};
+job2731.hours_logged[8] = {Date: "Jul 6", Hours: 1.5, Note: "fix artboards; margins; edits. 1st Route submitted"};
 jobs.push(job2731);
 
 
@@ -475,7 +476,8 @@ jobs.push(job2733);
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2734 = new Job(2734, 26, "Biretta Books", "Bulletins", "St. John Cantius Sunday Bulletins <ul><li>July 10th</li><li>July 17th</li><li>July 24th</li><li>July 31st</li><li>August 7th</li><li>August 14</li><li>August 21</li><li>August 28</li><li>September 4</li>", "June 29th, 2022", "September 4th, 2022");
+const job2734 = new Job(2734, 26, "Biretta Books", "Bulletins", "St. John Cantius Sunday Bulletins <ul><li>July 10th &#10003;</li><li>July 17th</li><li>July 24th</li><li>July 31st</li><li>August 7th</li><li>August 14</li><li>August 21</li><li>August 28</li><li>September 4</li>", "June 29th, 2022", "September 4th, 2022");
 job2734.hours_logged[0] = {Date: "Jun 29", Hours: .5, Note: "getting started"};
 job2734.hours_logged[1] = {Date: "Jun 30", Hours: 1, Note: "starting layout"};
+job2734.hours_logged[2] = {Date: "Jul 5", Hours: 1.5, Note: "finish layout for July 10 bulletin"};
 jobs.push(job2734);
