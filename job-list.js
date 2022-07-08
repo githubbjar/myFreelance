@@ -383,11 +383,11 @@ jobs.push(job2724);
 	
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-const job2725 = new Job(2725, 17, "Douglas Shaw & Associates", "TSM-0785", "The Scott Mission <br />July '22 eAppeal<ul><li>1 Homepage banner &#10003; </li><li>1 Donation page &#10003; </li><li>1 Email &#10003; </li><li>1 FB Post &#10003; </li><li>1 Twitter Post &#10003; </li></ul>", "May 25, 2022", "June 2, 2022");
+const job2725 = new Job(2725, 17, "Douglas Shaw & Associates", "TSM-0785", "The Scott Mission <br /><em>July '22 eAppeal</em><ul><li>1 Homepage banner &#10003; </li><li>1 Donation page &#10003; </li><li>1 Email &#10003; </li><li>1 FB Post &#10003; </li><li>1 Twitter Post &#10003; </li></ul>", "May 25, 2022", "June 2, 2022");
 job2725.hours_logged[0] = {Date: "May 25", Hours: 1, Note: "Getting started. email"};
 job2725.hours_logged[1] = {Date: "May 26", Hours: 1.5, Note: "Donation and social"};
 job2725.hours_logged[2] = {Date: "May 27", Hours: 1, Note: "Banner and output"}; 
-job2725.hours_logged[2] = {Date: "May 31", Hours: .25, Note: "1st Submission"}; 
+job2725.hours_logged[2] = {Date: "May 31", Hours: .25, Note: "1st submit"}; 
 job2725.hours_logged[3] = {Date: "June 1", Hours: .25, Note: "changes, submitted"}; 
 job2725.hours_logged[4] = {Date: "June 8", Hours: 1, Note: "changes, submitted"};
 job2725.hours_logged[5] = {Date: "June 10", Hours: .25, Note: "changes, submitted"};
@@ -413,10 +413,10 @@ job2726.pdf = true;
 jobs.push(job2726);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2727 = new Job(2727, 19, "Douglas Shaw & Associates", "CFD-0197", "Chicago Food Depository <br />August '22 eAppeal  <ol><li> homepage banner &#10003; </li><li>email 1 &#10003; </li><li>email 2 &#10003; </li><li>donation landing page &#10003; </li><li>thank you email &#10003; </li></ol>", "June 13, 2022", "June 17, 2022");
+const job2727 = new Job(2727, 19, "Douglas Shaw & Associates", "CFD-0197", "Chicago Food Depository <br /><em>August '22 eAppeal </em> <ol><li> homepage banner &#10003; </li><li>email 1 &#10003; </li><li>email 2 &#10003; </li><li>donation landing page &#10003; </li><li>thank you email &#10003; </li></ol>", "June 13, 2022", "June 17, 2022");
 job2727.hours_logged[0] = {Date: "Jun 15", Hours: 2, Note: "mock emails"};
 job2727.hours_logged[1] = {Date: "Jun 16", Hours: 1, Note: "donation page and banner"};
-job2727.hours_logged[2] = {Date: "Jun 17", Hours: .5, Note: "check and send first review pdf"};
+job2727.hours_logged[2] = {Date: "Jun 17", Hours: .5, Note: "check and 1st submit"};
 job2727.hours_logged[3] = {Date: "Jun 17", Hours: .75, Note: "edits returned"};
 job2727.hours_logged[4] = {Date: "Jun 20", Hours: .25, Note: "first route submitted"};
 job2727.hours_logged[5] = {Date: "Jun 22", Hours: .5, Note: "changes, cs review 1 submitted"};
@@ -426,18 +426,18 @@ jobs.push(job2727);
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2728 = new Job(2728, 20, "Douglas Shaw & Associates", "CFD-0204", "Chicago Food Depository <br />September Hunger Action Month", "June 14, 2022", "July 14, 2022");
+const job2728 = new Job(2728, 20, "Douglas Shaw & Associates", "CFD-0204", "Chicago Food Depository <br /><em>September Hunger Action Month</em>", "June 14, 2022", "July 14, 2022");
 job2728.hours_logged[0] = {Date: "Jun 14", Hours: .5, Note: "Initial meeting"}
 jobs.push(job2728);
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2729 = new Job(2729, 21, "Douglas Shaw & Associates", "MCR-0522", "Moody Church Media<br /> 2022 FYE Digital Campaign<ul><li>2 Facebook ads &#10003; </li><li>3 total emails &#10003; </li><li>1 hover ad &#10003; </li><li>1 Homepage Banner &#10003; </li><li>1 Donation page &#10003; </li></ul>", "June 21, 2022", "June 27, 2022");
+const job2729 = new Job(2729, 21, "Douglas Shaw & Associates", "MCR-0522", "Moody Church Media<br /> <em>2022 FYE Digital Campaign</em><ul><li>2 Facebook ads &#10003; </li><li>3 total emails &#10003; </li><li>1 hover ad &#10003; </li><li>1 Homepage Banner &#10003; </li><li>1 Donation page &#10003; </li></ul>", "June 21, 2022", "June 27, 2022");
 job2729.hours_logged[0] = {Date: "Jun 22", Hours: 1, Note: "FB ads and email 1"};
 job2729.hours_logged[1] = {Date: "Jun 22", Hours: .5, Note: "email 2"};
 job2729.hours_logged[2] = {Date: "Jun 24", Hours: .5, Note: "email 3, homepage banner"};
 job2729.hours_logged[3] = {Date: "Jun 25", Hours: 1.25, Note: "finished, output"};
-job2729.hours_logged[4] = {Date: "Jun 27", Hours: .25, Note: "checked; sent for review"};
+job2729.hours_logged[4] = {Date: "Jun 27", Hours: .25, Note: "checked; 1st submit"};
 jobs.push(job2729);
 
 
@@ -451,7 +451,7 @@ jobs.push(job2730);
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2731 = new Job(2731, 23, "Douglas Shaw & Associates", "WAS-1185", "Wycliffe Associates<br />August 2 Partner Letter Digital Campaign<ol><li>homepage banner &#10003; </li><li>donation page &#10003;</li><li>hover ad &#10003;</li><li>Facebook ad &#10003;</li><li>Facebook post  &#10003; </li><li>native ad &#10003; </li><li>social ambassador email &#10003;</li><li>auto-generated post &#10003;</li><li>(7) email &#10003; &#10003; &#10003; &#10003; &#10003; &#10003; &#10003;</li><li>blog post &#10003;</li></ol>", "June 25, 2022", "June 30, 2022");
+const job2731 = new Job(2731, 23, "Douglas Shaw & Associates", "WAS-1185", "Wycliffe Associates<br /><em>August 2 Partner Letter Digital Campaign</em><ol><li>homepage banner &#10003; </li><li>donation page &#10003;</li><li>hover ad &#10003;</li><li>Facebook ad &#10003;</li><li>Facebook post  &#10003; </li><li>native ad &#10003; </li><li>social ambassador email &#10003;</li><li>auto-generated post &#10003;</li><li>(7) email &#10003; &#10003; &#10003; &#10003; &#10003; &#10003; &#10003;</li><li>blog post &#10003;</li></ol>", "June 25, 2022", "June 30, 2022");
 job2731.hours_logged[0] = {Date: "Jun 25", Hours: .5, Note: "Setup; homepage banner"};
 job2731.hours_logged[1] = {Date: "Jun 26", Hours: 1, Note: "donation page; blog post"};
 job2731.hours_logged[2] = {Date: "Jun 27", Hours: .75, Note: "facebook; social; native"};
@@ -459,19 +459,21 @@ job2731.hours_logged[3] = {Date: "Jun 28", Hours: .25, Note: "ambassador email"}
 job2731.hours_logged[4] = {Date: "Jun 28", Hours: .5, Note: "email 1 control and test"};
 job2731.hours_logged[5] = {Date: "Jun 28", Hours: .25, Note: "email 2"};
 job2731.hours_logged[6] = {Date: "Jun 29", Hours: 1.5, Note: "all emails; blurring; organizing"};
-job2731.hours_logged[7] = {Date: "Jun 30", Hours: 1, Note: "hover ad; web images; creative review 1 submit"};
+job2731.hours_logged[7] = {Date: "Jun 30", Hours: 1, Note: "hover ad; web images; 1st submit"};
 job2731.hours_logged[8] = {Date: "Jul 6", Hours: 1.5, Note: "fix artboards; margins; edits. 1st Route submitted"};
+job2731.hours_logged[9] = {Date: "Jul 7", Hours: 1.75, Note: "1st Route edits recieved; changes made"};
+job2731.hours_logged[10] = {Date: "Jul 8", Hours: .25, Note: "CS Review.01 compiled and submitted"};
 jobs.push(job2731);
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2732 = new Job(2732, 24, "Douglas Shaw & Associates", "CFD-0212", "Chicago Food Depository<br />October Digital Donor Report<ul><li>Donation Page</li><li>Impact Landing Page</li><li>Email</li><li>Blog Post 1</li></ul>", "June 27, 2022", "August 17, 2022");
+const job2732 = new Job(2732, 24, "Douglas Shaw & Associates", "CFD-0212", "Chicago Food Depository<br /><em>October Digital Donor Report</em><ul><li>Donation Page</li><li>Impact Landing Page</li><li>Email</li><li>Blog Post 1</li></ul>", "June 27, 2022", "August 17, 2022");
 job2732.hours_logged[0] = {Date: "Jun 27", Hours: .25, Note: "Initial meeting"};
 jobs.push(job2732);
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2733 = new Job(2733, 25, "Douglas Shaw & Associates", "WAS-1189", "Wycliffe Assosicate<br />September Partner Letter Digital Campaign", "June 28, 2022", "July 25, 2022");
+const job2733 = new Job(2733, 25, "Douglas Shaw & Associates", "WAS-1189", "Wycliffe Assosicate<br /><em>September Partner Letter Digital Campaign</em>", "June 28, 2022", "July 25, 2022");
 jobs.push(job2733);
 
 
@@ -481,3 +483,8 @@ job2734.hours_logged[0] = {Date: "Jun 29", Hours: .5, Note: "getting started"};
 job2734.hours_logged[1] = {Date: "Jun 30", Hours: 1, Note: "starting layout"};
 job2734.hours_logged[2] = {Date: "Jul 5", Hours: 1.5, Note: "finish layout for July 10 bulletin"};
 jobs.push(job2734);
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+const job2735 = new Job(2735, 27, "Douglas Shaw & Associates", "CFD-0195", "Chicago Food Depository<br /><em>August Social Ambassador</em><ol><li>Email</li><li>Story 1 Social Share (FB, Twitter, LinkedIn)</li><li>Story 1 Email Share</li><li>Story 2 Social Share (FB, Twitter, LinkedIn)</li><li>Story 2 Email Share</li></ol>", "July 6, 2022", "July 13, 2022");
+jobs.push(job2735);

@@ -246,21 +246,44 @@ const loadPage = () => {
     }, 0);
 
 
+    //mockup sub section for shaw
+    const mockupSubSectionForShaw = (employer_nickname == "Shaw") ? `
+    <hr />
+    <p class="project-details-header">Mock-up Status for Jobs:</p>
+    <hr />
+    <p class="project-details">To Do:</p>
+    <p class="joblist_projects_amounts">ABC-123</p>
+    <hr />
+    <p class="project-details">Completed:</p>
+    <p class="joblist_projects_amounts">ABC-123</p>
+    ` : ``;
+
+
     //Display the code
     document.getElementById("totals-from-employer-title").innerHTML = `<h2 class="jerry">Amounts &#8212; ${jobsFromThisEmployer.length} ${employer_nickname} Job(s)</h2>`;
 
     document.getElementById("totals-from-employer").innerHTML = `
+    <hr />
     <p class="project-details-header">AMOUNT RECEIVED ::: CLOSED JOBS &#8212; ${closedJobsFromThisEmployer.length} </p>
+    <hr />
     <p class="joblist_projects_amounts">${closedProjectTitlesFromThisEmployer}</p>
-    <p class="total-due">${totalAmountReceivedFromThisEmployer.toFixed(2)}</p>
+    <p class="total-due">$${totalAmountReceivedFromThisEmployer.toFixed(2)}</p>
 
+    <hr />
     <p class="project-details-header">AMOUNT BILLED / TO BE BILLED ::: FINISHED JOBS &#8212; ${completedJobsFromThisEmployer.length}</p>
+    <hr />
     <p class="joblist_projects_amounts">${completedProjectTitlesFromThisEmployer}</p>
     <p class="total-due">$${totalAmountToBillFromThisEmployer.toFixed(2)}</p>
 
+    <hr />
     <p class="project-details-header">AMOUNT NOT YET BILLED ::: JOBS IN PROGRESS &#8212; ${jobsInProgressFromThisEmployer.length}</p>
+    <hr />
     <p class="joblist_projects_amounts">${jobsInProgressFromThisEmployerTitles}</p>
-    <p class="total-due">$${totalAmountToBeBilledFromThisEmployer.toFixed(2)}</p>`;
+    <p class="total-due">$${totalAmountToBeBilledFromThisEmployer.toFixed(2)}</p>
+    
+    ${mockupSubSectionForShaw}
+
+    `;
 
 
 
@@ -317,7 +340,7 @@ const loadPage = () => {
     
     //OUTPUT TOTALS MODAL
     document.getElementById("totals-spot").innerHTML = `<h2 class="jerry">Amounts &#8212; ${jobs.length} Jobs</h2>`;
-    document.getElementById("totals").innerHTML = `<p class="project-details-header">AMOUNT RECEIVED ::: CLOSED JOBS &#8212; ${closedJobs.length}</p><p class="joblist_projects_amounts">${closedProjectTitles}</p><p class="total-due">$${totalAmountReceived.toFixed(2)}</p><p class="project-details-header">AMOUNT BILLED / TO BE BILLED ::: FINISHED JOBS &#8212; ${completedJobs.length}</p><p class="joblist_projects_amounts">${completedProjectTitles}</p><p class="total-due">$${totalAmountBilled.toFixed(2)}</p><p class="project-details-header">AMOUNT NOT YET BILLED ::: JOBS IN PROGRESS &#8212; ${jobsInProgress.length}</p><p class="joblist_projects_amounts">${jobsInProgressTitles}</p><p class="total-due">$${totalAmountToBeBilled.toFixed(2)}</p>`;
+    document.getElementById("totals").innerHTML = `<hr /><p class="project-details-header">AMOUNT RECEIVED ::: CLOSED JOBS &#8212; ${closedJobs.length}</p><hr /><p class="joblist_projects_amounts">${closedProjectTitles}</p><p class="total-due">$${totalAmountReceived.toFixed(2)}</p><hr /><p class="project-details-header">AMOUNT BILLED / TO BE BILLED ::: FINISHED JOBS &#8212; ${completedJobs.length}</p><hr /><p class="joblist_projects_amounts">${completedProjectTitles}</p><p class="total-due">$${totalAmountBilled.toFixed(2)}</p><hr /><p class="project-details-header">AMOUNT NOT YET BILLED ::: JOBS IN PROGRESS &#8212; ${jobsInProgress.length}</p><hr /><p class="joblist_projects_amounts">${jobsInProgressTitles}</p><p class="total-due">$${totalAmountToBeBilled.toFixed(2)}</p>`;
 
 
 
