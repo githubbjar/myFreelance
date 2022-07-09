@@ -247,15 +247,37 @@ const loadPage = () => {
 
 
     //mockup sub section for shaw
+
+    //get array of all Shaw jobs w and w/o mockups and not ready to bill
+    const allShawJobsWithMockup = [];
+    for (let i = 0; i < jobs.length; i++) {
+        if (jobs[i].mockupSubmitted && jobs[i].employer_nickname() == "Shaw" && !jobs[i].completed_date) {
+            allShawJobsWithMockup.push(jobs[i]);
+        }
+    };
+    const allShawJobsWithMockupArray = allShawJobsWithMockup.map (function (job) {return `<a href="https://www.jerryjanquart.com/myFreelance/index.php?jobx=${job.job_number}">${job.project}</a>`;});
+    const allShawJobsWithMockupTitles = allShawJobsWithMockupArray.join(', ');
+
+
+    const allShawJobsWithoutMockup = [];
+    for (let i = 0; i < jobs.length; i++) {
+        if (!jobs[i].mockupSubmitted && jobs[i].employer_nickname() == "Shaw") {
+            allShawJobsWithoutMockup.push(jobs[i]);
+        }
+    };
+    const allShawJobsWithoutMockupArray = allShawJobsWithoutMockup.map (function (job) {return `<a href="https://www.jerryjanquart.com/myFreelance/index.php?jobx=${job.job_number}">${job.project}</a>`;});
+    const allShawJobsWithoutMockupTitles = allShawJobsWithoutMockupArray.join(', ');
+
     const mockupSubSectionForShaw = (employer_nickname == "Shaw") ? `
+    <hr /><hr /><hr />
+    <p class="project-details-header">Mock-up Status for Jobs :::</p>
     <hr />
-    <p class="project-details-header">Mock-up Status for Jobs:</p>
+    <p class="project-details">In Mock-up Stage &#8212; ${allShawJobsWithoutMockup.length}</p>
+    <p class="joblist_projects_amounts">${allShawJobsWithoutMockupTitles}</p>
     <hr />
-    <p class="project-details">To Do:</p>
-    <p class="joblist_projects_amounts">ABC-123</p>
-    <hr />
-    <p class="project-details">Completed:</p>
-    <p class="joblist_projects_amounts">ABC-123</p>
+    <p class="project-details">In Editing Stage &#8212; ${allShawJobsWithMockup.length}</p>
+    <p class="joblist_projects_amounts">${allShawJobsWithMockupTitles}</p>
+    <hr /><hr /><hr />
     ` : ``;
 
 

@@ -99,6 +99,7 @@ function Job(invoice_number, job_number, employer, project, project_type, start_
     this.date_paid = "";
     this.thumbnail = false;
     this.pdf = false;
+    this.mockupSubmitted = false;
 };
 
 //begin the jobs
@@ -388,6 +389,7 @@ job2725.hours_logged[0] = {Date: "May 25", Hours: 1, Note: "Getting started. ema
 job2725.hours_logged[1] = {Date: "May 26", Hours: 1.5, Note: "Donation and social"};
 job2725.hours_logged[2] = {Date: "May 27", Hours: 1, Note: "Banner and output"}; 
 job2725.hours_logged[2] = {Date: "May 31", Hours: .25, Note: "1st submit"}; 
+job2725.mockupSubmitted = true;
 job2725.hours_logged[3] = {Date: "June 1", Hours: .25, Note: "changes, submitted"}; 
 job2725.hours_logged[4] = {Date: "June 8", Hours: 1, Note: "changes, submitted"};
 job2725.hours_logged[5] = {Date: "June 10", Hours: .25, Note: "changes, submitted"};
@@ -417,6 +419,7 @@ const job2727 = new Job(2727, 19, "Douglas Shaw & Associates", "CFD-0197", "Chic
 job2727.hours_logged[0] = {Date: "Jun 15", Hours: 2, Note: "mock emails"};
 job2727.hours_logged[1] = {Date: "Jun 16", Hours: 1, Note: "donation page and banner"};
 job2727.hours_logged[2] = {Date: "Jun 17", Hours: .5, Note: "check and 1st submit"};
+job2727.mockupSubmitted = true;
 job2727.hours_logged[3] = {Date: "Jun 17", Hours: .75, Note: "edits returned"};
 job2727.hours_logged[4] = {Date: "Jun 20", Hours: .25, Note: "first route submitted"};
 job2727.hours_logged[5] = {Date: "Jun 22", Hours: .5, Note: "changes, cs review 1 submitted"};
@@ -438,6 +441,7 @@ job2729.hours_logged[1] = {Date: "Jun 22", Hours: .5, Note: "email 2"};
 job2729.hours_logged[2] = {Date: "Jun 24", Hours: .5, Note: "email 3, homepage banner"};
 job2729.hours_logged[3] = {Date: "Jun 25", Hours: 1.25, Note: "finished, output"};
 job2729.hours_logged[4] = {Date: "Jun 27", Hours: .25, Note: "checked; 1st submit"};
+job2729.mockupSubmitted = true;
 jobs.push(job2729);
 
 
@@ -460,6 +464,7 @@ job2731.hours_logged[4] = {Date: "Jun 28", Hours: .5, Note: "email 1 control and
 job2731.hours_logged[5] = {Date: "Jun 28", Hours: .25, Note: "email 2"};
 job2731.hours_logged[6] = {Date: "Jun 29", Hours: 1.5, Note: "all emails; blurring; organizing"};
 job2731.hours_logged[7] = {Date: "Jun 30", Hours: 1, Note: "hover ad; web images; 1st submit"};
+job2731.mockupSubmitted = true;
 job2731.hours_logged[8] = {Date: "Jul 6", Hours: 1.5, Note: "fix artboards; margins; edits. 1st Route submitted"};
 job2731.hours_logged[9] = {Date: "Jul 7", Hours: 1.75, Note: "1st Route edits recieved; changes made"};
 job2731.hours_logged[10] = {Date: "Jul 8", Hours: .25, Note: "CS Review.01 compiled and submitted"};
