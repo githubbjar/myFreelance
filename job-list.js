@@ -503,6 +503,9 @@ const job2735 = new Job(2735, 27, "Douglas Shaw & Associates", "CFD-0195", "Chic
 job2735.filesReceived = true;
 job2735.hours_logged[0] = {Date: "Jul 6th", Hours: .25, Note: "files received; getting organized"};
 job2735.hours_logged[1] = {Date: "Jul 10", Hours: 2, Note: "email and social 1 posts; templates reworked" };
+job2735.hours_logged[2] = {Date: "Jul 10", Hours: .75, Note: "social posts 2; pdf created; mock-up submitted"};
+job2735.mockupSubmitted = true;
+
 jobs.push(job2735);
 
 
