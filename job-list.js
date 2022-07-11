@@ -499,7 +499,7 @@ jobs.push(job2734);
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2735 = new Job(2735, 27, "Douglas Shaw & Associates", "CFD-0195", "Chicago Food Depository<br /><em>August Social Ambassador</em><ol><li>Email &#10003;</li><li>Story 1 Social Share (FB, Twitter, LinkedIn) &#10003;</li><li>Story 1 Email Share</li><li>Story 2 Social Share (FB, Twitter, LinkedIn)</li><li>Story 2 Email Share</li></ol>", "July 6, 2022", "July 13, 2022");
+const job2735 = new Job(2735, 27, "Douglas Shaw & Associates", "CFD-0195", "Chicago Food Depository<br /><em>August Social Ambassador</em><ol><li>Email &#10003;</li><li>Story 1 Social Share (FB, Twitter, LinkedIn) &#10003;</li><li>Story 1 Email Share &#10003;</li><li>Story 2 Social Share (FB, Twitter, LinkedIn) &#10003;</li><li>Story 2 Email Share &#10003;</li></ol>", "July 6, 2022", "July 13, 2022");
 job2735.filesReceived = true;
 job2735.hours_logged[0] = {Date: "Jul 6th", Hours: .25, Note: "files received; getting organized"};
 job2735.hours_logged[1] = {Date: "Jul 10", Hours: 2, Note: "email and social 1 posts; templates reworked" };
