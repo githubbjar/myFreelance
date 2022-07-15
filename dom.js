@@ -105,7 +105,7 @@ const loadPage = () => {
 
     //THUMBNAIL & PDF
     let thumbnailImg = "";
-    let thumbnailText = "<p class='project-details-header'>THUMBNAIL:<br /><br /></p>";
+    let thumbnailText = "<p class='project-details-header'>THUMBNAIL / PDF:<br /><br /></p>";
     if (thumbnail && pdf) {
         thumbnailImg = `${thumbnailText}<a href="pdfs/${invoice_number}.pdf"><img src="thumbnails/${invoice_number}.png" width="80%" /></a>`;
     } else if(jobs[x].thumbnail) {
@@ -185,6 +185,7 @@ const loadPage = () => {
 
     //Put the link for the popup on the page
     document.getElementById("alljobsfromthisemployerlink").innerHTML = `ALL ${employer_nickname.toUpperCase()} JOBS`;
+    document.getElementById("alljobslink").innerHTML = 'ALL JOBS';
 
     //Create array of all closed jobs from this employer
     const closedJobsFromThisEmployer = [];
@@ -307,13 +308,13 @@ const loadPage = () => {
     <p class="total-due">$${totalAmountReceivedFromThisEmployer.toFixed(2)}</p>
 
     <hr />
-    <p class="project-details-header">${completedJobsFromThisEmployer.length} FINISHED JOBS ::: AMOUNT BILLED / TO BE BILLED</p>
+    <p class="project-details-header">${completedJobsFromThisEmployer.length} FINISHED JOBS ::: AMOUNT BILLED</p>
     <hr />
     <p class="joblist_projects_amounts">${completedProjectTitlesFromThisEmployer}</p>
     <p class="total-due">$${totalAmountToBillFromThisEmployer.toFixed(2)}</p>
 
     <hr />
-    <p class="project-details-header">${jobsInProgressFromThisEmployer.length} JOBS IN PROGRESS ::: AMOUNT NOT YET BILLED</p>
+    <p class="project-details-header">${jobsInProgressFromThisEmployer.length} JOBS IN PROGRESS ::: AMOUNT EARNED</p>
     <hr />
     <p class="joblist_projects_amounts">${jobsInProgressFromThisEmployerTitles}</p>
     <p class="total-due">$${totalAmountToBeBilledFromThisEmployer.toFixed(2)}</p>

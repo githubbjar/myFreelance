@@ -33,7 +33,7 @@
         parse_str($url_components['query'], $params);
         // set jobx variable based on url
         if (!$params['jobx']) {
-            $jobx = 19;
+            $jobx = 0;
         } else {
             $jobx = $params['jobx'];
         };
@@ -142,7 +142,7 @@
         <!--Bootstrap Modal to display TOTALS for ALL JOBS-->
         <p class="info">
             <a data-bs-toggle="modal" data-bs-target="#alljobs">
-                ALL JOBS
+            <span id="alljobslink"></span>
             </a>
         </p>
         <!-- Modal -->
