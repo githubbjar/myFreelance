@@ -47,6 +47,16 @@ body {
         margin-bottom: 0px;
         margin-top: 15px;    
     }
+    p.project-details-header-shaw {
+        font-family: 'Anton', sans-serif;
+        margin-bottom: 0px;
+        margin-top: 15px;    
+        margin-left: 25px;
+    }
+    hr.shaw {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
     p.project-details-header-top {
         font-family: 'Anton', sans-serif;
         margin-bottom: 0px;
@@ -57,6 +67,13 @@ body {
         font-family: 'Crimson Text', serif;
         font-size: 22px;
         line-height: 24px;
+    }
+    p.project-details-shaw {
+        font-family: 'Crimson Text', serif;
+        font-size: 22px;
+        line-height: 24px;
+        margin-left: 25px;
+        margin-bottom: 0px;
     }
 
     p.info {
@@ -171,11 +188,12 @@ body {
         font-family: 'Crimson Text', serif;
     }
 
-    .joblist_projects_amounts_shaw {
+    .joblist_projects_amounts-shaw {
         font-size: 16px;
         line-height: 18px;
         margin-top: 5px;
         margin-bottom: 5px;
+        margin-left: 25px;
         font-family: 'Crimson Text', serif;
     }
 

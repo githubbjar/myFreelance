@@ -247,7 +247,27 @@ const loadPage = () => {
     }, 0);
 
 
-    //mockup sub section for shaw
+    //mockup special extras for shaw modal 
+
+    //DISPLAY TOTAL HOURS FOR ALL SHAW JOBS IN SHAW MODAL
+    
+    const totalShawHoursArray = [];
+    for (let i = 0; i < jobs.length; i++) {
+        if (jobs[i].employer_nickname() == "Shaw") {
+            totalShawHoursArray.push(jobs[i].total_hours());
+        }
+    };
+
+    const sumOfHours = (arrayOfHours) => {
+        let sum = 0;
+        for (let i = 0; i < arrayOfHours.length; i++) {
+            sum += arrayOfHours[i];
+        }
+        return sum;
+    };
+    
+    const shawTotalHours = (employer_nickname == "Shaw") ? `&#8212; ${sumOfHours(totalShawHoursArray)} Hours Total`:``;
+
 
     //get array of all Shaw jobs w and w/o mockups and not ready to bill
 
@@ -271,6 +291,9 @@ const loadPage = () => {
     const allShawJobsWithoutMockupArray = allShawJobsWithoutMockup.map (function (job) {return `<a href="https://www.jerryjanquart.com/myFreelance/index.php?jobx=${job.job_number}">${job.project}</a> due on ${job.due_date}`;});
     const allShawJobsWithoutMockupTitles = allShawJobsWithoutMockupArray.join('<br /> ');
 
+
+
+    
     
     //SHAW JOBS IN PLANNING STAGE
     const allShawJobsFilesNotReceived = [];
@@ -284,21 +307,21 @@ const loadPage = () => {
 
 
     const mockupSubSectionForShaw = (employer_nickname == "Shaw") ? `
-    <p class="project-details-header">STATUS OF JOBS IN PROGRESS</p>
-    <hr />
-    <p class="project-details">Planning Stage &#8212; ${allShawJobsFilesNotReceived.length}</p>
-    <p class="joblist_projects_amounts">${allShawJobsFilesNotReceivedTitles}</p>
-    <hr />
-    <p class="project-details">Mock-up Stage &#8212; ${allShawJobsWithoutMockup.length}</p>
-    <p class="joblist_projects_amounts_shaw">${allShawJobsWithoutMockupTitles}</p>
-    <hr />
-    <p class="project-details">Editing Stage &#8212; ${allShawJobsWithMockup.length}</p>
-    <p class="joblist_projects_amounts">${allShawJobsWithMockupTitles}</p>
+    <p class="project-details-header-shaw">STATUS OF THE JOBS IN PROGRESS</p>
+    <hr class="shaw" />
+    <p class="project-details-shaw">Planning Stage &#8212; ${allShawJobsFilesNotReceived.length}</p>
+    <p class="joblist_projects_amounts-shaw">${allShawJobsFilesNotReceivedTitles}</p>
+    <hr class="shaw" />
+    <p class="project-details-shaw"">Mock-up Stage &#8212; ${allShawJobsWithoutMockup.length}</p>
+    <p class="joblist_projects_amounts-shaw">${allShawJobsWithoutMockupTitles}</p>
+    <hr class="shaw" />
+    <p class="project-details-shaw"">Editing Stage &#8212; ${allShawJobsWithMockup.length}</p>
+    <p class="joblist_projects_amounts-shaw">${allShawJobsWithMockupTitles}</p>
     ` : ``;
 
 
     //Display the code
-    document.getElementById("totals-from-employer-title").innerHTML = `<h2 class="jerry">${jobsFromThisEmployer.length} ${employer_nickname} Jobs</h2>`;
+    document.getElementById("totals-from-employer-title").innerHTML = `<h2 class="jerry">${jobsFromThisEmployer.length} ${employer_nickname} Jobs ${shawTotalHours}</h2>`;
 
     document.getElementById("totals-from-employer").innerHTML = `
     <hr />

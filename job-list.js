@@ -458,6 +458,8 @@ job2729.hours_logged[2] = {Date: "Jun 24", Hours: .5, Note: "email 3, homepage b
 job2729.hours_logged[3] = {Date: "Jun 25", Hours: 1.25, Note: "finished, output"};
 job2729.hours_logged[4] = {Date: "Jun 27", Hours: .25, Note: "checked; 1st submit"};
 job2729.mockupSubmitted = true;
+job2729.hours_logged[5] = {Date: "Jul 15", Hours: .25, Note: "edits; CS.01 submitted"};
+job2729.mockupSubmitted = true;
 jobs.push(job2729);
 
 
@@ -525,6 +527,7 @@ jobs.push(job2735);
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2736 = new Job(2736, 28, "Douglas Shaw & Associates", "CFD-0201", "Chicago Food Depository<br /><em>September '22 Social Ambassador Email</em>", "July 12, 2022", "July 27th, 2022");
+const job2736 = new Job(2736, 28, "Douglas Shaw & Associates", "CFD-0201", "Chicago Food Depository<br /><em>September '22 Social Ambassador Email</em><ol><li>Email</li><li>Auto-generated Social Posts; Twitter, FB, LinkedIn</li><li>Auto-generated Email</li></ol>", "July 12, 2022", "July 27th, 2022");
 job2736.filesReceived = true;
+job2736.hours_logged[0] = {Date: "Jul 15", Hours: .25, Note: "Downloading files; setting up folder; getting organized"};
 jobs.push(job2736);
