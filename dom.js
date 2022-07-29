@@ -266,7 +266,7 @@ const loadPage = () => {
         return sum;
     };
     
-    const shawTotalHours = (employer_nickname == "Shaw") ? `&#8212; ${sumOfHours(totalShawHoursArray)} Hours Total`:``;
+    const shawTotalHours = (employer_nickname == "Shaw") ? `&#8212; ${sumOfHours(totalShawHoursArray).toFixed(2)} Hours Total`:``;
 
 
     //get array of all Shaw jobs w and w/o mockups and not ready to bill
