@@ -40,7 +40,7 @@ const loadPage = () => {
     //TOTAL AMOUNT DUE or RUNNING TOTAL
     let runningOrTotal = "RUNNING TOTAL:";
     if (completed_date && date_paid) {
-        runningOrTotal = "AMOUNT PAID:";
+        runningOrTotal = `AMOUNT PAID on ${date_paid}:`;
     } else if (completed_date && !date_paid) {
         runningOrTotal = "TOTAL DUE:";
     };

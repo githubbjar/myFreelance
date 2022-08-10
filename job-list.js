@@ -403,6 +403,7 @@ job2725.completed_date = "June 24, 2022";
 job2725.date_billed = "July 12, 2022"; 
 job2725.thumbnail = true;
 job2725.pdf = true;
+job2725.date_paid = "August 4th, 2022";
 jobs.push(job2725);
 
 
@@ -438,6 +439,12 @@ job2727.hours_logged[10] = {Date: "Jul 26", Hours: .5, Note: "edits made to emai
 job2727.hours_logged[11] = {Date: "Jul 27", Hours: .25, Note: "edit made to donation2; CR05 submitted"};
 job2727.hours_logged[12] = {Date: "Jul 29", Hours: .25, Note: "edit made to email; CR06(emails) submitted"};
 job2727.hours_logged[13] = {Date: "Jul 29", Hours: .5, Note: "edits made donation pages; FinalRoute02 submitted; banners uploaded"};
+job2727.hours_logged[14] = {Date: "Aug 4", Hours: .16, Note: "edits made emails; FinalRoute02 (emails) submitted"};
+job2727.hours_logged[15] = {Date: "Aug 5", Hours: .33, Note: "final email asses created/uploaded"};
+job2727.completed_date = "August 5th, 2022";
+job2727.date_billed = "August 5th, 2022";
+job2727.pdf = true;
+job2727.thumbnail = true;
 jobs.push(job2727);
 
 
@@ -477,6 +484,7 @@ job2729.hours_logged[10] = {Date: "Aug 3", Hours: .5, Note: "final web assets co
 job2729.completed_date = "August 3rd, 2022";
 job2729.pdf = true;
 job2729.thumbnail = true;
+job2729.date_billed = "August 5th, 2022";
 jobs.push(job2729);
 
 
@@ -505,13 +513,17 @@ job2731.mockupSubmitted = true;
 job2731.hours_logged[8] = {Date: "Jul 6", Hours: 1.5, Note: "fix artboards; margins; edits. 1st Route submitted"};
 job2731.hours_logged[9] = {Date: "Jul 7", Hours: 1.75, Note: "1st Route edits recieved; changes made"};
 job2731.hours_logged[10] = {Date: "Jul 8", Hours: .25, Note: "CS Review.01 compiled and submitted"};
-job2731.hours_logged[11] = {Date: "Jul11", Hours: .25, Note: "edits made; CS Review.02 submitted"};
+job2731.hours_logged[11] = {Date: "Jul 11", Hours: .25, Note: "edits made; CS Review.02 submitted"};
+job2731.hours_logged[12] = {Date: "Aug 4", Hours: .75, Note: "edits made; Client Review.02 submitted"};
+job2731.hours_logged[13] = {Date: "Aug 4", Hours: .5, Note: "edits made; Client Review.03 submitted"};
 jobs.push(job2731);
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2732 = new Job(2732, 24, "Douglas Shaw & Associates", "CFD-0212", "Chicago Food Depository<br /><em>October Digital Donor Report</em><ul><li>Donation Page</li><li>Impact Landing Page</li><li>Email</li><li>Blog Post 1</li></ul>", "June 27, 2022", "August 17th, 2022");
+const job2732 = new Job(2732, 24, "Douglas Shaw & Associates", "CFD-0212", "Chicago Food Depository<br /><em>October Digital Donor Report</em><ol><li>Email &#10003;</li><li>Impact Landing Page &#10003;</li><li>Blog Article 1</li><li>Blog Article 2</li><li>Donation Page</ol>", "June 27, 2022", "August 17th, 2022");
 job2732.hours_logged[0] = {Date: "Jun 27", Hours: .25, Note: "Initial meeting"};
+job2732.hours_logged[1] = {Date: "Aug 10", Hours: .75, Note: "Email layout"};
+job2732.hours_logged[2] = {Date: "Aug 10", Hours: .75, Note: "Impact page layout"};
 job2732.filesReceived = true;
 jobs.push(job2732);
 
@@ -521,9 +533,14 @@ const job2733 = new Job(2733, 25, "Douglas Shaw & Associates", "WAS-1189", "Wycl
 job2733.filesReceived = true;
 job2733.hours_logged[0] = {Date: "Jul 19", Hours: .25, Note: "Files created; Getting Organized"};
 job2733.hours_logged[1] = {Date: "Jul 20", Hours: .5, Note: "CR.01 / mockup submitted"};
-job2733.hours_logged[2] = {Date: "Jul 27", Hours: .2, Note: "edit; CS Review.01 submitted"}
-job2733.hours_logged[3] = {Date: "Aug 2", Hours: .2, Note: "edit; ClientReview.02 submitted"}
 job2733.mockupSubmitted = true;
+job2733.hours_logged[2] = {Date: "Jul 27", Hours: .2, Note: "edit; CS Review.01 submitted"};
+job2733.hours_logged[3] = {Date: "Aug 2", Hours: .2, Note: "edit; ClientReview.02 submitted"};
+job2733.hours_logged[4] = {Date: "Aug 4", Hours: .25, Note: "to web and working files submitted"};
+job2733.completed_date = "August 3rd, 2022";
+job2733.pdf = true;
+job2733.thumbnail = true;
+job2733.date_billed = "August 5th, 2022";
 jobs.push(job2733);
 
 
@@ -552,7 +569,11 @@ job2735.hours_logged[3] = {Date: "Jul 11", Hours: .25, Note: "edits made; CR 02 
 job2735.hours_logged[4] = {Date: "Jul 12", Hours: .25, Note: "edits made; First Route submitted"};
 job2735.hours_logged[5] = {Date: "Jul 20", Hours: .75, Note: "edits made (new story 2); CS 01 submitted"};
 job2735.hours_logged[6] = {Date: "Aug 2", Hours: .33, Note: "edits made; ClientReview 02 submitted"};
-job2735.hours_logged[7] = {Date: "Aug 2", Hours: .16, Note: "edits made; ClientReview 03 submitted"};
+job2735.hours_logged[7] = {Date: "Aug 8", Hours: .16, Note: "edits made; ClientReview 03 submitted"};
+job2735.hours_logged[8] = {Date: "Aug 9", Hours: .25, Note: "final files uploaded"};
+job2735.completed_date = "August 9, 2022";
+job2735.thumbnail = true;
+job2735.pdf = true;
 jobs.push(job2735);
 
 
@@ -569,15 +590,28 @@ jobs.push(job2736);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2737 = new Job(2737, 29, "Biretta Books", "2022/23 Music Schedule", "16 page booklet, 5.5 x 8.5, St. John Cantius Church", "July 15, 2022", "August 1, 2022");
-job2737.hours_logged[0] = {Date: "Jul 27", Hours: .5, Note: "Word docs and pictures created/downloaded"};
-job2737.hours_logged[1] = {Date: "Aug 1", Hours: 1.25, Note: "Layout"};
-job2737.hours_logged[1] = {Date: "Aug 3", Hours: 1.2, Note: "styling of dates"};
+job2737.hours_logged[0] = {Date: "Jul 27", Hours: .75, Note: "Word docs and pictures created/downloaded"};
+job2737.hours_logged[1] = {Date: "Aug 1", Hours: 1.5, Note: "Layout"};
+job2737.hours_logged[1] = {Date: "Aug 3", Hours: 1.5, Note: "styling/editing date text"};
+job2737.hours_logged[2] = {Date: "Aug 4", Hours: 2, Note: "layout"};
+job2737.hours_logged[3] = {Date: "Aug 5", Hours: 1, Note: "first draft completed/sent"};
+job2737.hours_logged[4] = {Date: "Aug 9", Hours: 1.25, Note: "edits, second draft sent"};
+job2737.hours_logged[5] = {Date: "Aug 9", Hours: 1, Note: "edits; pictures formatted; fnl submitted"};
+job2737.completed_date = "August 10th, 2022";
+job2737.date_billed = "August 10th, 2022";
+job2737.pdf = true;
+job2737.thumbnail = true;
 jobs.push(job2737);
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2738 = new Job(2738, 30, "Douglas Shaw & Associates", "CFD-0210", "Chicago Food Depository<br /><em>October e-Appeal</em><ol><li>Homepage Banner</li><li>Donation Page</li><li>Email 1</li><li>Email 2</li><li>Thank you</li>", "July 19, 2022", "August 15, 2022");
+const job2738 = new Job(2738, 30, "Douglas Shaw & Associates", "CFD-0210", "Chicago Food Depository<br /><em>October e-Appeal</em><ol><li>Homepage Banner &#10003;</li><li>Donation Page &#10003;</li><li>Email 1 &#10003;</li><li>Email 2 &#10003;</li><li>Thank you &#10003;</li>", "July 19th, 2022", "August 15th, 2022");
 job2738.hours_logged[0] = {Date: "Jul 19", Hours: .5, Note: "Meeting; Getting Organized"};
+job2738.hours_logged[1] = {Date: "Aug 7", Hours: 1.33, Note: "Layout completed"};
+job2738.hours_logged[2] = {Date: "Aug 8", Hours: .16, Note: "compiled and send Creative Review 01"};
+job2738.mockupSubmitted = true;
+job2738.hours_logged[3] = {Date: "Aug 9", Hours: .75, Note: "edits; form 2 creation; CR02 sent"};
+job2738.filesReceived = true;
 jobs.push(job2738);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -605,11 +639,20 @@ job2741.mockupSubmitted = true;
 jobs.push(job2741);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2742 = new Job(2742, 34, "Biretta Books", "August Bulletins", "St. John Cantius Sunday Bulletins <ul><li>August 7th &#10003;</li><li>August 14th</li><li>August 21st</li><li>August 28th</li>", "August 2nd, 2022", "August 23rd");
-job2742.hours_logged[0] = {Date: "Aug 2", Hours: 1.75, Note: "layout; many adjustments and edits; final submit"};
+const job2742 = new Job(2742, 34, "Biretta Books", "August Bulletins", "St. John Cantius Sunday Bulletins <ul><li>August 7th &#10003;</li><li>August 14th &#10003;</li><li>August 21st</li><li>August 28th</li>", "August 2nd, 2022", "August 23rd");
+job2742.hours_logged[0] = {Date: "Aug 2", Hours: 1.75, Note: "layout; adjustments and edits; final submit"};
+job2742.hours_logged[1] = {Date: "Aug 9", Hours: 2, Note: "layout; adjustments; final submit"};
 jobs.push(job2742);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2743 = new Job(2743, 35, "Douglas Shaw & Associates", "WAS-1219", "Wycliffe Associates<br /><em>Quarterly Thank You Email 4</em><ol><li>Email</li><li>Donation Page</li></ol>", "August 2nd, 2022", "August 8th, 2022");
 job2743.filesReceived = true;
+job2743.hours_logged[0] = {Date: "Aug 6", Hours: .5, Note: "Layout, Creative Review 01 Submitted"};
+job2743.mockupSubmitted = true;
 jobs.push(job2743);
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+const job2744 = new Job(2744, 36, "Douglas Shaw & Associates", "WAS-1382", "Wycliffe Associates<br /><em>October Bible Distribution Partner Letter Digital Campaign</em><ol><li>Donation page</li><li>Homepage Banner</li><li>1 Hover Ad</li><li>Email 1</li><li>Email 2</li><li>Email 3</li><li>Email 4</li><li>Email Resend</li><li>Soc Ambassador Email</li><li>Email 1 Outlook Style</li><li>Email 1 Outlook Style</li><li>Email 3 w .gif</li><li>Facebook Ad</li><li>Social Posts</li><li>Blog post</li></ol>", "August 4th, 2022", "August 25th, 2022");
+job2744.hours_logged[0] = {Date: "Aug 4", Hours: .5, Note: "Meeting / Setup"};
+job2744.filesReceived = true;
+jobs.push(job2744);

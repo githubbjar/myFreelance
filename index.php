@@ -1,9 +1,9 @@
 <?php
     //BLOCK ALL IPs Except Mine
     $ipaddress = getenv("REMOTE_ADDR");
-    if ($ipaddress !== "107.197.41.219") {
-        header('Location: http://www.nickjanquart.com');
-    }
+        if ($ipaddress !== "107.197.41.219") {
+          header('Location: http://www.nickjanquart.com');
+    };
     
 ?>
 <!doctype html>
