@@ -61,7 +61,7 @@ const loadPage = () => {
     const completed_date_text = (jobs[x].completed_date) ? "COMPLETED DATE:" : "";
     document.getElementById("completed-date-header").innerHTML = completed_date_text;
     document.getElementById("completed_date").innerHTML = completed_date;
-    document.getElementById("total_hours").innerHTML = total_hours + " hours";
+    document.getElementById("total_hours").innerHTML = total_hours.toFixed(2) + " hours";
     document.getElementById("rate_of_pay").innerHTML = "$" + rate_of_pay + " / hour";
 
 
