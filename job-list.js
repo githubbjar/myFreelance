@@ -366,6 +366,7 @@ job2722.hours_logged[23] = {Date: "Sep 9", Hours: 1, Note: "Durer Candlesticks"}
 job2722.hours_logged[24] = {Date: "Sep 10", Hours: 1, Note: "Durer Noli Me Tangere"};
 job2722.hours_logged[25] = {Date: "Sep 14", Hours: 1, Note: "Intro and DaVinci Vitruvian Man"};
 job2722.hours_logged[26] = {Date: "Sep 14", Hours: 1, Note: "DaVinci Madonna and child and Anne"};
+job2722.hours_logged[27] = {Date: "Sep 15", Hours: 1, Note: "Raphael Alba Madonna"};
 jobs.push(job2722);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -851,17 +852,23 @@ jobs.push(job2751);
 const job2752 = new Job(2752, 44, "Biretta Books", "September Bulletins", "St. John Cantius Sunday Bulletins <ul><li>September 4th &#10003;</li><li>September 11th &#10003;</li>", "August 30th, 2022", "September 21st");
 job2752.hours_logged[0] = {Date: "Aug 30", Hours: 1.75, Note: "Sept 4th completed"};
 job2752.hours_logged[1] = {Date: "Sep 7", Hours: 1.25, Note: "Sept 11th completed"};
+job2752.completed_date = "September 7th, 2022";
+job2752.date_billed = "September 19th, 2022";
 jobs.push(job2752);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2753 = new Job(2753, 45, "Biretta Books", "2023 Ordo", "6 x 9, spiral-bound, 150+ page reference book for St. John Cantius Church", "September 1st, 2022", "October 1st, 2022");
 job2753.hours_logged[0] = {Date: "Sep 13", Hours: 1, Note: "Advent22"};
 job2753.hours_logged[1] = {Date: "Sep 14", Hours: 1.5, Note: "Front Matter; finish Advent 22"};
+job2753.hours_logged[2] = {Date: "Sep 15", Hours: .75, Note: "Christmastide 22-23"};
+job2753.hours_logged[3] = {Date: "Sep 19", Hours: .75, Note: "Epiphanytide 23"};
 jobs.push(job2753);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2754 = new Job(2754, 46, "Biretta Books", "<em>Via Sacra</em> Fall 22", "16 page booklet redesign", "September 9th, 2022", "September 15th, 2022");
 job2754.hours_logged[0] = {Date: "Sept 10", Hours: 1.5, Note: "pp 1-4"};
 job2754.hours_logged[1] = {Date: "Sept 11", Hours: 2.5, Note: "pp 5-11"};
-job2754.hours_logged[2] = {Date: "Sept 11", Hours: 1.5, Note: "finished first draft"};
+job2754.hours_logged[2] = {Date: "Sept 11", Hours: 1.5, Note: "finished first draft; job closed"};
+job2754.completed_date = "September 16th, 2022";
+job2754.date_billed = "September 19th, 2022";
 jobs.push(job2754);
