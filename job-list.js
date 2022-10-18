@@ -367,6 +367,13 @@ job2722.hours_logged[24] = {Date: "Sep 10", Hours: 1, Note: "Durer Noli Me Tange
 job2722.hours_logged[25] = {Date: "Sep 14", Hours: 1, Note: "Intro and DaVinci Vitruvian Man"};
 job2722.hours_logged[26] = {Date: "Sep 14", Hours: 1, Note: "DaVinci Madonna and child and Anne"};
 job2722.hours_logged[27] = {Date: "Sep 15", Hours: 1, Note: "Raphael Alba Madonna"};
+job2722.hours_logged[28] = {Date: "Sep 22", Hours: 1, Note: "Raphael Sistine Madonna"};
+job2722.hours_logged[29] = {Date: "Sep 23", Hours: 2, Note: "Michelangelo and Titian"};
+job2722.hours_logged[30] = {Date: "Sep 26", Hours: 2, Note: "two Titians"};
+job2722.hours_logged[31] = {Date: "Sep 27", Hours: 2, Note: "First two from later Ren."};
+job2722.hours_logged[32] = {Date: "Sep 28", Hours: 2, Note: "Two El Grecos"};
+job2722.hours_logged[33] = {Date: "Oct 5", Hours: 2, Note: "Equation Clock & Archdukes"};
+job2722.hours_logged[34] = {Date: "Oct 18", Hours: 1, Note: "Fontana della Barcaccia"};
 jobs.push(job2722);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -480,6 +487,7 @@ job2728.hours_logged[9] = {Date: "Aug 1", Hours: 1.5, Note: "extensive edits"};
 job2728.hours_logged[10] = {Date: "Sep 5", Hours: .17, Note: "files uploaded; job closed"};
 job2728.completed_date = "September 5th, 2022";
 job2728.date_billed = "September 13th, 2022";
+job2728.date_paid = "October 13th, 2022";
 jobs.push(job2728);
 
 
@@ -520,6 +528,11 @@ job2730.hours_logged[8] = {Date: "Aug 19", Hours: .5, Note: "photo reformat (7)"
 job2730.hours_logged[9] = {Date: "Aug 22", Hours: .25, Note: "McClay buckslip resized"};
 job2730.hours_logged[10] = {Date: "Aug 31", Hours: 1, Note: "Wiland promotion; FB ads"};
 job2730.hours_logged[11] = {Date: "Sep 9", Hours: .5, Note: "Plough rate card edits"};
+job2730.hours_logged[12] = {Date: "Sep 21", Hours: .5, Note: "FT 5 image pdfs created"};
+job2730.hours_logged[13] = {Date: "Sep 22", Hours: .5, Note: "FT 4 image pdfs created"};
+job2730.hours_logged[14] = {Date: "Sep 27", Hours: .5, Note: "FT Wiland ads edits"};
+job2730.hours_logged[15] = {Date: "Oct 12", Hours: .25, Note: "FT ads reformatted"};
+job2730.hours_logged[16] = {Date: "Oct 18", Hours: .33, Note: "ft finalize 5 pics"};
 jobs.push(job2730);
 
 
@@ -550,6 +563,7 @@ job2731.completed_date = "August 30th, 2022";
 job2731.date_billed = "August 30th, 2022";
 job2731.pdf = true;
 job2731.thumbnail = true;
+job2731.date_paid = "September 21st, 2022";
 jobs.push(job2731);
 
 
@@ -571,6 +585,7 @@ job2732.hours_logged[10] = {Date: "Sep 1", Hours: .75, Note: "edits; submit CS.0
 job2732.hours_logged[11] = {Date: "Sep 5", Hours: .17, Note: "files uploaded; job closed"};
 job2732.completed_date = "September 5th, 2022";
 job2732.date_billed = "September 13th, 2022";
+job2732.date_paid = "October 13th, 2022";
 jobs.push(job2732);
 
 
@@ -622,6 +637,7 @@ job2735.completed_date = "August 9, 2022";
 job2735.thumbnail = true;
 job2735.pdf = true;
 job2735.date_billed = "August 25th, 2022";
+job2735.date_paid = "September 21st, 2022";
 jobs.push(job2735);
 
 
@@ -640,6 +656,7 @@ job2736.hours_logged[7] = {Date: "Aug 31", Hours: .25, Note: "edit; Client Revie
 job2736.hours_logged[8] = {Date: "Sep 5", Hours: .17, Note: "files uploaded; job closed"};
 job2736.completed_date = "September 5th, 2022";
 job2736.date_billed = "September 13th, 2022";
+job2736.date_paid = "October 13th, 2022";
 jobs.push(job2736);
 
 
@@ -676,6 +693,7 @@ job2738.hours_logged[8] = {Date: "Sep 1", Hours: .5, Note: "edits; unfreshed loo
 job2738.hours_logged[9] = {Date: "Sep 5", Hours: .5, Note: "edits; ClientReview.04 sent; job closed"};
 job2738.completed_date = "September 5th, 2022";
 job2738.date_billed = "September 13th, 2022";
+job2738.date_paid = "October 13th, 2022";
 jobs.push(job2738);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -705,6 +723,7 @@ job2740.hours_logged[9] = {Date: "Sep 2", Hours: 1, Note: "Extensive edits; Crea
 job2740.hours_logged[10] = {Date: "Sep 7", Hours: .5, Note: "edits; first route; files uploaded; job closed"};
 job2740.completed_date = "September 7th, 2022";
 job2740.date_billed = "September 13th, 2022";
+job2740.date_paid = "October 13th, 2022";
 jobs.push(job2740);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -717,6 +736,7 @@ job2741.mockupSubmitted = true;
 job2741.hours_logged[3] = {Date: "Sep 5", Hours: .17, Note: "files uploaded; job closed"};
 job2741.completed_date = "September 5th, 2022";
 job2741.date_billed = "September 13th, 2022";
+job2741.date_paid = "October 13th, 2022";
 jobs.push(job2741);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -739,6 +759,7 @@ job2743.hours_logged[1] = {Date: "Aug 15", Hours: .3, Note: "edits, CR.02 submit
 job2743.hours_logged[2] = {Date: "Sep 5", Hours: .17, Note: "files uploaded; job closed"};
 job2743.completed_date = "September 5th, 2022";
 job2743.date_billed = "September 13th, 2022";
+job2743.date_paid = "October 13th, 2022";
 jobs.push(job2743);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -756,6 +777,7 @@ job2744.mockupSubmitted = true;
 job2744.hours_logged[8] = {Date: "Sep 5", Hours: .17, Note: "files uploaded; job closed"};
 job2744.completed_date = "September 5th, 2022";
 job2744.date_billed = "September 13th, 2022";
+job2744.date_paid = "October 13th, 2022";
 jobs.push(job2744);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -767,6 +789,7 @@ job2745.hours_logged[1] = {Date: "Aug 19", Hours: .25, Note: "CS.01 submitted"};
 job2745.hours_logged[2] = {Date: "Sep 5", Hours: .17, Note: "files uploaded; job closed"};
 job2745.completed_date = "September 5th, 2022";
 job2745.date_billed = "September 13th, 2022";
+job2745.date_paid = "October 13th, 2022";
 jobs.push(job2745);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -779,6 +802,7 @@ job2746.hours_logged[2] = {Date: "Aug 31", Hours: .5, Note: "photo change; edit;
 job2746.hours_logged[3] = {Date: "Sep 5", Hours: .17, Note: "files uploaded; job closed"};
 job2746.completed_date = "September 5th, 2022";
 job2746.date_billed = "September 13th, 2022";
+job2746.date_paid = "October 13th, 2022";
 jobs.push(job2746);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -796,6 +820,7 @@ job2747.completed_date = "August 23, 2022";
 job2747.pdf = true;
 job2747.thumbnail = true;
 job2747.date_billed = "August 25, 2022";
+job2747.date_paid = "September 21st, 2022";
 jobs.push(job2747);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -808,6 +833,7 @@ job2748.hours_logged[1] = {Date: "Sep 2", Hours: .5, Note: "photo and text edits
 job2748.hours_logged[2] = {Date: "Sep 5", Hours: .17, Note: "files uploaded; job closed"};
 job2748.completed_date = "September 5th, 2022";
 job2748.date_billed = "September 13th, 2022";
+job2748.date_paid = "October 13th, 2022";
 jobs.push(job2748);
 
 
@@ -822,6 +848,7 @@ job2749.hours_logged[3] = {Date: "Sep 6", Hours: .17, Note: "small edits; First 
 job2749.hours_logged[4] = {Date: "Sep 7", Hours: .17, Note: "files uploaded; job closed"};
 job2749.completed_date = "September 7th, 2022";
 job2749.date_billed = "September 13th, 2022";
+job2749.date_paid = "October 13th, 2022";
 jobs.push(job2749);
 
 
@@ -854,6 +881,7 @@ job2752.hours_logged[0] = {Date: "Aug 30", Hours: 1.75, Note: "Sept 4th complete
 job2752.hours_logged[1] = {Date: "Sep 7", Hours: 1.25, Note: "Sept 11th completed"};
 job2752.completed_date = "September 7th, 2022";
 job2752.date_billed = "September 19th, 2022";
+job2752.date_paid = "September 21st, 2022";
 jobs.push(job2752);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -862,6 +890,17 @@ job2753.hours_logged[0] = {Date: "Sep 13", Hours: 1, Note: "Advent22"};
 job2753.hours_logged[1] = {Date: "Sep 14", Hours: 1.5, Note: "Front Matter; finish Advent 22"};
 job2753.hours_logged[2] = {Date: "Sep 15", Hours: .75, Note: "Christmastide 22-23"};
 job2753.hours_logged[3] = {Date: "Sep 19", Hours: .75, Note: "Epiphanytide 23"};
+job2753.hours_logged[4] = {Date: "Sep 19", Hours: .5, Note: "Septuagesima"};
+job2753.hours_logged[5] = {Date: "Sep 22", Hours: 1, Note: "Lent"};
+job2753.hours_logged[6] = {Date: "Sep 29", Hours: 1.5, Note: "March 26 - May 14"};
+job2753.hours_logged[7] = {Date: "Sep30", Hours: 1.5, Note: "through June 30"};
+job2753.hours_logged[8] = {Date: "Sep 30", Hours: 1, Note: "through July 31"};
+job2753.hours_logged[9] = {Date: "Oct 1", Hours: 1, Note: "through Aug 31"};
+job2753.hours_logged[10] = {Date: "Oct 3", Hours: 1, Note: "through Sept 30"};
+job2753.hours_logged[11] = {Date: "Oct 5", Hours: 2, Note: "through Dec. 2"};
+job2753.hours_logged[12] = {Date: "Oct 5", Hours: 1.5, Note: "through Letter Accompanying Traditionis Custodes"};
+job2753.hours_logged[13] = {Date: "Oct 6", Hours: 1, Note: "finish initial layout"};
+job2753.hours_logged[14] = {Date: "Oct 17", Hours: .75, Note: "cover"};
 jobs.push(job2753);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -870,5 +909,6 @@ job2754.hours_logged[0] = {Date: "Sept 10", Hours: 1.5, Note: "pp 1-4"};
 job2754.hours_logged[1] = {Date: "Sept 11", Hours: 2.5, Note: "pp 5-11"};
 job2754.hours_logged[2] = {Date: "Sept 11", Hours: 1.5, Note: "finished first draft; job closed"};
 job2754.completed_date = "September 16th, 2022";
-job2754.date_billed = "September 19th, 2022";
+job2754.date_billed = "September 16th, 2022";
+job2754.date_paid = "September 21st, 2022";
 jobs.push(job2754);
