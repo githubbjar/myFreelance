@@ -374,6 +374,17 @@ job2722.hours_logged[31] = {Date: "Sep 27", Hours: 2, Note: "First two from late
 job2722.hours_logged[32] = {Date: "Sep 28", Hours: 2, Note: "Two El Grecos"};
 job2722.hours_logged[33] = {Date: "Oct 5", Hours: 2, Note: "Equation Clock & Archdukes"};
 job2722.hours_logged[34] = {Date: "Oct 18", Hours: 1, Note: "Fontana della Barcaccia"};
+job2722.hours_logged[35] = {Date: "Oct 19", Hours: 1, Note: "Poussins Holy Family"};
+job2722.hours_logged[36] = {Date: "Oct 20", Hours: 1, Note: "Dolci Marriage"};
+job2722.hours_logged[37] = {Date: "Oct 21", Hours: 1, Note: "Vermeer Balances"};
+job2722.hours_logged[38] = {Date: "Oct 22", Hours: 1, Note: "St Peter's Denial"};
+job2722.hours_logged[39] = {Date: "Oct 23", Hours: 1, Note: "St. Paul"};
+job2722.hours_logged[40] = {Date: "Oct 24", Hours: 1, Note: "Jan Steen"};
+job2722.hours_logged[41] = {Date: "Oct 25", Hours: 2, Note: "flowers/vase; modern age; Assumption ceiling"};
+job2722.hours_logged[42] = {Date: "Oct 26", Hours: 1, Note: "John the Baptist"};
+job2722.hours_logged[43] = {Date: "Oct 26", Hours: 1, Note: "West Nativity"};
+job2722.hours_logged[44] = {Date: "Oct 27", Hours: 2, Note: "Falls of Kaaterskills & Annunciation"};
+job2722.hours_logged[45] = {Date: "Oct 28", Hours: 1, Note: "Tanner Flight into Egypt"};   
 jobs.push(job2722);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -533,6 +544,9 @@ job2730.hours_logged[13] = {Date: "Sep 22", Hours: .5, Note: "FT 4 image pdfs cr
 job2730.hours_logged[14] = {Date: "Sep 27", Hours: .5, Note: "FT Wiland ads edits"};
 job2730.hours_logged[15] = {Date: "Oct 12", Hours: .25, Note: "FT ads reformatted"};
 job2730.hours_logged[16] = {Date: "Oct 18", Hours: .33, Note: "ft finalize 5 pics"};
+job2730.completed_date = "October 18, 2022";
+job2730.date_billed = "October 25, 2022"; 
+job2730.date_paid = "October 31, 2022";
 jobs.push(job2730);
 
 
@@ -748,6 +762,7 @@ job2742.hours_logged[3] = {Date: "Aug 22", Hours: 1, Note: "Aug 28 draft created
 job2742.hours_logged[4] = {Date: "Aug 24", Hours: 1.5, Note: "Aug 28; extra pages; edits; final created/submitted"};
 job2742.completed_date = "August 29th, 2022";
 job2742.date_billed = "August 29th, 2022";
+job2742.date_paid = "September 8th, 2022";
 jobs.push(job2742);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -901,6 +916,12 @@ job2753.hours_logged[11] = {Date: "Oct 5", Hours: 2, Note: "through Dec. 2"};
 job2753.hours_logged[12] = {Date: "Oct 5", Hours: 1.5, Note: "through Letter Accompanying Traditionis Custodes"};
 job2753.hours_logged[13] = {Date: "Oct 6", Hours: 1, Note: "finish initial layout"};
 job2753.hours_logged[14] = {Date: "Oct 17", Hours: .75, Note: "cover"};
+job2753.hours_logged[15] = {Date: "Oct 28", Hours: .5, Note: "applying edits"};
+job2753.hours_logged[16] = {Date: "Oct 29", Hours: 1, Note: "finish applying edits"};
+job2753.hours_logged[17] = {Date: "Oct 30", Hours: .5, Note: "finalize graphics; output pdf"};
+job2753.completed_date = "October 29th, 2022";
+job2753.date_billed = "November 7th, 2022";
+job2753.date_paid = "November 9th, 2022";
 jobs.push(job2753);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -912,3 +933,16 @@ job2754.completed_date = "September 16th, 2022";
 job2754.date_billed = "September 16th, 2022";
 job2754.date_paid = "September 21st, 2022";
 jobs.push(job2754);
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+const job2755 = new Job(2755, 47, "Publishing Management Associates", "Small Ads 7", "Small ads created; pictures reformatted; etc.", "November 15th, 2022", "N/A");
+job2755.hours_logged[0] = {Date: "Nov 15", Hours: .5, Note: "Call for papers ad"};
+job2755.hours_logged[1] = {Date: "Nov 16", Hours: .75, Note: "photo reformatting"};
+job2755.hours_logged[2] = {Date: "Nov 17", Hours: .25, Note: "finish call for papers ad"};
+job2755.hours_logged[3] = {Date: "Nov 21", Hours: .25, Note: "photo reformatting (2)"};
+jobs.push(job2755);
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+const job2756 = new Job(2756, 48, "Biretta Books", "Maronite Booklet", "8.5 x 11; 40 page booklet", "December 12, 2022", "January 22, 2022");
+jobs.push(job2756);
