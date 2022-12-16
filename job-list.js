@@ -941,6 +941,7 @@ job2755.hours_logged[0] = {Date: "Nov 15", Hours: .5, Note: "Call for papers ad"
 job2755.hours_logged[1] = {Date: "Nov 16", Hours: .75, Note: "photo reformatting"};
 job2755.hours_logged[2] = {Date: "Nov 17", Hours: .25, Note: "finish call for papers ad"};
 job2755.hours_logged[3] = {Date: "Nov 21", Hours: .25, Note: "photo reformatting (2)"};
+job2755.hours_logged[4] = {Date: "Dec 16", Hours: .75, Note: "photo reformatting (3)"};
 jobs.push(job2755);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
