@@ -946,9 +946,11 @@ jobs.push(job2755);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2756 = new Job(2756, 48, "Biretta Books", "Maronite Booklet", "8.5 x 11; 40 page booklet", "December 12th, 2022", "January 22nd, 2022");
+job2756.hours_logged[0] = {Date: "Jan 5", Hours: 1, Note: "First ten pages reformatted"};
 jobs.push(job2756);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2757 = new Job(2757, 49, "Publishing Management Associates", "FT Marketing 1", "January FT Product &amp; Subsciption Eblasts<ul><li>Jan. 10&#8212;SV64 Advertising eblast</li><li>Jan. 11&#8212;Save 50% Introductory Subscription Offer</li><li>Jan. 18&#8212;Back Issue Organizer</li></ul>", "January 3rd, 2023", "January 18th, 2023");
+const job2757 = new Job(2757, 49, "Publishing Management Associates", "FT Marketing 1", "January FT Product &amp; Subsciption Eblasts<ul><li>Jan. 10&#8212;SV64 Advertising eblast</li><li>Jan. 11&#8212;Save 50% Introductory Subscription Offer &#10003;</li><li>Jan. 18&#8212;Back Issue Organizer</li></ul>", "January 3rd, 2023", "January 18th, 2023");
 job2757.hours_logged[0] = {Date: "Jan 3", Hours: .25, Note: "Call w/ Sue"};
+job2757.hours_logged[1] = {Date: "Jan 5", Hours: .5, Note: "check art; call w/ Sue; finish job"};
 jobs.push(job2757);
