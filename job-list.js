@@ -127,6 +127,10 @@ const job2709 = new Job(2709, 1, "Publishing Management Associates", "FT Flex 2.
 job2709.hours_logged[0] = {Date: "Jul 19", Hours: 3, Note: "Initial setup"};
 job2709.hours_logged[1] = {Date: "Jul 21", Hours: 1, Note: "Edits and tweaks"};
 job2709.hours_logged[2] = {Date: "Aug 9", Hours: 1, Note: "More edits and tweaks"};
+job2709.hours_logged[3] = {Date: "Jan 20, 23", Hours: -5, Note: "closing out this job until further notice"};
+job2709.completed_date = "January 20th, 2023";
+job2709.date_billed = "January 20th, 2023";
+job2709.date_paid = "January 20th, 2023";
 //End Hours Logged
 job2709.thumbnail = true;
 jobs.push(job2709);
@@ -942,15 +946,39 @@ job2755.hours_logged[1] = {Date: "Nov 16", Hours: .75, Note: "photo reformatting
 job2755.hours_logged[2] = {Date: "Nov 17", Hours: .25, Note: "finish call for papers ad"};
 job2755.hours_logged[3] = {Date: "Nov 21", Hours: .25, Note: "photo reformatting (2)"};
 job2755.hours_logged[4] = {Date: "Dec 16", Hours: .75, Note: "photo reformatting (3)"};
+job2755.hours_logged[5] = {Date: "Jan 17", Hours: .5, Note: "SCSS ad"};
+job2755.completed_date = "January 17th, 2023";
+job2755.date_billed = "January 17th, 2023";
 jobs.push(job2755);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2756 = new Job(2756, 48, "Biretta Books", "Maronite Booklet", "8.5 x 11; 40 page booklet", "December 12th, 2022", "January 22nd, 2022");
 job2756.hours_logged[0] = {Date: "Jan 5", Hours: 1, Note: "First ten pages reformatted"};
+job2756.hours_logged[1] = {Date: "Jan 10", Hours: .5, Note: "Another seven pages completed"};
+job2756.hours_logged[2] = {Date: "Jan 10", Hours: 1.5, Note: "Finished Draft"};
+job2756.hours_logged[3] = {Date: "Jan 12", Hours: 1, Note: "apply edits; format for printing; turn in final"};
+job2756.completed_date = "January 12th, 2023";
+job2756.date_billed = "January 20th, 2023";
 jobs.push(job2756);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2757 = new Job(2757, 49, "Publishing Management Associates", "FT Marketing 1", "January FT Product &amp; Subsciption Eblasts<ul><li>Jan. 10&#8212;SV64 Advertising eblast</li><li>Jan. 11&#8212;Save 50% Introductory Subscription Offer &#10003;</li><li>Jan. 18&#8212;Back Issue Organizer</li></ul>", "January 3rd, 2023", "January 18th, 2023");
+const job2757 = new Job(2757, 49, "Publishing Management Associates", "FT Marketing 1", "January FT Product &amp; Subsciption Eblasts<ul><li>Jan. 10&#8212;SV64 Advertising eblast &#10003;</li><li>Jan. 11&#8212;Save 50% Introductory Subscription Offer &#10003;</li><li>Jan. 18&#8212;Back Issue Organizer &#10003;</li></ul>", "January 3rd, 2023", "January 18th, 2023");
 job2757.hours_logged[0] = {Date: "Jan 3", Hours: .25, Note: "Call w/ Sue"};
 job2757.hours_logged[1] = {Date: "Jan 5", Hours: .5, Note: "check art; call w/ Sue; finish job"};
+job2757.hours_logged[2] = {Date: "Jan 10", Hours: .75, Note: "Salvo eblast"};
+job2757.hours_logged[3] = {Date: "Jan 17", Hours: .25, Note: "FT back issue organizer blast"};
+job2757.completed_date = "January 17th, 2023";
+job2757.date_billed = "January 17th, 2023";
 jobs.push(job2757);
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+const job2758 = new Job(2758, 50, "Publishing Management Associates", "Small Ads 8", "Small ads created; pictures reformatted; etc.", "January 20th, 2023", "n/a");
+job2758.hours_logged[0] = {Date: "Jan 22", Hours: 1, Note: "FT ad fix"};
+job2758.hours_logged[1] = {Date: "Jan 23", Hours: .5, Note: "image reformatting (5)"};
+job2758.hours_logged[2] = {Date: "Jan 24", Hours: .1, Note: "image reformatting (1)"};
+jobs.push(job2758);
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+const job2759 = new Job(2759, 51, "Publishing Management Associates", "PMA Marketing 2", "February Product &amp; Subscription Eblasts<ul><li>Feb. 2&#8212;<em>Image</em> Issue 116 &#10003;</li><li>Feb. 3&#8212;<em>FT</em> April 2023</li><li>Feb. 8&#8212;<em>FT</em> Read w/out Limits</li><li>Feb. 15&#8212;<em>FT</em> Reprint Series</li><li>Feb. 22&#8212;Creed mp4</li></ul>", "February 2nd, 2023", "February 22nd, 2023");
+job2759.hours_logged[0] = {Date: "Feb 2", Hours: .25, Note: "Image Journal 116"};
+jobs.push(job2759);
