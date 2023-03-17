@@ -949,6 +949,7 @@ job2755.hours_logged[4] = {Date: "Dec 16", Hours: .75, Note: "photo reformatting
 job2755.hours_logged[5] = {Date: "Jan 17", Hours: .5, Note: "SCSS ad"};
 job2755.completed_date = "January 17th, 2023";
 job2755.date_billed = "January 17th, 2023";
+job2755.date_paid = "March 7th, 2023";
 jobs.push(job2755);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -959,6 +960,7 @@ job2756.hours_logged[2] = {Date: "Jan 10", Hours: 1.5, Note: "Finished Draft"};
 job2756.hours_logged[3] = {Date: "Jan 12", Hours: 1, Note: "apply edits; format for printing; turn in final"};
 job2756.completed_date = "January 12th, 2023";
 job2756.date_billed = "January 20th, 2023";
+job2756.date_paid = "January 26th, 2023";
 jobs.push(job2756);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -969,6 +971,7 @@ job2757.hours_logged[2] = {Date: "Jan 10", Hours: .75, Note: "Salvo eblast"};
 job2757.hours_logged[3] = {Date: "Jan 17", Hours: .25, Note: "FT back issue organizer blast"};
 job2757.completed_date = "January 17th, 2023";
 job2757.date_billed = "January 17th, 2023";
+job2757.date_paid = "March 7th, 2023";
 jobs.push(job2757);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -976,9 +979,35 @@ const job2758 = new Job(2758, 50, "Publishing Management Associates", "Small Ads
 job2758.hours_logged[0] = {Date: "Jan 22", Hours: 1, Note: "FT ad fix"};
 job2758.hours_logged[1] = {Date: "Jan 23", Hours: .5, Note: "image reformatting (5)"};
 job2758.hours_logged[2] = {Date: "Jan 24", Hours: .1, Note: "image reformatting (1)"};
+job2758.hours_logged[3] = {Date: "Feb 9", Hours: .1, Note: "pdf flattening (1)"};
+job2758.hours_logged[4] = {Date: "Feb 10", Hours: .25, Note: "pdf flattening (1)"};
+job2758.hours_logged[5] = {Date: "Feb 16", Hours: .25, Note: "collegium ad fixed type"};
+job2758.hours_logged[6] = {Date: "Feb 20", Hours: .5, Note: "image reformatting (5)"};
+job2758.hours_logged[7] = {Date: "Mar 3", Hours: .5, Note: "image reformatting (6)"};
+job2758.hours_logged[8] = {Date: "Mar 6", Hours: .5, Note: "Modern Age rate card '23"};
+job2758.hours_logged[9] = {Date: "Mar 7", Hours: .2, Note: "Modern Age rate card '23 rev."};
+job2758.hours_logged[10] = {Date: "Mar 9", Hours: .2, Note: "FT small ad revisions"};
+job2758.hours_logged[11] = {Date: "Mar 14", Hours: .2, Note: "image reformatting (1)"};
+job2758.hours_logged[12] = {Date: "Mar 17", Hours: 2, Note: "Religion &amp; Liberty rate card"};
 jobs.push(job2758);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2759 = new Job(2759, 51, "Publishing Management Associates", "PMA Marketing 2", "February Product &amp; Subscription Eblasts<ul><li>Feb. 2&#8212;<em>Image</em> Issue 116 &#10003;</li><li>Feb. 3&#8212;<em>FT</em> April 2023</li><li>Feb. 8&#8212;<em>FT</em> Read w/out Limits</li><li>Feb. 15&#8212;<em>FT</em> Reprint Series</li><li>Feb. 22&#8212;Creed mp4</li></ul>", "February 2nd, 2023", "February 22nd, 2023");
+const job2759 = new Job(2759, 51, "Publishing Management Associates", "PMA Marketing 2", "February Product &amp; Subscription Eblasts<ul><li>Feb. 2&#8212;<em>Image</em> Issue 116 &#10003;</li><li>Feb. 3&#8212;<em>FT</em> April 2023 &#10003;</li><li>Feb. 8&#8212;<em>FT</em> Read w/out Limits &#10003;</li><li>Feb. 9&#8212;<em>FT</em> Podcast sponsorship &#10003;</li><li>Feb. 15&#8212;<em>FT</em> Reprint Series &#10003;</li><li>Feb. 16&#8212;<em>TS</em> May/June Ad Sales &#10003;</li><li>Feb. 22&#8212;Creed mp4 &#10003;</li></ul>", "February 2nd, 2023", "February 22nd, 2023");
 job2759.hours_logged[0] = {Date: "Feb 2", Hours: .25, Note: "Image Journal 116"};
+job2759.hours_logged[1] = {Date: "Feb 6", Hours: .5, Note: "FT April Ad eblast"};
+job2759.hours_logged[2] = {Date: "Feb 8", Hours: .2, Note: "FT digital blast"};
+job2759.hours_logged[3] = {Date: "Feb 9", Hours: .5, Note: "FT podcast sponsorship"};
+job2759.hours_logged[4] = {Date: "Feb 13", Hours: .5, Note: "FT Reprint Series"};
+job2759.hours_logged[5] = {Date: "Feb 16", Hours: .75, Note: "TS May/June Ad blast"};
+job2759.hours_logged[6] = {Date: "Feb 27", Hours: .25, Note: "Creed mp4"};
+job2759.completed_date = "February 27th, 2023";
+job2759.date_billed = "March 1st, 2023";
+job2759.date_paid = "March 7th, 2023";
 jobs.push(job2759);
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+const job2760 = new Job(2760, 52, "Publishing Management Associates", "PMA Marketing 3", "March Product &amp; Subscription Eblasts<ul><li>March 8&#8212;FT May Ad Space Reserve &#10003;</li><li>March 15&#8212;FT Introductory Offer &#10003;</li><li>March 29&#8212;FT Back Issues</li></ul>", "March 3rd, 2022", "n/a");
+job2760.hours_logged[0] = {Date: "Mar 7", Hours: .5, Note: "FT May issue ad blast"};
+job2760.hours_logged[1] = {Date: "Mar 10", Hours: .25, Note: "FT Introductory Sub Blast"};
+job2760.hours_logged[2] = {Date: "Mar 13", Hours: .25, Note: "FT Introductory Sub Blast"};
+jobs.push(job2760);
