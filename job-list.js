@@ -1009,7 +1009,7 @@ jobs.push(job2759);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 const job2760 = new Job(2760, 52, "Publishing Management Associates", "PMA Marketing 3", "March Product &amp; Subscription Eblasts<ul><li>March 8&#8212;FT May Ad Space Reserve &#10003;</li><li>March 15&#8212;FT Introductory Offer &#10003;</li><li>March 29&#8212;FT Back Issues &#10003;</li></ul>", "March 3rd, 2022", "n/a");
-job2760.hours_logged[0] = {Date: "Mar 7", Hours: .5, Note: "FT May issue ad blast"};
+job2760.hours_logged[0] = {Date: "Mar 7", Hours: .5, Note: "FT May issue a  d blast"};
 job2760.hours_logged[1] = {Date: "Mar 10", Hours: .25, Note: "FT Introductory Sub Blast"};
 job2760.hours_logged[2] = {Date: "Mar 13", Hours: .25, Note: "FT Introductory Sub Blast"};
 job2760.hours_logged[3] = {Date: "Mar 21", Hours: .25, Note: "FT Product eBlast"};
