@@ -989,6 +989,8 @@ job2758.hours_logged[9] = {Date: "Mar 7", Hours: .2, Note: "Modern Age rate card
 job2758.hours_logged[10] = {Date: "Mar 9", Hours: .2, Note: "FT small ad revisions"};
 job2758.hours_logged[11] = {Date: "Mar 14", Hours: .2, Note: "image reformatting (1)"};
 job2758.hours_logged[12] = {Date: "Mar 17", Hours: 2, Note: "Religion &amp; Liberty rate card"};
+job2758.completed_date = "March 17th, 2023";
+job2758.date_billed = "March 24th, 2023";
 jobs.push(job2758);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1006,8 +1008,31 @@ job2759.date_paid = "March 7th, 2023";
 jobs.push(job2759);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2760 = new Job(2760, 52, "Publishing Management Associates", "PMA Marketing 3", "March Product &amp; Subscription Eblasts<ul><li>March 8&#8212;FT May Ad Space Reserve &#10003;</li><li>March 15&#8212;FT Introductory Offer &#10003;</li><li>March 29&#8212;FT Back Issues</li></ul>", "March 3rd, 2022", "n/a");
+const job2760 = new Job(2760, 52, "Publishing Management Associates", "PMA Marketing 3", "March Product &amp; Subscription Eblasts<ul><li>March 8&#8212;FT May Ad Space Reserve &#10003;</li><li>March 15&#8212;FT Introductory Offer &#10003;</li><li>March 29&#8212;FT Back Issues &#10003;</li></ul>", "March 3rd, 2022", "n/a");
 job2760.hours_logged[0] = {Date: "Mar 7", Hours: .5, Note: "FT May issue ad blast"};
 job2760.hours_logged[1] = {Date: "Mar 10", Hours: .25, Note: "FT Introductory Sub Blast"};
 job2760.hours_logged[2] = {Date: "Mar 13", Hours: .25, Note: "FT Introductory Sub Blast"};
+job2760.hours_logged[3] = {Date: "Mar 21", Hours: .25, Note: "FT Product eBlast"};
+job2760.completed_date = "March 21st, 2023";
+job2760.date_billed = "March 24th, 2023";
 jobs.push(job2760);
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+const job2761 = new Job(2761, 53, "Publishing Management Associates", "PMA Small Ads 9", "Small ads created; pictures reformatted; etc.", "March 29th, 2023", "n/a");
+job2761.hours_logged[0] = {Date: "Mar 29", Hours: .25, Note: "Modern Age rate card edits"};
+job2761.hours_logged[1] = {Date: "Apr 11", Hours: .75, Note: "FT Reprint Book Cover 14"};
+job2761.hours_logged[2] = {Date: "Apr 12", Hours: .75, Note: "FT Reprint Buckslip"};
+job2761.hours_logged[3] = {Date: "Apr 21", Hours: .5, Note: "ad reformat (2)"};
+job2761.hours_logged[4] = {Date: "Apr 21", Hours: .2, Note: "pic reformat"};
+job2761.hours_logged[5] = {Date: "Apr 26", Hours: .25, Note: "pic reformat (3)"};
+jobs.push(job2761);
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+const job2762 = new Job(2762, 54, "Publishing Management Associates", "PMA Marketing 4", "April Product &amp; Subscription Eblasts<ul><li>April 4 &#8212;FT June/July Ad Space &#10003;</li><li>April 14 &#8212;FT Intro Offer Blast &#10003;</li><li>April 16&#8212;SV ad eblast &#10003;</li><li>April 19&#8212;FT Mug &#10003;</li><li>April 28&#8212;TS Jul/Aug ad space &#10003;</li></ul>", "April 4th, 2023", "n/a");
+job2762.hours_logged[0] = {Date: "Apr 4", Hours: .25, Note: "FT Jun/Jul Ad Space"};
+job2762.hours_logged[1] = {Date: "Apr 14", Hours: .25, Note: "FT intro sub offer"};
+job2762.hours_logged[2] = {Date: "Apr 16", Hours: .25, Note: "Salvo Advertising blast"};
+job2762.hours_logged[3] = {Date: "Apr 19", Hours: .25, Note: "FT Mug"};
+job2762.hours_logged[4] = {Date: "Apr 28", Hours: .25, Note: "TS July/Aug ad space"};
+
+jobs.push(job2762);
