@@ -115,7 +115,7 @@ job2708.hours_logged[4] = {Date: "Aug 1", Hours: 1, Note: "Final corrections"}
 //End Hours Logged
 job2708.completed_date = "August 1, 2021";
 job2708.date_billed = "August 4, 2021";
-job2708.date_paid = "August 9, 2011";
+job2708.date_paid = "August 9, 2021";
 job2708.thumbnail = true;
 job2708.pdf = true;
 jobs.push(job2708);
@@ -342,9 +342,11 @@ jobs.push(job2721);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-const job2722 = new Job(2722, 14, "The Fellowship of St. James", "<em>Thousand Words</em> Book", "by Mary Elizabeth Podles, 8.5\" by 11\"", "March 8th, 2022", "November 1st, 2022");
-job2722.hours_logged[0] = {Date: "Mar 8", Hours: .75, Note: "Initial layout"};
-job2722.hours_logged[1] = {Date: "Apr 6", Hours: .5, Note: "Try 1 col layout"};
+const job2722 = new Job(2722, 14, "The Fellowship of St. James", "<em>A Thousand Words</em> by Mary Elizabeth Podles", "<ul><li>62 articles</li><li>200+ pages</li><li>Covers</li></ul>", "Mid-2022", "Mid-2023");
+job2722.hours_logged[0] = {Date: "", Hours: 60, Note: "Full project"};
+job2722.completed_date = "July 2023";
+job2722.date_billed = "June 27, 2023";
+/*job2722.hours_logged[1] = {Date: "Apr 6", Hours: .5, Note: "Try 1 col layout"};
 job2722.hours_logged[2] = {Date: "Jun 5", Hours: 1, Note: "Ara Pacis Augustae"};
 job2722.hours_logged[3] = {Date: "Jun 6", Hours: 1.5, Note: "Ancient World completed"};
 job2722.hours_logged[4] = {Date: "Jun 10", Hours: 1, Note: "Rembrandt Introduction"};
@@ -388,7 +390,7 @@ job2722.hours_logged[41] = {Date: "Oct 25", Hours: 2, Note: "flowers/vase; moder
 job2722.hours_logged[42] = {Date: "Oct 26", Hours: 1, Note: "John the Baptist"};
 job2722.hours_logged[43] = {Date: "Oct 26", Hours: 1, Note: "West Nativity"};
 job2722.hours_logged[44] = {Date: "Oct 27", Hours: 2, Note: "Falls of Kaaterskills & Annunciation"};
-job2722.hours_logged[45] = {Date: "Oct 28", Hours: 1, Note: "Tanner Flight into Egypt"};   
+job2722.hours_logged[45] = {Date: "Oct 28", Hours: 1, Note: "Tanner Flight into Egypt"};   */
 jobs.push(job2722);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1025,14 +1027,28 @@ job2761.hours_logged[2] = {Date: "Apr 12", Hours: .75, Note: "FT Reprint Bucksli
 job2761.hours_logged[3] = {Date: "Apr 21", Hours: .5, Note: "ad reformat (2)"};
 job2761.hours_logged[4] = {Date: "Apr 21", Hours: .2, Note: "pic reformat"};
 job2761.hours_logged[5] = {Date: "Apr 26", Hours: .25, Note: "pic reformat (3)"};
+job2761.hours_logged[6] = {Date: "Jun 21", Hours: .25, Note: "FT Ad reformat"};
 jobs.push(job2761);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2762 = new Job(2762, 54, "Publishing Management Associates", "PMA Marketing 4", "April Product &amp; Subscription Eblasts<ul><li>April 4 &#8212;FT June/July Ad Space &#10003;</li><li>April 14 &#8212;FT Intro Offer Blast &#10003;</li><li>April 16&#8212;SV ad eblast &#10003;</li><li>April 19&#8212;FT Mug &#10003;</li><li>April 28&#8212;TS Jul/Aug ad space &#10003;</li></ul>", "April 4th, 2023", "n/a");
+const job2762 = new Job(2762, 54, "Publishing Management Associates", "PMA Marketing 4", "April Product &amp; Subscription Eblasts<ul><li>April 4 &#8212;FT June/July Ad Space &#10003;</li><li>April 14 &#8212;FT Intro Offer Blast &#10003;</li><li>April 16&#8212;SV ad eblast &#10003;</li><li>April 19&#8212;FT Mug &#10003;</li><li>April 28&#8212;TS Jul/Aug ad space &#10003;</li><li>April 28&#8212;Religion &amp; Liberty ad blast &#10003;</ul>", "April 4th, 2023", "n/a");
 job2762.hours_logged[0] = {Date: "Apr 4", Hours: .25, Note: "FT Jun/Jul Ad Space"};
 job2762.hours_logged[1] = {Date: "Apr 14", Hours: .25, Note: "FT intro sub offer"};
 job2762.hours_logged[2] = {Date: "Apr 16", Hours: .25, Note: "Salvo Advertising blast"};
 job2762.hours_logged[3] = {Date: "Apr 19", Hours: .25, Note: "FT Mug"};
 job2762.hours_logged[4] = {Date: "Apr 28", Hours: .25, Note: "TS July/Aug ad space"};
-
+job2762.hours_logged[5] = {Date: "Apr 28", Hours: .75, Note: "Religion &amp; Liberty Ad Space"};
+job2762.completed_date = "April 28, 2023";
 jobs.push(job2762);
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+const job2763 = new Job(2763, 55, "Publishing Management Associates", "PMA Marketing 5", "May Product &amp; Subscription Eblasts<ul><li>May 4 &#8212;FT Illinois Shooter Summer eBlast &#10003;</li><li>May 5 &#8212; Image Journal 117 ad sales eblast &#10003;</li><li>May 10 &#8212; FT Neuhaus books blast &#10003;</li></li><li>May 17 &#8212; FT introductory offer &#10003;</li></ul>", "May 4th, 2023", "n/a");
+job2763.hours_logged[0] = {Date: "May 4", Hours: .25, Note: "Illinois Shooter"};
+job2763.hours_logged[1] = {Date: "May 5", Hours: .5, Note: "Image 117"};
+job2763.hours_logged[2] = {Date: "May 9", Hours: .25, Note: "Neuhaus books"};
+job2763.hours_logged[3] = {Date: "Jun 5", Hours: .5, Note: "FT Aug/Sept Ad Space"};
+job2763.hours_logged[4] = {Date: "Jun 5", Hours: .2, Note: "FT Summer Reading"};
+job2763.hours_logged[5] = {Date: "Jun 21", Hours: .5, Note: "TS Sept/Oct Ads eblast"};   
+job2763.hours_logged[6] = {Date: "Jun 22", Hours: .5, Note: "FT Brazil Page"};
+job2763.hours_logged[7] = {Date: "Jun 26", Hours: .25, Note: "covers reformatted"}; 
+jobs.push(job2763); 
