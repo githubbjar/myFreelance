@@ -290,8 +290,8 @@ jobs.push(job2718);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-const job2719 = new Job(2719, 11, "Biretta Books", "St. John Cantius book", "6x9 book by Fr. Dennis Kolinski, SJC", "December 20, 2021", "N/A");
-job2719.hours_logged[0] = {Date: "Dec 30", Hours: 2.5, Note: "Initial layouts intro, chpt. 1"};
+const job2719 = new Job(2719, 11, "Biretta Books", "St. John Cantius book, phase 1", "6x9 book by Fr. Dennis Kolinski, SJC", "December 20, 2021", "N/A");
+job2719.hours_logged[0] = {Date: "Dec 30, 2021", Hours: 2.5, Note: "Initial layouts intro, chpt. 1"};
 job2719.hours_logged[1] = {Date: "Jan 6", Hours: 1, Note: "chpts. 2 and 3"};
 job2719.hours_logged[2] = {Date: "Jan 7", Hours: 1, Note: "chpts. 4 and 5"};
 job2719.hours_logged[3] = {Date: "Jan 8", Hours: 2, Note: "chpts. 6, 7, 8"};
@@ -306,7 +306,9 @@ job2719.hours_logged[11] = {Date: "May 2", Hours: 1, Note: "proof passes 1"};
 job2719.hours_logged[12] = {Date: "May 20", Hours: 1, Note: "Illustration layout"};
 job2719.hours_logged[13] = {Date: "May 22", Hours: 1, Note: "Illustration layout"};
 job2719.hours_logged[14] = {Date: "May 23", Hours: 1, Note: "Illustration layout"};
-job2719.hours_logged[15] = {Date: "May 24", Hours: 1.5, Note: "Preparing proof copies"};
+job2719.hours_logged[15] = {Date: "May 24, 2022", Hours: 1.5, Note: "Preparing proof copies"};
+job2719.completed_date = "August 3, 2023";
+job2719.date_billed = "August 3, 2023";
 jobs.push(job2719);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -346,6 +348,7 @@ const job2722 = new Job(2722, 14, "The Fellowship of St. James", "<em>A Thousand
 job2722.hours_logged[0] = {Date: "", Hours: 60, Note: "Full project"};
 job2722.completed_date = "July 2023";
 job2722.date_billed = "June 27, 2023";
+job2722.date_paid = "July 23, 2023";
 /*job2722.hours_logged[1] = {Date: "Apr 6", Hours: .5, Note: "Try 1 col layout"};
 job2722.hours_logged[2] = {Date: "Jun 5", Hours: 1, Note: "Ara Pacis Augustae"};
 job2722.hours_logged[3] = {Date: "Jun 6", Hours: 1.5, Note: "Ancient World completed"};
@@ -993,6 +996,7 @@ job2758.hours_logged[11] = {Date: "Mar 14", Hours: .2, Note: "image reformatting
 job2758.hours_logged[12] = {Date: "Mar 17", Hours: 2, Note: "Religion &amp; Liberty rate card"};
 job2758.completed_date = "March 17th, 2023";
 job2758.date_billed = "March 24th, 2023";
+job2758.date_paid = "July 1st, 2023";
 jobs.push(job2758);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1017,6 +1021,7 @@ job2760.hours_logged[2] = {Date: "Mar 13", Hours: .25, Note: "FT Introductory Su
 job2760.hours_logged[3] = {Date: "Mar 21", Hours: .25, Note: "FT Product eBlast"};
 job2760.completed_date = "March 21st, 2023";
 job2760.date_billed = "March 24th, 2023";
+job2760.date_paid = "July 1st, 2023";
 jobs.push(job2760);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1028,6 +1033,9 @@ job2761.hours_logged[3] = {Date: "Apr 21", Hours: .5, Note: "ad reformat (2)"};
 job2761.hours_logged[4] = {Date: "Apr 21", Hours: .2, Note: "pic reformat"};
 job2761.hours_logged[5] = {Date: "Apr 26", Hours: .25, Note: "pic reformat (3)"};
 job2761.hours_logged[6] = {Date: "Jun 21", Hours: .25, Note: "FT Ad reformat"};
+job2761.completed_date = "July 12, 2023";
+job2761.date_billed = "July 12, 2023";
+job2761.date_paid = "July 30, 2023";
 jobs.push(job2761);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1039,10 +1047,12 @@ job2762.hours_logged[3] = {Date: "Apr 19", Hours: .25, Note: "FT Mug"};
 job2762.hours_logged[4] = {Date: "Apr 28", Hours: .25, Note: "TS July/Aug ad space"};
 job2762.hours_logged[5] = {Date: "Apr 28", Hours: .75, Note: "Religion &amp; Liberty Ad Space"};
 job2762.completed_date = "April 28, 2023";
+job2762.date_billed = "July 12, 2023";
+job2762.date_paid = "July 30, 2023";
 jobs.push(job2762);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-const job2763 = new Job(2763, 55, "Publishing Management Associates", "PMA Marketing 5", "May Product &amp; Subscription Eblasts<ul><li>May 4 &#8212;FT Illinois Shooter Summer eBlast &#10003;</li><li>May 5 &#8212; Image Journal 117 ad sales eblast &#10003;</li><li>May 10 &#8212; FT Neuhaus books blast &#10003;</li></li><li>May 17 &#8212; FT introductory offer &#10003;</li></ul>", "May 4th, 2023", "n/a");
+const job2763 = new Job(2763, 55, "Publishing Management Associates", "PMA Marketing 5", "May & June Product &amp; Subscription Eblasts<ul><li>May 4 &#8212;FT Illinois Shooter Summer eBlast &#10003;</li><li>May 5 &#8212; Image Journal 117 ad sales eblast &#10003;</li><li>May 10 &#8212; FT Neuhaus books blast &#10003;</li></li><li>May 17 &#8212; FT introductory offer &#10003;</li></ul>", "May 4th, 2023", "n/a");
 job2763.hours_logged[0] = {Date: "May 4", Hours: .25, Note: "Illinois Shooter"};
 job2763.hours_logged[1] = {Date: "May 5", Hours: .5, Note: "Image 117"};
 job2763.hours_logged[2] = {Date: "May 9", Hours: .25, Note: "Neuhaus books"};
@@ -1051,4 +1061,31 @@ job2763.hours_logged[4] = {Date: "Jun 5", Hours: .2, Note: "FT Summer Reading"};
 job2763.hours_logged[5] = {Date: "Jun 21", Hours: .5, Note: "TS Sept/Oct Ads eblast"};   
 job2763.hours_logged[6] = {Date: "Jun 22", Hours: .5, Note: "FT Brazil Page"};
 job2763.hours_logged[7] = {Date: "Jun 26", Hours: .25, Note: "covers reformatted"}; 
+job2763.completed_date = "June 26, 2023";
+job2763.date_billed = "July 12, 2023";
+job2763.date_paid = "July 30, 2023";
 jobs.push(job2763); 
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+const job2764 = new Job(2764, 56, "Publishing Management Associates", "PMA Marketing 6", "July Product &amp; Subscription Eblasts <ul><li>July 12 &#8212;Salvo 66 &#10003;</li><li>July 13&#8212;FT subs &#10003;</li><li>July 13&#8212;FT product &#10003;</li><li>August 2&#8212;Image #118 Ad Blast &#10003;</li><li>August 4&#8212;Illinois Shooter eBlast &#10003;</li><li>August 14&#8212;FT Ad eBlast &#10003;</li><li>August 22&#8212;SCSS Ad &#10003;</li><li>August 23&#8212;Collegium Institute Ad &#10003;</li></ul>", "July 1, 2023", "August 30, 2023");
+job2764.hours_logged[0] = {Date: "Jul 12", Hours: .333, Note: "SV66 ad blast"};
+job2764.hours_logged[1] = {Date: "Jul 13", Hours: .25, Note: "FT Subs"};
+job2764.hours_logged[2] = {Date: "Jul 13", Hours: .25, Note: "FT Product"};
+job2764.hours_logged[3] = {Date: "Aug 1", Hours: .5, Note: "George lecture"};
+job2764.hours_logged[4] = {Date: "Aug 2", Hours: .25, Note: "Image 118 ad blast"};
+job2764.hours_logged[5] = {Date: "Aug 4", Hours: .25, Note: "Illinois Shooter eBlast"};
+job2764.hours_logged[6] = {Date: "Aug 9", Hours: .25, Note: "Religion&Liberty ad blast"};
+job2764.hours_logged[7] = {Date: "Aug 14", Hours: .25, Note: "FT Oct Ad blast"};
+job2764.hours_logged[8] = {Date: "Aug 16", Hours: .25, Note: "FT intro sub blast"};
+job2764.hours_logged[9] = {Date: "Aug 21", Hours: .2, Note: "John Jay ad flat"};
+job2764.hours_logged[10] = {Date: "Aug 21", Hours: .2, Note: "Hillsdale ad flat"};
+job2764.hours_logged[11] = {Date: "Aug 23", Hours: .25, Note: "SCSS Conf. Ad 23"};
+job2764.hours_logged[12] = {Date: "Aug 23", Hours: .2, Note: "FT Back Issues #2"};
+job2764.hours_logged[12] = {Date: "Aug 24", Hours: .25, Note: "Collegium Institute"};
+job2764.hours_logged[13] = {Date: "Aug 26", Hours: .25, Note: "TS ad blast"};
+job2764.hours_logged[14] = {Date: "Aug 29", Hours: .5, Note: "6 pics"};
+job2764.completed_date = "August 29, 2023";
+job2764.date_billed = "August 29, 2023";
+
+
+jobs.push(job2764);
